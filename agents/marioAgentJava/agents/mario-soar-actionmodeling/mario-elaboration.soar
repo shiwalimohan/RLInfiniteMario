@@ -1,4 +1,29 @@
-#--------------------mario specific elaborations----------------------------------------------------------
+#--------------------mario specific elaborations------
+
+
+#--psuedo elaboration to determine the current id of the episode
+
+sp {mario-soar*query*emem*present-id
+   (state <s> ^name mario-soar
+              ^epmem.command <ecom>)
+-->
+   (<ecom> ^query <q>)
+   (<q> ^top-state.superstate nil)
+}
+
+sp {mario-soar*elaborate*state*present-id
+   (state <s> ^name mario-soar              
+   	      ^epmem.result <eres>)
+   (<eres> ^present-id <pid>)
+-->
+   (<s> ^present-id <pid>)
+}
+
+sp {all*elaborate*state*present-id
+   (state <s> ^superstate.present-id <pid>)
+-->
+   (<s> ^present-id <pid>)
+}
 
 #----------------elaborate mario--------------------
 sp {mario-soar*elaborate-mario
@@ -18,6 +43,9 @@ sp {mario-soar*elaborate-monster
    (<s> ^object <m>)
    (<m> ^type monster)
 }
+
+
+
 sp {mario-soar*elaborate-object-relative-distance
    (state <s> ^mario <mario>
               ^object <ob>)	

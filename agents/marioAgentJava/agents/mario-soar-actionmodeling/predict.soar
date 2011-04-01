@@ -1,3 +1,35 @@
 #----------------------------------------------------------------------------------------------
 #  for every object in the state, propose operators that predict the next position of the object
 #  by consulting episodic memory
+#----------------------------------------------------------------------------------------------
+
+sp {predict-object*elaborate*state
+   (state <s> ^name predict-object
+   	      ^superstate <ss>)
+   (<ss> ^operator <sop>)
+   (<sop> ^name predict-object
+   	  ^object <obj>)
+-->
+  (<s> ^object <obj>)
+}
+
+sp {predict-object*elaborate*state*cue
+   (state <s> ^name predict-object
+ 	      ^object <obj>)
+ -->
+  (<s> ^cue <cue>)
+  (<cue> ^object <ob>)
+}
+
+sp {predict-object*elaborate*cue
+   (state <s> ^name predict-object
+   	      ^object <obj>
+	      ^cue-nobject <cue-object>)
+  (<obj> ^{<> <attr> << xi x yi y>>} <val>)
+-->
+  (<cue-object> ^<attr> <val>)}
+
+sp {predict-object*query*epmem
+   (state <s> ^name predict-object
+   	      ^cue-object <cue-object>
+	      ^epmem.command <ecom>

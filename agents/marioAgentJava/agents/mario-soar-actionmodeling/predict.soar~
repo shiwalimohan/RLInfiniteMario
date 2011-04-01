@@ -1,0 +1,3 @@
+#----------------------------------------------------------------------------------------------
+#  for every object in the state, propose operators that predict the next position of the object
+#  by consulting episodic memory
