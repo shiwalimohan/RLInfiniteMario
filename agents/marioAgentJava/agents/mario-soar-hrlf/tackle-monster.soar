@@ -1,0 +1,85 @@
+sp {propose*tackle-monster1
+   (state <s> ^name mario-soar-hrlf
+              ^monster <m>
+            - ^coin.isreachable yes
+            - ^question.isreachable yes)
+   (<m> ^isthreat yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name tackle-monster
+        ^monster <m>)
+}
+sp {propose*tackle-monster2
+   (state <s> ^name mario-soar-hrlf
+              ^monster <m>
+              ^coin.isreachable yes
+            - ^question.isreachable yes)
+   (<m> ^isthreat yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name tackle-monster
+        ^monster <m>)
+}
+sp {propose*tackle-monster3
+   (state <s> ^name mario-soar-hrlf
+              ^monster <m>
+            - ^coin.isreachable yes
+              ^question.isreachable yes)
+   (<m> ^isthreat yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name tackle-monster
+        ^monster <m>)
+}
+gp {tackle*monster*general
+   (state <s> ^name mario-soar-hrlf
+              ^operator <op> +)
+   (<op> ^name tackle-monster
+         ^monster <m>)
+   (<m> ^distx [-3 -2.5 -2 -1.5 -1 -0.5 0 0.5 1 1.5 2 2.5 3]
+        ^disty [-5 -4.5 -4 -3.5 -3 -2.5 -2 -1.5 -1 -0.5 0 0.5 1 1.5 2 2.5 3 3.5 4]
+        ^direction [vertical stationary towards-mario awayfrom-mario]
+        ^type  [|Goomba| |Mushroom| |Fire Flower|] )
+-->
+   (<s> ^operator <op> = 0)
+}
+sp {monster*random*action
+   (state <s> ^name tackle-monster
+              ^rand-move <mv>
+              ^rand-jump <jp>
+              ^rand-speed <sp>
+              ^monster <m>
+              ^mario <mario>)
+   (<m> ^distx <dx>
+        ^disty <dy>
+        ^direction <dir>)
+   (<jp> ^up <j>) 
+   (<mario> ^yi <my>)
+   (<mv> ^direction <d>)
+   (<sp> ^degree <sd>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>
+        ^speed <sd>)
+}
+gp {tackle*monster
+   (state <s> ^name tackle-monster
+              ^operator <op> +
+              ^monster <m>
+              ^mario <mario>)
+   (<mario> ^type [|Small| |Big| |Fiery|]
+        ^tile-above [| | |7| b |?| |$| |1|])
+   (<op> ^name action
+         ^direction [left nil right]
+         ^jump [yes no]
+         ^speed [high low])
+   (<m> ^type [|Goomba| |Mushroom| |Fire Flower|] 
+        ^distx [-3 -2.5 -2 -1.5 -1 -0.5 0 0.5 1 1.5 2 2.5 3]
+        ^disty [-5 -4.5 -4 -3.5 -3 -2.5 -2 -1.5 -1 -0.5 0 0.5 1 1.5 2 2.5 3 3.5 4]
+        ^direction [vertical stationary towards-mario awayfrom-mario]
+        ^isthreat yes)
+--> 
+   (<s> ^operator <op> = 0)
+}

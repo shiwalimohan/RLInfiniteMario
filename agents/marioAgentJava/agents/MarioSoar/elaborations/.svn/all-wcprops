@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/elaborations
+END
+top-state.soar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/elaborations/top-state.soar
+END
+copy-reward.soar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/elaborations/copy-reward.soar
+END
+_all.soar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/elaborations/_all.soar
+END
+elaborations_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/elaborations/elaborations_source.soar
+END

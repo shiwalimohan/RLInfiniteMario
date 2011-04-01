@@ -1,0 +1,23 @@
+VERSION 4
+/mario-soar-reward/mario-soar-reward.dm
+0	ROOT mario-soar-reward mario-soar-reward 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR copy-reward copy-reward.soar 6
+6	3	FOPERATOR elaborate-heights elaborate-heights.soar 7
+7	3	FOPERATOR elaborate-mario elaborate-mario.soar 8
+8	3	FOPERATOR elaborate-monsters elaborate-monsters.soar 9
+9	3	FOPERATOR elaborate-platforms elaborate-platforms.soar 10
+10	3	FOPERATOR elaborate-tiles elaborate-tiles.soar 11
+11	3	FOPERATOR preference-update-end preference-update-end.soar 12
+12	3	FOPERATOR remove-actions remove-actions.soar 13
+13	3	FOPERATOR top-state top-state.soar 14
+14	0	OPERATOR apply-action apply-action.soar 15
+15	0	OPERATOR grab-coin grab-coin.soar 16
+16	0	OPERATOR initialize-mario-soar-reward initialize-mario-soar-reward.soar 17
+17	0	OPERATOR move-to-goal move-to-goal.soar 18
+18	0	OPERATOR search-question search-question.soar 19
+19	0	OPERATOR tackle-monster tackle-monster.soar 20
+END

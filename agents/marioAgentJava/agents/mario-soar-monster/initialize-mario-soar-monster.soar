@@ -1,0 +1,28 @@
+sp {propose*initialize-mario-soar-monster
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-mario-soar-monster)
+}
+
+sp {apply*initialize-mario-soar-monster
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-mario-soar-monster)
+-->
+   (<s> ^name mario-soar-monster
+        ^move <m1>
+        ^move <m2>
+        ^move <m3>
+        ^jump <j1>
+        ^jump <j2>)
+   (<m1> ^direction left
+         ^initial 0)
+   (<m2> ^direction right
+         ^initial 1)
+   (<m3> ^direction nil
+         ^initial 0)
+   (<j1> ^up yes)
+   (<j2> ^up no)
+
+}

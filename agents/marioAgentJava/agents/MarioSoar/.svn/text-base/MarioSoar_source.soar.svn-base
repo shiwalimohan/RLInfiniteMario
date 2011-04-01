@@ -1,0 +1,14 @@
+source _firstload.soar
+pushd all
+source all_source.soar
+popd
+pushd elaborations
+source elaborations_source.soar
+popd
+source initialize-MarioSoar.soar
+source jump.soar
+source move-left-jump.soar
+source move-left-only.soar
+source move-right-jump.soar
+source move-right-only.soar
+source rl.soar

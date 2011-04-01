@@ -1,0 +1,3 @@
+pushd mario-soar-model1
+source mario-soar-model1_source.soar
+popd

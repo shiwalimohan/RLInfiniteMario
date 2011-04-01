@@ -1,0 +1,15 @@
+sp {propose*initialize-mario-soar-tiling
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-mario-soar-tiling)
+}
+
+sp {apply*initialize-mario-soar-tiling
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-mario-soar-tiling)
+-->
+   (<s> ^name mario-soar-tiling)
+}
+

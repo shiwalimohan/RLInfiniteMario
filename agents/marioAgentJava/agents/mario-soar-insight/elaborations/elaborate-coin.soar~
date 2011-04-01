@@ -1,0 +1,68 @@
+sp {mario*elaborate*coin
+   (state <s> ^name mario-soar-insight
+              ^io.input-link <il>
+              ^xtile <xt>
+              ^ytile <yt>)
+   (<il> ^visual-scene <v>
+         ^mario <mario>)
+   (<v> ^tile-row <row>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        ^type |$|)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^coin <c>)
+   (<c> ^distx (- <x> <mx>)
+        ^disty (- <y> <my>))
+}
+sp {mario*elaborate*coin2
+   (state <s> ^name mario-soar-insight
+              ^coin <c>)
+   (<c> ^distx < 3
+        ^disty < 3)
+  -(<c> ^distx < -2)
+  -(<c> ^disty < 0)
+-->
+   (<c> ^isreachable yes)
+}
+sp {mario*elaborate*brick
+   (state <s> ^name mario-soar-insight
+              ^io.input-link <il>
+              ^xtile <xt>
+              ^ytile <yt>)
+   (<il> ^visual-scene <v>
+         ^mario <mario>)
+   (<v> ^tile-row <row>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        ^type b)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^brick <b>)
+   (<b> ^distx (- <x> <mx>)
+        ^disty (- <y> <my>))
+}
+sp {mario*elaborate*question
+   (state <s> ^name mario-soar-insight
+              ^io.input-link <il>
+              ^xtile <xt>
+              ^ytile <yt>)
+   (<il> ^visual-scene <v>
+         ^mario <mario>)
+   (<v> ^tile-row <row>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        ^type |?|)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^question <q>)
+   (<q> ^distx (- <x> <mx>)
+        ^disty (- <y> <my>))
+}
+

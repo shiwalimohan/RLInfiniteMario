@@ -1,0 +1,98 @@
+sp {propose*grab-coin
+   (state <s> ^name mario-soar
+              ^coin <c>)
+   (<c> ^isreachable yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name grab-coin
+        ^coin <c>)
+}
+sp {grab-coin-general
+   :template
+   (state <s> ^name mario-soar
+              ^operator <op> +)
+   (<op> ^name grab-coin
+         ^coin <c>)
+   (<c> ^distx <dx>
+        ^disty <dy>)
+-->
+   (<s> ^operator <op> = 0)
+}
+
+sp {elaborate*psuedo*reward*coin
+   (state <s> ^name grab-coin
+              ^superstate <ss>
+              ^coin <c>
+              ^reward-link <r>
+              ^io.input-link.visual-scene.tile-row <row>)
+   (<c> ^x <x>
+        ^y <y>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        -^type |$|)
+-->
+   (<r> ^reward.value 1)
+}
+
+sp {propose*form*state*grab-coin
+   (state <s> ^name grab-coin
+              ^superstate <ss>
+             -^copied yes)
+   (<ss> ^operator <sop>)
+   (<sop> ^name grab-coin
+          ^coin <m>)
+-->
+   (<s> ^operator <op>)
+   (<op> ^name copy-coin
+        ^coin <m>)
+}
+
+sp {apply*form*state*grab-coin
+   (state <s> ^name grab-coin
+              ^operator <op>)
+   (<op> ^name copy-coin
+         ^coin <m>)
+-->
+   (<s> ^coin <m>
+        ^copied yes)
+}
+
+sp {coin*random*action
+   (state <s> ^name grab-coin
+              ^rand-move <mv>
+              ^rand-jump <jp>
+              ^rand-speed <sp>
+              ^mario <mario>
+              ^copied yes)
+   (<mv> ^direction <d>)
+   (<jp> ^up <j>)
+   (<mario> ^xi <mx>
+            ^yi <my>)
+   (<sp> ^degree <sd>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>
+        ^speed <sd>)
+}
+
+sp {grab*coin
+   :template
+   (state <s> ^name grab-coin
+              ^operator <op> +
+              ^coin <c>
+              ^mario <m>)
+   (<m> ^type <mt>
+        ^tile-above <ta>)
+   (<c> ^distx <dx>
+        ^disty <dy>
+        ^isreachable yes)
+   (<op> ^name action
+         ^direction <d>
+         ^jump <j>
+         ^speed <sd>)
+--> 
+   (<s> ^operator <op> = 0)
+}

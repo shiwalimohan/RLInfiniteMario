@@ -1,0 +1,21 @@
+sp {mario*elaborate*pit5
+   (state <s> ^name mario-soar-hrl3
+              ^pit <pit>
+              ^mario <mario>)
+   (<mario> ^xi <mariox>)
+   (<pit> ^start <sx>
+        ^end <ex>)
+-->
+   (<pit> ^dist-start (- <sx> <mariox>)
+        ^width (- <ex> <sx>))
+}
+sp {mario*elaborate*pit6
+   (state <s> ^pit <pit>
+              ^mario <mario>)
+   (<pit> ^dist-start < 3
+          ^end <pe>)
+   (<mario> ^xi < <pe>)
+  -(<pit> ^dist-start < -3)
+-->
+   (<pit> ^isdangerous yes)
+}

@@ -1,0 +1,24 @@
+sp {copy*reward
+   (state <s> ^reward-link <r>
+              ^io.input-link <il>
+              ^name mario-soar)
+   (<il> ^reward <num>)
+-->
+   (<r> ^reward.value <num>)
+}
+
+sp {copy*reward*substate
+   (state <s> ^reward-link <r>
+              ^io.output-link.jump <j>
+              ^superstate.name mario-soar)
+-->
+   (<r> ^reward.value -0.01)
+}
+
+sp {copy*reward*substate*1
+   (state <s> ^reward-link <r>
+              ^io.output-link.jump <j>
+              ^io.input-link.reward -10)
+-->
+   (<r> ^reward.value -10)
+}

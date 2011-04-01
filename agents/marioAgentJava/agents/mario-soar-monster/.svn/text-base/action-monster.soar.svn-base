@@ -1,0 +1,17 @@
+sp {mario*rl
+   :template
+   (state <s> ^operator <op> +
+              ^io.input-link.monster <m>
+              ^move <mv>)
+   (<m> ^type <t>
+        ^x <x>
+        ^y <y>
+        ^xdirection <dir>)
+   (<op> ^name action
+         ^move <d>
+         ^jump <j>)
+   (<mv> ^direction <d>
+         ^initial <i>)
+-->
+   (<s> ^operator <op> = 0)
+}

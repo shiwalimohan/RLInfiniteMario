@@ -1,0 +1,75 @@
+###############################################################
+# step 4 - retrieve next episode
+################################################################
+
+sp {retrieve*next*episode
+   (state <s> ^name predict-next-position
+              ^monster <m>
+              ^stage 2
+              ^epmem.command <ecomm>)
+   (<m> ^prediction.position <pp>)
+   (<pp> ^memory-id <mid>
+         ^next-id <nid>)
+  -(<m> ^prediction.position.memory-id {<id>  < <mid>})
+-->
+   (<ecomm> ^retrieve <nid>)
+}
+
+sp {propose*store*next*episode
+  (state <s> ^name predict-next-position
+             ^stage 2
+             ^epmem.result <eres>
+             ^monster <m>)
+   (<eres> ^retrieved <episode>
+           ^memory-id <id>)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name store-information-next
+         ^episode <episode>
+         ^monster <m>
+         ^id <id>)
+}
+
+
+#may lead to ambiguous retrieval
+#important to come up with a strategy to solve this
+sp {apply*store*information*retrieved*next*episode
+   (state <s> ^name predict-next-position
+              ^operator <op>
+              ^superstate <ss>)
+   (<ss> ^name tackle-monster)
+   (<op> ^name store-information-next
+         ^episode <episode>
+         ^monster <m>
+         ^id <id>)
+   (<m> ^prediction <p>
+        ^type <mtype>)
+   (<episode> ^monster <em>)
+   (<em> ^xd <ex>
+        ^yd <ey>
+        ^type <mtype>)
+-->
+   (<p> ^position <pp>)
+   (<pp> ^memory-id <id>
+         ^next-id (+ <id> 1)
+         ^xd <ex>
+         ^yd <ey>)
+   (<ss> ^stage prediction -
+         ^stage action)
+}
+
+
+   
+
+#sp {apply*retrieve*next*episode
+#   (state <s> ^name predict-next-position
+#              ^operator <op>
+#              ^epmem.command <ecomm>)
+#   (<op> ^name retrieve-next-episode
+#         ^id <id>)
+#-->
+#   (<ecomm> ^retrieve <id>)
+#   (<s> ^stage 4 -
+#        ^stage 5)
+#}
+

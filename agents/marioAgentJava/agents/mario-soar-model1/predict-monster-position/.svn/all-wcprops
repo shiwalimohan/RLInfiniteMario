@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position
+END
+store-information.soar
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/store-information.soar
+END
+predict-monster-position_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/predict-monster-position_source.soar
+END
+elaborations.soar
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/elaborations.soar
+END
+determine-present-id.soar
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/determine-present-id.soar
+END
+retrieve-next-episode.soar
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/retrieve-next-episode.soar
+END
+retrieve-similar-episode.soar
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/retrieve-similar-episode.soar
+END
+retrieve-failure.soar
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/retrieve-failure.soar
+END
+remove-prediction.soar
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/shiwali/!svn/ver/19/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-model1/predict-monster-position/remove-prediction.soar
+END

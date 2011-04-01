@@ -1,0 +1,7 @@
+source _all.soar
+source elaborate-mario.soar
+source elaborate-monsters.soar
+source elaborate-operator-conflict.soar
+source elaborate-tiles.soar
+source remove-action.soar
+source top-state.soar

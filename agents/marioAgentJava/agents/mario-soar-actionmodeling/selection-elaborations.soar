@@ -1,0 +1,6 @@
+sp {selection*elaborate*state-name
+   :default
+   (state <s> ^choices multiple)
+-->
+   (<s> ^name selection)
+}

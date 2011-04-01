@@ -1,0 +1,7 @@
+source _all.soar
+source copy-reward.soar
+source elaborate-mario.soar
+source elaborate-monsters.soar
+source elaborate-tiles.soar
+source preference-update-end.soar
+source top-state.soar

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools
+END
+run-cross-test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-cross-test.sh
+END
+run-package-unit-tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-package-unit-tests.sh
+END
+make-asdf-package.sh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/make-asdf-package.sh
+END
+run-random-cross-tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-random-cross-tests.sh
+END
+common.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/common.sh
+END
+run-functional-test.sh
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-functional-test.sh
+END
+run-example.sh
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-example.sh
+END
+run-all-unit-tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-all-unit-tests.sh
+END
+run-all-functional-tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/run-all-functional-tests.sh
+END

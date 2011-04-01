@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator
+END
+Operator_Tie.soar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator/Operator_Tie.soar
+END
+State_No-Change.soar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator/State_No-Change.soar
+END
+evaluate-operator_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator/evaluate-operator_source.soar
+END
+elaborations.soar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator/elaborations.soar
+END
+Operator_Constraint-Failure.soar
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator/Operator_Constraint-Failure.soar
+END
+task-operator.soar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/11591/trunk/SoarSuite/Core/Demos/default/selection/Operator_Tie/evaluate-operator/task-operator.soar
+END

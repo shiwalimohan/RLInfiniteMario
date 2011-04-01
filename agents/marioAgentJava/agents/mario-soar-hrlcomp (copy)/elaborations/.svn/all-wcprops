@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations
+END
+elaborate-platform.soar
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-platform.soar
+END
+top-state.soar
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/top-state.soar
+END
+copy-reward.soar
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/copy-reward.soar
+END
+elaborate-heights.soar
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-heights.soar
+END
+elaborate-pit.soar
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-pit.soar
+END
+_all.soar
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/_all.soar
+END
+elaborations_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborations_source.soar
+END
+elaborate-monsters.soar
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-monsters.soar
+END
+elaborate-pipes.soar
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-pipes.soar
+END
+elaborate-tiles.soar
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-tiles.soar
+END
+remove-action.soar
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/remove-action.soar
+END
+elaborate-mario.soar
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp%20(copy)/elaborations/elaborate-mario.soar
+END

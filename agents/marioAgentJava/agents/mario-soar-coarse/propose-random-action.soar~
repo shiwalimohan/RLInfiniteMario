@@ -1,0 +1,38 @@
+sp {monster*random*action
+   (state <s> ^rand-move <mv>
+              ^rand-jump <jp>
+              ^rand-speed <sp>
+              ^mario <mario>
+              ^io.output-link <ol>)
+   (<mv> ^direction <d>)
+   (<jp> ^up <j>)
+   (<sp> ^degree <sd>)
+   (<ol> ^move <dir>
+         ^jump <y>
+         ^speed <deg>)
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>
+        ^speed <sd>)
+}
+
+sp {monster*random*action*1
+   (state <s> ^rand-move <mv>
+              ^rand-jump <jp>
+              ^rand-speed <sp>
+              ^mario <mario>
+              ^io.output-link <ol>)
+   (<mv> ^direction <d>)
+   (<jp> ^up <j>)
+   (<sp> ^degree <sd>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+-->
+   (<s> ^operator <o> + < =)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>
+        ^speed <sd>)
+}

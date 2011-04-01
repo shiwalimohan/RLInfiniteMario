@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/shiwali/Desktop/0007-rl-competition-2009/system/codecs/Java/products/JavaRLGlueCodec.jar" sourcepath="/home/shiwali/Desktop/0007-rl-competition-2009/system/codecs/Java/src"/>
+	<classpathentry kind="lib" path="/home/shiwali/soar/trunk/SoarLibrary/lib/sml.jar" sourcepath="/home/shiwali/soar/SoarSuite/SoarLibrary/bin"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

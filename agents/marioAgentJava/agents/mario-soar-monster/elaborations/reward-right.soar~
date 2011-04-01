@@ -1,0 +1,11 @@
+sp {right*reward
+   (state <s> ^name mario-soar-monster
+              ^reward-link <r>
+              ^operator <o>
+              ^io.input-link <il>)
+   (<o> ^name action
+        ^move right)
+   (<il> ^reward <num>)
+-->
+   (<r> ^reward.value (+ <num> 0.1))
+}

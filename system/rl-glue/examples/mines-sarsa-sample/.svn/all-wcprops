@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/mines-sarsa-sample
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/mines-sarsa-sample/README.txt
+END
+SampleMinesEnvironment.c
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/mines-sarsa-sample/SampleMinesEnvironment.c
+END
+SampleSarsaAgent.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/mines-sarsa-sample/SampleSarsaAgent.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/mines-sarsa-sample/Makefile
+END
+SampleExperiment.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/mines-sarsa-sample/SampleExperiment.c
+END

@@ -1,0 +1,15 @@
+VERSION 4
+/mario-soar-monster/mario-soar-monster.dm
+0	ROOT mario-soar-monster mario-soar-monster 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR copy-reward copy-reward.soar 6
+6	3	FOPERATOR remove-action remove-action.soar 7
+7	3	FOPERATOR top-state top-state.soar 8
+8	0	OPERATOR action-monster action-monster.soar 9
+9	0	OPERATOR apply-action apply-action.soar 10
+10	0	OPERATOR initialize-mario-soar-monster initialize-mario-soar-monster.soar 11
+11	0	OPERATOR random-action random-action.soar 12
+END

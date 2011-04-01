@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config
+END
+lisp-cmucl
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-cmucl
+END
+lisp-scieneer
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-scieneer
+END
+lisp-lispworks
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-lispworks
+END
+init.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/init.lisp
+END
+lisp-ccl
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-ccl
+END
+lisp-clisp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-clisp
+END
+lisp-sbcl
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-sbcl
+END
+lisp-allegro
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/tools/config/lisp-allegro
+END

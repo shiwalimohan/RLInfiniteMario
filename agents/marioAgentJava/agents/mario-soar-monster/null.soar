@@ -1,0 +1,7035 @@
+
+sp {rl*mario*rl*624
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*623
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*622
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*621
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.2276233641917065)
+}
+
+
+sp {rl*mario*rl*620
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*619
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*618
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5049999998882413)
+}
+
+
+sp {rl*mario*rl*617
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*616
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*615
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*614
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*613
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*612
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*611
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*610
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*609
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*608
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*607
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*606
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*605
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*604
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*603
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.07974999983794989)
+}
+
+
+sp {rl*mario*rl*602
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*601
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*600
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*599
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*598
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*597
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*596
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*595
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*594
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*593
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*592
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*591
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.4825660772670913)
+}
+
+
+sp {rl*mario*rl*590
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*589
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*588
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*587
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*586
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*585
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*584
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*583
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*582
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.02776356310410494)
+}
+
+
+sp {rl*mario*rl*581
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*580
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*579
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*578
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*577
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*576
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.009846126468858369)
+}
+
+
+sp {rl*mario*rl*575
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*574
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*573
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*572
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*571
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*570
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*569
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*568
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*567
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.03384166659942517)
+}
+
+
+sp {rl*mario*rl*566
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*565
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*564
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*563
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*562
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*561
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.03384166659942517)
+}
+
+
+sp {rl*mario*rl*560
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*559
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*558
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.03818750034784899)
+}
+
+
+sp {rl*mario*rl*557
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.002472917459827528)
+}
+
+
+sp {rl*mario*rl*556
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*555
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*554
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*553
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*552
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*551
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*550
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*549
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -8.333203382791346e-05)
+}
+
+
+sp {rl*mario*rl*548
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*547
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*546
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.02353437466500327)
+}
+
+
+sp {rl*mario*rl*545
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*544
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*543
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*542
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*541
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*540
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.02353437466500327)
+}
+
+
+sp {rl*mario*rl*539
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*538
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*537
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*536
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*535
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*534
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.02749999994412064)
+}
+
+
+sp {rl*mario*rl*533
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*532
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*531
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*530
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*529
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*528
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*527
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*526
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*525
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.02374375013262037)
+}
+
+
+sp {rl*mario*rl*524
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*523
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*522
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.1389375005569309)
+}
+
+
+sp {rl*mario*rl*521
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*520
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*519
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*518
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*517
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*516
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*515
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*514
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*513
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*512
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*511
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*510
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.07294374985177998)
+}
+
+
+sp {rl*mario*rl*509
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*508
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*507
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*506
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*505
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*504
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -1.192171257892083)
+}
+
+
+sp {rl*mario*rl*503
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*502
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*501
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*500
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*499
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*498
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*497
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*496
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*495
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*494
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*493
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*492
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.2171949996156618)
+}
+
+
+sp {rl*mario*rl*491
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*490
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*489
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5049999998882413)
+}
+
+
+sp {rl*mario*rl*488
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*487
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*486
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*485
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*484
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*483
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*482
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*481
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*480
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05992306312267044)
+}
+
+
+sp {rl*mario*rl*479
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*478
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*477
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*476
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*475
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*474
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*473
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*472
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*471
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*470
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*469
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*468
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*467
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*466
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*465
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*464
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*463
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*462
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*461
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*460
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*459
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1094999997876585)
+}
+
+
+sp {rl*mario*rl*458
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*457
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*456
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0.2434481181842918)
+}
+
+
+sp {rl*mario*rl*455
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*454
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*453
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*452
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*451
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*450
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*449
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*448
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*447
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*446
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*445
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*444
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*443
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*442
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*441
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*440
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*439
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*438
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.07974999983794989)
+}
+
+
+sp {rl*mario*rl*437
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*436
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*435
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*434
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*433
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*432
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 1.020375005891547)
+}
+
+
+sp {rl*mario*rl*431
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*430
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*429
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*428
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*427
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*426
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*425
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*424
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*423
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*422
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*421
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*420
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*419
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*418
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*417
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*416
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*415
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*414
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*413
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*412
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*411
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*410
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*409
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0.4450000001117587)
+}
+
+
+sp {rl*mario*rl*408
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*407
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*406
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*405
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.5049999998882413)
+}
+
+
+sp {rl*mario*rl*404
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*403
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*402
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.1099999997764826)
+}
+
+
+sp {rl*mario*rl*401
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*400
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*399
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*398
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*397
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -2 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*396
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*395
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*394
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*393
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*392
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*391
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*390
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*389
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*388
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*387
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*386
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*385
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -3 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*384
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.06312500050989911)
+}
+
+
+sp {rl*mario*rl*383
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*382
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*381
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*380
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*379
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*378
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*377
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*376
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*375
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.1135499996971339)
+}
+
+
+sp {rl*mario*rl*374
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*373
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*372
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*371
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*370
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.4450000001117587)
+}
+
+
+sp {rl*mario*rl*369
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*368
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*367
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*366
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*365
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*364
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*363
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*362
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*361
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*360
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*359
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*358
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*357
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*356
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*355
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*354
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.3234279494763445)
+}
+
+
+sp {rl*mario*rl*353
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*352
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*351
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*350
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*349
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*348
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*347
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*346
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*345
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*344
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*343
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*342
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*341
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*340
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*339
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*338
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*337
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*336
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*335
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*334
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*333
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.02749999994412064)
+}
+
+
+sp {rl*mario*rl*332
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*331
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*330
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*329
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*328
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*327
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.02749999994412064)
+}
+
+
+sp {rl*mario*rl*326
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*325
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*324
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.02109413551785708)
+}
+
+
+sp {rl*mario*rl*323
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*322
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*321
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.06749360328508847)
+}
+
+
+sp {rl*mario*rl*320
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*319
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*318
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.03326527792775785)
+}
+
+
+sp {rl*mario*rl*317
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*316
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*315
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*314
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*313
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*312
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.04549999926937748)
+}
+
+
+sp {rl*mario*rl*311
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*310
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*309
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*308
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*307
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*306
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.09363178139000239)
+}
+
+
+sp {rl*mario*rl*305
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*304
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*303
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*302
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*301
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*300
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.03326527792775785)
+}
+
+
+sp {rl*mario*rl*299
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*298
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*297
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.06625000174778201)
+}
+
+
+sp {rl*mario*rl*296
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*295
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*294
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.1001875019236468)
+}
+
+
+sp {rl*mario*rl*293
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*292
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.6829375028191134)
+}
+
+
+sp {rl*mario*rl*291
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*290
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*289
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*288
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 2.167750009298325)
+}
+
+
+sp {rl*mario*rl*287
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*286
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*285
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*284
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*283
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*282
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*281
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*280
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*279
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.09812500192783774)
+}
+
+
+sp {rl*mario*rl*278
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*277
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*276
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.6135499996971339)
+}
+
+
+sp {rl*mario*rl*275
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*274
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*273
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*272
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*271
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*270
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.8154270880091689)
+}
+
+
+sp {rl*mario*rl*269
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*268
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*267
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*266
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*265
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -3 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*264
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*263
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*262
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*261
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 1.417500007152557)
+}
+
+
+sp {rl*mario*rl*260
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*259
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*258
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*257
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*256
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*255
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5324999998323618)
+}
+
+
+sp {rl*mario*rl*254
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*253
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*252
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*251
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.9650270896927298)
+}
+
+
+sp {rl*mario*rl*250
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*249
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.07493749984772877)
+}
+
+
+sp {rl*mario*rl*248
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*247
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*246
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*245
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*244
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*243
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -8.333203382791346e-05)
+}
+
+
+sp {rl*mario*rl*242
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*241
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*240
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*239
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*238
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*237
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*236
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*235
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*234
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*233
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*232
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*231
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*230
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*229
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*228
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*227
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*226
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*225
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*224
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*223
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*222
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*221
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*220
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*219
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.3234279494763445)
+}
+
+
+sp {rl*mario*rl*218
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*217
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*216
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.1022202103160038)
+}
+
+
+sp {rl*mario*rl*215
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*214
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*213
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*212
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*211
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*210
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.04339124906086361)
+}
+
+
+sp {rl*mario*rl*209
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*208
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*207
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*206
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*205
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*204
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*203
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*202
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*201
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.07974999983794989)
+}
+
+
+sp {rl*mario*rl*200
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*199
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*198
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -1.015616555499896)
+}
+
+
+sp {rl*mario*rl*197
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*196
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*195
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.7728849996115987)
+}
+
+
+sp {rl*mario*rl*194
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.3424952672853065)
+}
+
+
+sp {rl*mario*rl*193
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*192
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.07974999983794989)
+}
+
+
+sp {rl*mario*rl*191
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*190
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*189
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.001422184720464736)
+}
+
+
+sp {rl*mario*rl*188
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*187
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.484334132698717)
+}
+
+
+sp {rl*mario*rl*186
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1069375002081506)
+}
+
+
+sp {rl*mario*rl*185
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*184
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*183
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*182
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*181
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*180
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05943075679922755)
+}
+
+
+sp {rl*mario*rl*179
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.002472917459827528)
+}
+
+
+sp {rl*mario*rl*178
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*177
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.03987499991897495)
+}
+
+
+sp {rl*mario*rl*176
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.4450000001117587)
+}
+
+
+sp {rl*mario*rl*175
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*174
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5049999998882413)
+}
+
+
+sp {rl*mario*rl*173
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*172
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*171
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1388333331700414)
+}
+
+
+sp {rl*mario*rl*170
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*169
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*168
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*167
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.4450000001117587)
+}
+
+
+sp {rl*mario*rl*166
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*165
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*164
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*163
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x -1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*162
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1094999997876585)
+}
+
+
+sp {rl*mario*rl*161
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*160
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*159
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*158
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*157
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*156
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*155
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*154
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.3078440631194506)
+}
+
+
+sp {rl*mario*rl*153
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1094999997876585)
+}
+
+
+sp {rl*mario*rl*152
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*151
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 4 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*150
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1369999997317791)
+}
+
+
+sp {rl*mario*rl*149
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*148
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*147
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.1094999997876585)
+}
+
+
+sp {rl*mario*rl*146
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*145
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 2 ^x 6 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*144
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*143
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*142
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.6575031010280534)
+}
+
+
+sp {rl*mario*rl*141
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.4259955212629405)
+}
+
+
+sp {rl*mario*rl*140
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*139
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -9 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*138
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.4905910920162202)
+}
+
+
+sp {rl*mario*rl*137
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*136
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*135
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*134
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*133
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*132
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*131
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*130
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*129
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*128
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*127
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*126
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*125
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*124
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*123
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*122
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*121
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x -3 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*120
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*119
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*118
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*117
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*116
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*115
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -2 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*114
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5049999998882413)
+}
+
+
+sp {rl*mario*rl*113
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*112
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*111
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.06356874929647882)
+}
+
+
+sp {rl*mario*rl*110
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*109
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0.4450000001117587)
+}
+
+
+sp {rl*mario*rl*108
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.07974999983794989)
+}
+
+
+sp {rl*mario*rl*107
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*106
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*105
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*104
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*103
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 8 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*102
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0.5523050075508654)
+}
+
+
+sp {rl*mario*rl*101
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*100
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*99
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*98
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*97
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 0 ^x -9 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*96
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*95
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*94
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*93
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*92
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*91
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -8 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*90
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*89
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*88
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*87
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0.1757500015354405)
+}
+
+
+sp {rl*mario*rl*86
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*85
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -2 ^x -7 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*84
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*83
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*82
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*81
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*80
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*79
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y -1 ^x -6 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*78
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*77
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*76
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*75
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*74
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*73
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -5 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*72
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.1369999997317791)
+}
+
+
+sp {rl*mario*rl*71
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*70
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*69
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.1644999996758997)
+}
+
+
+sp {rl*mario*rl*68
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*67
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -4 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*66
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.02749999994412064)
+}
+
+
+sp {rl*mario*rl*65
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*64
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*63
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = -0.1094999997876585)
+}
+
+
+sp {rl*mario*rl*62
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*61
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x -1 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*60
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0.2136875030677765)
+}
+
+
+sp {rl*mario*rl*59
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*58
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*57
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*56
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*55
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*54
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*53
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*52
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*51
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0.552493756148964)
+}
+
+
+sp {rl*mario*rl*50
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*49
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 0 ^type |Mushroom|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*48
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5049999998882413)
+}
+
+
+sp {rl*mario*rl*47
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*46
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*45
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.05499999988824128)
+}
+
+
+sp {rl*mario*rl*44
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump no ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*43
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump no ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 1 ^x 1 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*42
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump yes ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.2993199994564056)
+}
+
+
+sp {rl*mario*rl*41
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction left ^initial 0)
+    (<o1> ^jump yes ^move left ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*40
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction nil ^initial 0)
+    (<o1> ^jump yes ^move nil ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = 0)
+}
+
+
+sp {rl*mario*rl*39
+    (state <s1> ^move <m1> ^operator <o1> + ^io <i1>)
+    (<m1> ^direction right ^initial 1)
+    (<o1> ^jump no ^move right ^name action)
+    (<i1> ^input-link <i2>)
+    (<i2> ^monster <m2>)
+    (<m2> ^y 3 ^x 5 ^type |Goomba|)
+    -->
+    (<s1> ^operator <o1> = -0.5635499996971338)
+}
+
+
+sp {rl*mario*rl*38
+    (state <s1> ^move <m1> ^operator <o1> + ^io <

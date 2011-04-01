@@ -1,0 +1,24 @@
+sp {set-pref*question*coin
+   (state <s> ^operator <o1> +
+              ^operator <o2> +)
+   (<o1> ^name search-question)
+   (<o2> ^name grab-coin)
+-->
+   (<s> ^operator <o1> > <o2>)
+}
+sp {set-pref*monster*question
+   (state <s> ^operator <o1> +
+              ^operator <o2> +)
+   (<o1> ^name tackle-monster)
+   (<o2> ^name search-question)
+-->
+   (<s> ^operator <o1> > <o2>)
+}
+sp {set-pref*monster*coin
+   (state <s> ^operator <o1> +
+              ^operator <o2> +)
+   (<o1> ^name tackle-monster)
+   (<o2> ^name grab-coin)
+-->
+   (<s> ^operator <o1> > <o2>)
+}

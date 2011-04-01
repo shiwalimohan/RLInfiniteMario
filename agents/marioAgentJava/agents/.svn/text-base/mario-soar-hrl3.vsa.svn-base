@@ -1,0 +1,27 @@
+VERSION 4
+/mario-soar-hrl3/mario-soar-hrl3.dm
+0	ROOT mario-soar-hrl3 mario-soar-hrl3 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR copy-reward copy-reward.soar 6
+6	3	FOPERATOR elaborate-heights elaborate-heights.soar 24
+7	3	FOPERATOR elaborate-mario elaborate-mario.soar 7
+8	3	FOPERATOR elaborate-monsters elaborate-monsters.soar 8
+9	3	FOPERATOR elaborate-pipes elaborate-pipes.soar 26
+10	3	FOPERATOR elaborate-pit elaborate-pit.soar 9
+11	3	FOPERATOR elaborate-platform elaborate-platform.soar 27
+12	3	FOPERATOR elaborate-tiles elaborate-tiles.soar 11
+13	3	FOPERATOR remove-action remove-action.soar 12
+14	3	FOPERATOR top-state top-state.soar 13
+15	0	OPERATOR apply-action apply-action.soar 14
+16	0	OPERATOR avoid-pit avoid-pit.soar 15
+17	0	OPERATOR grab-coin grab-coin.soar 16
+18	0	OPERATOR initialize-mario-soar-hrl3 initialize-mario-soar-hrl3.soar 17
+19	0	OPERATOR move-to-goal move-to-goal.soar 18
+20	0	OPERATOR operator-preference operator-preference.soar 19
+21	0	OPERATOR preference-update-end preference-update-end.soar 20
+22	0	OPERATOR search-question search-question.soar 21
+23	0	OPERATOR tackle-monster tackle-monster.soar 22
+END

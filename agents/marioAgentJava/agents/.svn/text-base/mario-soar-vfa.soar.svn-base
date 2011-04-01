@@ -1,0 +1,3 @@
+pushd mario-soar-vfa
+source mario-soar-vfa_source.soar
+popd

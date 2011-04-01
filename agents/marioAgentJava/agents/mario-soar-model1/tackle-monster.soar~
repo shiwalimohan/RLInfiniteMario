@@ -1,0 +1,111 @@
+sp {propose*tackle-monster
+   (state <s> ^name mario-soar
+              ^monster <m>)
+   (<m> ^isthreat yes)
+  -(<m> ^isthreat no)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name tackle-monster
+        ^monster <m>)
+}
+
+#sp {set*flag
+#   (state <s> ^name tackle-monster)
+#-->
+#   (<s> ^stage prediction)
+#}
+
+sp {monster*random*action
+   (state <s> ^name tackle-monster
+              ^rand-move <mv>
+              ^rand-jump <jp>
+              ^rand-speed <sp>
+              ^monster <m>
+              ^mario <mario>)
+#              ^stage action)
+   (<m> ^distx <dx>
+        ^disty <dy>)
+   (<jp> ^up <j>) 
+   (<mario> ^yi <my>)
+   (<mv> ^direction <d>)
+   (<sp> ^degree <sd>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>
+        ^speed <sd>)
+}
+ 
+sp {tackle-monster*propose*dummy*operators*1
+   (state <s> ^name tackle-monster
+              ^mario <mario>)
+#             ^stage action)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name A)
+}
+
+sp {tackle-monster*propose*dummy*operators*2
+   (state <s> ^name tackle-monster
+              ^mario <mario>)
+#             ^stage action)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name B)
+}
+
+sp {create*conflict*impasse*1
+   (state <s> ^name tackle-monster
+              ^operator <op1> +
+              ^operator <op2> +)
+   (<op1> ^name A)
+   (<op2> ^name B)
+-->
+   (<s> ^operator <op1> > <op2>)
+}
+
+sp {create*conflict*impasse*2
+   (state <s> ^name tackle-monster
+              ^operator <op1> +
+              ^operator <op2> +)
+   (<op1> ^name A)
+   (<op2> ^name action)
+-->
+   (<s> ^operator <op1> < <op2>)
+}
+
+sp {create*conflict*impasse*3
+   (state <s> ^name tackle-monster
+              ^operator <op1> +
+              ^operator <op2> +)
+   (<op1> ^name B)
+   (<op2> ^name action)
+-->
+   (<s> ^operator <op1> > <op2>)
+}
+
+sp {tackle*monster
+   :template
+   (state <s> ^name tackle-monster
+              ^operator <op> +
+              ^monster <m>
+              ^mario <mario>
+              ^xtile <xt>)
+   (<xt> ^centre.isclear <yn>)
+   (<mario> ^type <mtype>)
+   (<op> ^name action
+         ^direction <d>
+         ^jump <j>
+         ^speed <sp>)
+   (<m> ^type <monst>
+        ^distx <dx>
+        ^disty <sy>)
+     #   ^direction <dir>)
+--> 
+   (<s> ^operator <op> = 0)
+}

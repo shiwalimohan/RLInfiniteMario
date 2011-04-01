@@ -1,0 +1,28 @@
+sp {propose*jump
+   (state <s> ^name MarioSoar
+              ^io.input-link.mario <m>)
+   (<m> ^xi <x>
+        ^yi <y>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name jump)
+}
+
+sp {apply*jump
+   (state <s> ^operator <o>
+              ^io <io>)
+   (<io> ^output-link <out>)
+   (<o> ^name jump)
+-->
+   (<out> ^jump <j>
+          ^move <m>)
+   (<j> ^up yes)
+   (<m> ^direction <stay>)
+}
+sp {apply*jump*remove-jump
+   (state <s> ^operator.name jump 
+              ^io.output-link <out>)
+   (<out> ^jump <j>)
+   (<j> ^status complete)
+-->
+   (<out> ^jump <j> -)}

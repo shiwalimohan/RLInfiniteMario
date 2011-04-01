@@ -1,0 +1,25 @@
+sp {predict*next*position
+   (state <s> ^name tackle-monster
+              ^superstate <ss>
+              ^stage prediction)
+   (<ss> ^operator <sop>)
+   (<sop> ^name tackle-monster
+          ^monster <m>)
+   (<m> ^isthreat yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name predict-next-position
+        ^monster <m>)
+}
+
+sp {elaborate*substate*predict-next-position
+   (state <s> ^name predict-next-position
+              ^superstate <ss>)
+   (<ss> ^name tackle-monster
+         ^operator <sop>)
+   (<sop> ^name predict-next-position
+          ^monster <m>)
+-->
+   (<s> ^monster <m>
+        ^stage 0)
+}

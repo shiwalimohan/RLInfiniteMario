@@ -1,0 +1,95 @@
+sp {mario*elaborate*monster
+   (state <s> ^io.input-link.monsters.monster <m>
+              ^name mario-soar-hrlcomp)
+   -(<m> ^type |Mario|)
+-->
+   (<s> ^monster <m>)
+}
+sp {mario*elaborate*monster-distance
+   (state <s> ^mario <mario>
+              ^monster <ob>)
+   (<mario> ^x <mariox>
+            ^y <marioy>)
+   (<ob> ^x <obx>
+         ^y <oby>)
+-->
+   (<ob> ^distx (- <obx> <mariox>)
+         ^disty (- <oby> <marioy>))
+}
+sp {mario*elaborate*monster2
+   (state <s> ^monster <m>)
+  -(<m> ^type |Fireball|)
+   (<m> ^distx < 4
+       ^disty < 5)
+   -(<m> ^distx < -3)
+   -(<m> ^disty < -6)
+-->
+   (<m> ^isthreat yes)
+}
+sp {mario*elaborate*monster4
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>)
+   (<m> ^distx > 0.0
+        ^sx < 0.0)
+-->
+   (<m> ^direction towards-mario)
+}
+sp {mario*elaborate*monster5
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>)
+   (<m> ^distx < 0.0
+        ^sx < 0.0)
+-->
+   (<m> ^direction awayfrom-mario)
+}
+sp {mario*elaborate*monster6
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>)
+   (<m> ^distx > 0.0
+        ^sx > 0.0)
+-->
+   (<m> ^direction awayfrom-mario)
+}
+sp {mario*elaborate*monster7
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>)
+   (<m> ^distx < 0.0
+        ^sx > 0.0)
+-->
+   (<m> ^direction towards-mario)
+}
+sp {mario*elaborate*monster8
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>)
+   (<m> ^sx 0.0
+        ^sy 0.0 )
+-->
+   (<m> ^direction stationary)
+}
+sp {mario*elaborate*monster9
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>)
+   (<m> ^sx 0.0
+      - ^sy 0.0 )
+-->
+   (<m> ^direction vertical)
+}
+sp {mario*elaborate*monster10
+   (state <s> ^name mario-soar-hrlcomp
+              ^monster <m>
+              ^pipe <p>)
+   (<p> ^xloc <px>
+        ^yloc <py>
+        ^end <pend>)
+   (<m> ^type |Piranha Plant|
+        ^x > <px>
+        ^y < <py>
+        ^x <= <pend>)
+   
+-->
+  (<m> ^isthreat no)
+}
+
+
+
+        

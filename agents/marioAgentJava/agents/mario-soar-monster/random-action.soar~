@@ -1,0 +1,17 @@
+sp {propose*random*action
+   (state <s> ^name mario-soar-monster
+              ^io.input-link.mario <mario>
+              ^move <mv>
+              ^jump <jp>
+              ^move.initial <i>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+   (<mv> ^direction <d>
+         ^initial <i>)
+   (<jp> ^up <j>)
+-->
+   (<s> ^operator <o> + = <i>)
+   (<o> ^name action
+        ^move <d>
+        ^jump <j>)
+}

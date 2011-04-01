@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-speed
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-speed/config
+END
+test-speed-environment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-speed/test-speed-environment.lisp
+END
+test-speed-experiment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-speed/test-speed-experiment.lisp
+END

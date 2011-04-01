@@ -1,0 +1,12 @@
+sp {apply*action
+   (state <s> ^operator <op>
+              ^io.output-link <ol>)
+   (<op> ^name action
+         ^move <d>
+         ^jump <ju>)
+-->
+   (<ol> ^jump <j>
+         ^move <m>)
+   (<j> ^up <ju>)
+   (<m> ^direction <d>)
+}

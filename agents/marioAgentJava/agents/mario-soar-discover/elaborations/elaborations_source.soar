@@ -1,0 +1,6 @@
+source _all.soar
+source elaborate-coin.soar
+source elaborate-mario.soar
+source elaborate-monster.soar
+source remove-action.soar
+source top-state.soar

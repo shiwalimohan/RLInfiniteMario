@@ -1,0 +1,15 @@
+sp {remove-prediction
+   (state <s> ^name tackle-monster
+              ^monster <m>
+              ^operator <o>)
+   (<o> ^name action)
+   (<m> ^prediction <p>
+        ^futurex <fx>
+        ^futurey <fy>)
+   (<p> ^<position> <pp>)
+-->
+   (<p> ^<position> <pp> -)
+  # (<m> ^futurex <fx> -
+   #     ^futurey <fy> - )
+ 
+}

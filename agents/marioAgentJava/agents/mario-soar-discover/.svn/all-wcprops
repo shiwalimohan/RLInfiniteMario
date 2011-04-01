@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover
+END
+mario-soar-discover_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/mario-soar-discover_source.soar
+END
+move-to-goal.soar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/move-to-goal.soar
+END
+_firstload.soar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/_firstload.soar
+END
+apply-action.soar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/apply-action.soar
+END
+discover.config
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/discover.config
+END
+log-run1.csv
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/log-run1.csv
+END
+mario-soar-discover.dm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/mario-soar-discover.dm
+END
+comment.dm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/comment.dm
+END
+initialize-mario-soar-discover.soar
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/initialize-mario-soar-discover.soar
+END
+random-action.soar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-discover/random-action.soar
+END

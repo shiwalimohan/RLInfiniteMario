@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/src/rl-glue-utils
+END
+rl-glue-utils.asd
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/src/rl-glue-utils/rl-glue-utils.asd
+END
+generic.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/src/rl-glue-utils/generic.lisp
+END
+rl-utils-package.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/src/rl-glue-utils/rl-utils-package.lisp
+END

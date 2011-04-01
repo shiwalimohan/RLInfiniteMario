@@ -1,0 +1,3 @@
+pushd mario-soar-tiling
+source mario-soar-tiling_source.soar
+popd

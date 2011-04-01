@@ -1,0 +1,3 @@
+pushd mario-soar-hrlf
+source mario-soar-hrlf_source.soar
+popd

@@ -1,0 +1,218 @@
+sp {set*flag
+   (state <s> ^name tackle-monster)
+-->
+   (<s> ^stage prediction)
+}
+
+sp {predict*next*position
+   (state <s> ^name tackle-monster
+              ^superstate <ss>
+              ^stage prediction)
+   (<ss> ^operator <sop>)
+   (<sop> ^name tackle-monster
+          ^monster <m>)
+   (<m> ^isthreat yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name predict-next-position
+        ^monster <m>)
+}
+
+sp {elaborate*substate*predict-next-position
+   (state <s> ^name predict-next-position
+              ^superstate <ss>)
+   (<ss> ^name tackle-monster
+         ^operator <sop>)
+   (<sop> ^name predict-next-position
+          ^monster <m>)
+-->
+   (<s> ^monster <m>)
+}
+
+sp {retrieve*similar*episode
+   (state <s> ^name predict-next-position
+              ^monster <m>
+              ^epmem.command <ecom>)
+    (<m> ^sx <sx>
+        ^sy <sy>
+        ^type <mtype>
+        ^top-right.isblocked <i1>
+        ^top-left.isblocked <i2>
+        ^top.isblocked <i3>
+        ^left.isblocked <i4>
+        ^right.isblocked <i5>
+        ^bottom-right.isblocked <i6>
+        ^bottom-left.isblocked <i7>
+        ^bottom.isblocked <i8>)
+-->
+   (<ecom> ^query <q>)
+   (<q> ^name mario-soar
+        ^monster <em>)
+   (<em> ^sx <sx>
+        ^sy <sy>
+        ^type <mtype>
+        ^top-right.isblocked <i1>
+        ^top-left.isblocked <i2>
+        ^top.isblocked <i3>
+        ^left.isblocked <i4>
+        ^right.isblocked <i5>
+        ^bottom-right.isblocked <i6>
+        ^bottom-left.isblocked <i7>
+        ^bottom.isblocked <i8>)
+}
+
+sp {propose*store*retrieved*episode
+   (state <s> ^name predict-next-position
+              ^epmem.result <eres>
+              ^epmem.command <ecomm>
+              ^monster <m>)
+   (<eres> ^success <query>
+           ^retrieved <episode>
+           ^memory-id <id>)
+   (<ecomm> ^query <query>)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name retrieve-episode
+         ^episode <episode>
+         ^monster <m>
+         ^id <id>)
+}
+
+sp {propose*failed*retrieval
+   (state <s> ^name predict-next-position
+              ^epmem.result <eres>
+              ^epmem.command <ecomm>
+              ^monster <m>)
+   (<eres> ^failed <query>)
+   (<ecomm> ^query <query>)
+-->
+   (<s> ^operator retrieve-failure
+        ^monster <m>)
+}
+
+sp {apply*failed*retrieval
+   (state <s> ^name predict-next-position
+              ^operator <op>
+              ^superstate <ss>)
+   (<ss> ^name tackle-monster)
+   (<op>  ^name retrieve-failure
+          ^monster.prediction <mp>)
+-->
+   (<mp> ^available no)
+   (<ss> ^stage prediction -
+         ^stage action)
+}
+             
+      
+sp {apply*store*information*retrieved*episode
+   (state <s> ^name predict-next-position
+              ^operator <op>
+              ^superstate <ss>)
+   (<ss> ^tackle-monster)
+   (<op> ^name retrieve-episode
+         ^episode <episode>
+         ^monster <m>
+         ^id <id>)
+   (<m> ^prediction <p>
+        ^sx <sx>
+        ^sy <sy>
+        ^type <mtype>
+        ^top-right.isblocked <i1>
+        ^top-left.isblocked <i2>
+        ^top.isblocked <i3>
+        ^left.isblocked <i4>
+        ^right.isblocked <i5>
+        ^bottom-right.isblocked <i6>
+        ^bottom-left.isblocked <i7>
+        ^bottom.isblocked <i8>)
+   (<episode> ^monster <em>)
+   (<emm> ^sx <sx>
+        ^sy <sy>
+        ^x <ex>
+        ^y <ey>
+        ^type <mtype>
+        ^top-right.isblocked <i1>
+        ^top-left.isblocked <i2>
+        ^top.isblocked <i3>
+        ^left.isblocked <i4>
+        ^right.isblocked <i5>
+        ^bottom-right.isblocked <i6>
+        ^bottom-left.isblocked <i7>
+        ^bottom.isblocked <i8>)
+-->
+   (<p> ^position <pp>)
+   (<pp> ^memory-id <id>
+         ^next-id (+ <id> 1)
+         ^x <ex>
+         ^y <ey>)
+   #might create problems/ check here is does not run
+    (<ss> ^stage prediction -
+         ^stage action)
+}
+
+sp {propose*delete*epmem*command
+   (state <s> ^name predict-next-position
+              ^monster <m>
+              ^epmem.command <ecomm>
+              ^epmem.result <eres>)
+   (<eres> ^memory-id <id>
+           ^success <query>)
+   (<m> ^prediction.position.id <id>)
+   (<ecomm> ^query <query>)
+-->
+   (<s> ^operator <op>)
+   (<op> ^name delete-command
+         ^query <query>)
+}
+
+sp {apply*delete*epmem*command
+   (state <s> ^name predict-next-position
+              ^operator <op>
+              ^epmem.command <ecomm>)
+   (<op> ^name delete-command
+         ^query <query>)
+-->
+   (<ecomm> ^query <query> -)
+}
+
+sp {retrieve*next*episode
+   (state <s> ^name predict-next-position
+              ^monster <m>
+              ^epmem.command <ecomm>)
+   (<m> ^prediction.position <pp>)
+   (<pp> ^memory-id <id>
+         ^next-id <nid>)
+  -(<m> ^prediction.position.memory-id {<mid>  < <id>})
+-->
+   (<ecomm> ^retrieve <id>)
+}
+
+sp {elaborate*future*movement
+   (state <s> ^name predict-next-position
+              ^monster.prediction <mp>)
+   (<mp> ^position <mpp1>
+         ^position {<mpp2> <> <mpp1>})
+   (<mpp1> ^memory-id <id1>
+           ^x <x1>
+           ^y <y1>)
+   (<mpp2> ^memory-id {<id2> > <id1>}
+           ^x <x2>
+           ^y <y2>)
+-->
+   (<mp> ^deltax (- <x2> <x1>)
+         ^deltay (- <y1> <y2>))
+}
+
+sp {elaborate*predicted*position
+   (state <s> ^name predict-next-position
+              ^monster <m>)
+   (<m> ^prediction <mp>)
+   (<mp> ^deltax <dx>
+         ^deltay <dy>)
+   (<m> ^x <mx>
+        ^y <my>)
+-->
+   (<m> ^futurex (+ <mx> <dx>)
+        ^futurey (+ <my> <dy>))
+}
+   

@@ -1,0 +1,21 @@
+Username:mariosoar
+Event:4
+EventName:Tetris
+MDP:1
+Key:a9df53dc0be334b4b54c781f593ec193mariosoar4
+user.name:shiwali
+java.vm.version:11.0-b15
+os.arch:i386
+os.name:Linux
+os.version:2.6.27-11-generic
+sun.cpu.endian:little
+user.country:US
+ipAddress:127.0.1.1
+hostname:shiwali-desktop
+TimeToSendLastResultsFile:0
+date:Thu May 07 16:32:54 EDT 2009
+#####
+EpisodeNumber:0 Return:0.0 Steps:86
+EpisodeNumber:1 Return:0.0 Steps:80
+EpisodeNumber:2 Return:0.0 Steps:82
+EpisodeNumber:3 Return:0.0 Steps:92

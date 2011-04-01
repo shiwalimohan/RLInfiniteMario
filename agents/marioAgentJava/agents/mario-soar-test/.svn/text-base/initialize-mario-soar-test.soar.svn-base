@@ -1,0 +1,24 @@
+sp {propose*initialize-mario-soar-test
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-mario-soar-test)
+}
+
+sp {apply*initialize-mario-soar-test
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-mario-soar-test)
+-->
+   (<s> ^name mario-soar-test
+        ^rand-move <m1>
+        ^rand-move <m2>
+        ^rand-move <m3>
+        ^rand-jump <j1>
+        ^rand-jump <j2>)
+   (<m1> ^direction left)
+   (<m2> ^direction right)
+   (<m3> ^direction nil)
+   (<j1> ^up yes)
+   (<j2> ^up no)
+}

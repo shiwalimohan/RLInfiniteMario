@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-message
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-message/config
+END
+test-message-agent.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-message/test-message-agent.lisp
+END
+test-message-environment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-message/test-message-environment.lisp
+END
+test-message-experiment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/test-message/test-message-experiment.lisp
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/README.txt
+END
+Makefile.agent
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/Makefile.agent
+END
+Makefile.experiment
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/Makefile.experiment
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/Makefile
+END
+SkeletonEnvironment.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/SkeletonEnvironment.c
+END
+SkeletonAgent.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/SkeletonAgent.c
+END
+Makefile.environment
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/Makefile.environment
+END
+SkeletonExperiment.c
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/skeleton-example/SkeletonExperiment.c
+END

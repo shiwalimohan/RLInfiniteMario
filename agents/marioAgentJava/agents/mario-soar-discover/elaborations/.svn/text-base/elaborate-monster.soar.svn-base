@@ -1,0 +1,28 @@
+sp {mario*elaborate*monster
+   (state <s> ^io.input-link.monsters.monster <m>
+              ^name mario-soar-discover)
+   -(<m> ^type |Mario|)
+-->
+   (<s> ^monster <m>)
+}
+sp {mario*elaborate*monster-distance
+   (state <s> ^mario <mario>
+              ^monster <ob>)
+   (<mario> ^x <mariox>
+            ^y <marioy>)
+   (<ob> ^x <obx>
+         ^y <oby>)
+-->
+   (<ob> ^distx (- <obx> <mariox>)
+         ^disty (- <oby> <marioy>))
+}
+sp {mario*elaborate*monster2
+   (state <s> ^monster <m>)
+  -(<m> ^type |Fireball|)
+   (<m> ^distx < 4
+       ^disty < 5)
+   -(<m> ^distx < -3)
+   -(<m> ^disty < -6)
+-->
+   (<m> ^isthreat yes)
+}

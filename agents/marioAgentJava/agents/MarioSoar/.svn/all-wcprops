@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar
+END
+move-right-jump.soar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/move-right-jump.soar
+END
+configs
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/configs
+END
+rl.soar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/rl.soar
+END
+MarioSoar_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/MarioSoar_source.soar
+END
+move-right-only.soar
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/move-right-only.soar
+END
+move-left-jump.soar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/move-left-jump.soar
+END
+_firstload.soar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/_firstload.soar
+END
+move-left-only.soar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/move-left-only.soar
+END
+MarioSoar.dm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/MarioSoar.dm
+END
+initialize-MarioSoar.soar
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/initialize-MarioSoar.soar
+END
+comment.dm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/comment.dm
+END
+jump.soar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/MarioSoar/jump.soar
+END

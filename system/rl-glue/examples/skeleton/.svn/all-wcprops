@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/skeleton
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/skeleton/README.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/skeleton/Makefile
+END
+SkeletonEnvironment.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/skeleton/SkeletonEnvironment.c
+END
+SkeletonAgent.c
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/skeleton/SkeletonAgent.c
+END
+SkeletonExperiment.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/examples/skeleton/SkeletonExperiment.c
+END

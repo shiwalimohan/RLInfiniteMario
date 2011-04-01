@@ -1,0 +1,15 @@
+#--------------
+
+
+
+sp {query-smem*elaborate-state
+   (state <s> ^impasse no-change
+   	      ^attribute operator
+	      ^superstate <ss>
+	      ^epmem.command <ecomm>)
+   (<ss> ^operator <sop>)
+   (<sop> ^name query-epmem
+   	  ^cue <cue>)
+-->  
+   (<ecomm> ^query <cue>)
+}

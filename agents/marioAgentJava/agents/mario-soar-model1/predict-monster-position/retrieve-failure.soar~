@@ -1,0 +1,46 @@
+##########################################################################
+# Step 2 - failure - destroy state - move to random action
+# two cases : either there is a complete failure or the cue results only in  a partial match
+#########################################################################
+sp {propose*partial*match*failure
+   (state <s> ^name predict-next-position
+               ^epmem.result <eres>
+              ^epmem.command <ecomm>
+              ^monster <m>
+              ^stage 2)
+   (<eres> ^success <query>
+           ^normalized-match-score < 1)
+   (<ecomm> ^query <query>)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name retrieve-failure
+        ^monster <m>)
+}
+
+
+sp {propose*failed*retrieval
+   (state <s> ^name predict-next-position
+              ^epmem.result <eres>
+              ^epmem.command <ecomm>
+              ^monster <m>
+              ^stage 2)
+   (<eres> ^failed <query>)
+   (<ecomm> ^query <query>)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name retrieve-failure
+        ^monster <m>)
+}
+
+sp {apply*failed*retrieval
+   (state <s> ^name predict-next-position
+              ^operator <op>
+              ^superstate <ss>)
+   (<ss> ^name tackle-monster)
+   (<op>  ^name retrieve-failure
+          ^monster.prediction <mp>)
+-->
+   (<mp> ^available no)
+   (<ss> ^stage prediction -
+         ^stage action)
+}

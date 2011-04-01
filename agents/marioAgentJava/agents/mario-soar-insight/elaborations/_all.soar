@@ -1,0 +1,27 @@
+sp {elaborate*state*name
+   (state <s> ^superstate.operator.name <name>)
+-->
+   (<s> ^name <name>)
+}
+
+sp {elaborate*state*top-state
+   (state <s> ^superstate.top-state <ts>)
+-->
+   (<s> ^top-state <ts>)
+}
+sp {elaborate*state*io
+   (state <s> ^superstate.io <io>)
+-->
+   (<s> ^io <io>)
+}
+sp {elaborate*state*move
+   (state <s> ^superstate.rand-move <mv>)
+-->
+   (<s> ^rand-move <mv>)
+}
+sp {elaborate*state*jump
+   (state <s> ^superstate.rand-jump <jp>)
+-->
+   (<s> ^rand-jump <jp>)
+}
+

@@ -1,0 +1,10 @@
+source elaborations.soar
+pushd elaborations
+source elaborations_source.soar
+popd
+source remove-prediction.soar
+source determine-present-id.soar
+source retrieve-failure.soar
+source retrieve-next-episode.soar
+source retrieve-similar-episode.soar
+source store-information.soar

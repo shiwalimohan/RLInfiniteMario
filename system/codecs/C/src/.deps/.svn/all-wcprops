@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps
+END
+librlenvironment_la-RL_debug.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps/librlenvironment_la-RL_debug.Plo
+END
+librlagent_la-RL_debug.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps/librlagent_la-RL_debug.Plo
+END
+librlexperiment_la-RL_client_experiment.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps/librlexperiment_la-RL_client_experiment.Plo
+END
+librlexperiment_la-RL_debug.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps/librlexperiment_la-RL_debug.Plo
+END
+librlagent_la-RL_client_agent.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps/librlagent_la-RL_client_agent.Plo
+END
+librlenvironment_la-RL_client_environment.Plo
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/src/.deps/librlenvironment_la-RL_client_environment.Plo
+END

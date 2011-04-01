@@ -1,0 +1,14 @@
+VERSION 4
+/mario-soar-test/mario-soar-test.dm
+0	ROOT mario-soar-test mario-soar-test 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR elaborate-tile elaborate-tile.soar 6
+6	3	FOPERATOR remove-action remove-action.soar 11
+7	3	FOPERATOR top-state top-state.soar 7
+8	0	OPERATOR apply-action apply-action.soar 10
+9	0	OPERATOR initialize-mario-soar-test initialize-mario-soar-test.soar 8
+10	0	OPERATOR move-to-goal move-to-goal.soar 9
+END

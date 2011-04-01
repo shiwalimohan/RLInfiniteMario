@@ -1,0 +1,46 @@
+sp {propose*grab-coin
+   (state <s> ^name mario-soar-insight
+              ^coin <c>)
+   (<c> ^isreachable yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name grab-coin
+        ^coin <c>)
+}
+sp {set-pref*coin*coin
+   (state <s> ^name mario-soar-insight
+              ^operator <o1> +
+              ^operator <o2> +)
+   (<o1> ^name grab-coin
+         ^coin.distx <x1>)
+   (<o2> ^name grab-coin
+         ^coin.distx > <x1>)
+-->
+   (<s> ^operator <o1> > <o2>)
+}
+sp {coin*random*action
+   (state <s> ^name grab-coin
+              ^rand-move <mv>
+              ^rand-jump <jp>)
+   (<mv> ^direction <d>)
+   (<jp> ^up <j>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>)
+}
+sp {grab*coin
+   :template
+   (state <s> ^name grab-coin
+              ^operator <op> +
+              ^coin <c>)
+   (<c> ^distx <dx>
+        ^disty <dy>
+        ^isreachable yes)
+   (<op> ^name action
+         ^direction <d>
+         ^jump <j>)
+--> 
+   (<s> ^operator <op> = 0)
+}

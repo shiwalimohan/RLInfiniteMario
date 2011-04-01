@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/README.txt
+END
+Makefile.agent
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/Makefile.agent
+END
+Makefile.experiment
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/Makefile.experiment
+END
+SampleMinesEnvironment.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/SampleMinesEnvironment.c
+END
+SampleSarsaAgent.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/SampleSarsaAgent.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/Makefile
+END
+SampleExperiment.c
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/SampleExperiment.c
+END
+Makefile.environment
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/C/examples/mines-sarsa-example/Makefile.environment
+END

@@ -1,0 +1,12 @@
+#reward on moving right. internal goal. reward shaping
+#
+#sp {elaborate*reward*move*right
+#   (state <s> ^reward-link <r>
+#              ^io.input-link <il>
+#              ^mario <mario>)
+#   (<mario> ^x <mx>
+#            ^prevx <mpx> < <mx>)
+#   (<il> ^reward <num>)
+#-->
+#   (<r> ^reward.value (+ <num> 0.01))
+#}

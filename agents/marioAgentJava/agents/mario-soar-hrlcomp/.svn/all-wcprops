@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp
+END
+tackle-monster.soar
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/tackle-monster.soar
+END
+_firstload.soar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/_firstload.soar
+END
+initialize-mario-soar-hrlcomp.soar
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/initialize-mario-soar-hrlcomp.soar
+END
+apply-action.soar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/apply-action.soar
+END
+log-run1.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run1.csv
+END
+log-run2.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run2.csv
+END
+grab-coin.soar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/grab-coin.soar
+END
+log-run3.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run3.csv
+END
+rl_rules.soar
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/rl_rules.soar
+END
+log-run4.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run4.csv
+END
+log-run5.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run5.csv
+END
+log-run6.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run6.csv
+END
+mario-soar-hrl.dm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/mario-soar-hrl.dm
+END
+mario-soar-hrl_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/mario-soar-hrl_source.soar
+END
+log-run7.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run7.csv
+END
+log-run8.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run8.csv
+END
+log-run9.csv
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/log-run9.csv
+END
+search-question.soar
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/search-question.soar
+END
+move-to-goal.soar
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/move-to-goal.soar
+END
+preference-update-end.soar
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/preference-update-end.soar
+END
+rl_rules
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/rl_rules
+END
+operator-preference.soar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/operator-preference.soar
+END
+avoid-pit.soar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/avoid-pit.soar
+END
+comment.dm
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/comment.dm
+END
+mario-soar-hrlcomp_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/mario-soar-hrlcomp_source.soar
+END
+mario-soar-hrlcomp.dm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/mario-soar-hrlcomp.dm
+END
+hrlcomp.config
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-soar-hrlcomp/hrlcomp.config
+END

@@ -1,0 +1,36 @@
+sp {propose*tackle-monster
+   (state <s> ^name mario-soar-insight
+              ^monster <m>)
+   (<m> ^isthreat yes)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name tackle-monster)
+}
+sp {monster*random*action
+   (state <s> ^name tackle-monster
+              ^rand-move <mv>
+              ^rand-jump <jp>)
+   (<mv> ^direction <d>)
+   (<jp> ^up <j>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>)
+}
+sp {tackle*monster
+   :template
+   (state <s> ^name tackle-monster
+              ^operator <op> +
+              ^monster <m>)
+   (<op> ^name action
+         ^direction <d>
+         ^jump <j>)
+   (<m> ^type <t>
+        ^distx <dx>
+        ^disty <dy>
+        ^isthreat yes)
+--> 
+   (<s> ^operator <op> = 0)
+}
+

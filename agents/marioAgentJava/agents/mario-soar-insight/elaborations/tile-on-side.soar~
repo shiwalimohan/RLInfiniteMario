@@ -1,0 +1,38 @@
+sp {mario*elaborate*xright*xleft
+   (state <s> ^name mario-soar-insight
+              ^io.input-link <il>)
+   (<il> ^mario <mario>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+-->
+   (<s> ^xtile <xt>
+        ^ytile <yt>)
+   (<xt> ^right (+ <x> 1)
+         ^on <x>
+         ^left (- <x> 1))
+   (<yt> ^up (+ <y> 1)
+         ^on <y>
+         ^down (- <y> 1))
+}
+
+sp {mario*elaborate*tile-on-right-left
+   (state <s> ^name mario-soar-insight
+              ^io.input-link <il>
+              ^xtile <xt>)
+   (<il> ^mario <mario>
+         ^visual-scene <v>)
+   (<xt> ^right <xloc>)
+   (<v> ^tile-row <row>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <xloc>
+        ^type <ty>)
+-->
+   (<s> ^tile-type <tt>)
+   (<tt> ^right <ty>)
+}
+
+
+

@@ -1,0 +1,4 @@
+source _all.soar
+source elaborate-tile.soar
+source remove-action.soar
+source top-state.soar

@@ -1,0 +1,9 @@
+#################################################################
+#Go through following steps to complete a prediction
+# 1. retrieve - retrieve similar episode
+# 2. store - store relevent information in working memory
+# 3. delete - delete epmem command
+# 4. retrieve-next - next episode
+# 5. store - store relevant information / predict
+#################################################################
+

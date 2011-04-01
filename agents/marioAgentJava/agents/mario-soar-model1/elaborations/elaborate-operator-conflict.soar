@@ -1,0 +1,47 @@
+sp {elaborate*operator-tie*in*tackel-monster
+   (state <s> ^impasse conflict
+              ^superstate <ss>
+              ^attribute operator)
+   (<ss> ^name tackle-monster)
+-->
+   (<s> ^name selection)
+}
+
+sp {selection*propose*evaluate-operator
+   :default
+   (state <s> ^name selection
+              ^item <i>)
+ -{(state <s> ^evaluation <e>)
+   (<e> ^operator <i>
+        ^value true)}
+   -->
+   (<s> ^operator <o> +, =)
+   (<o> ^name evaluate-operator
+        ^operator <i>)
+}
+
+
+
+#in the substate, reject dummy operators to continure application of legitimate actions
+# has to o-supported reject preference
+#sp {propose*reject*dummy*operators
+#   (state <s> ^name selection)
+#-->
+#   (<s> ^operator <op> +)
+#   (<op> ^name reject-dummy-operator)
+#}
+#
+#sp {apply*reject*dummy*operator
+#   (state <s> ^name selection
+#              ^operator <op> +
+#              ^superstate <ss>)
+#   (<op> ^name reject-dummy-operator)
+#   (<ss> ^name tackle-monster
+#         ^operator <op1> +
+#         ^operator <op2> +)
+#   (<op1> ^name A)
+#   (<op2> ^name B)
+#-->
+#   (<ss> ^operator <op1> -
+#        ^operator <op2> - )
+#}

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional
+END
+rl-glue-tests.asd
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/rl-glue-tests.asd
+END
+rl-tests-package.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/rl-tests-package.lisp
+END
+rl-tests-common.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/test/functional/rl-tests-common.lisp
+END

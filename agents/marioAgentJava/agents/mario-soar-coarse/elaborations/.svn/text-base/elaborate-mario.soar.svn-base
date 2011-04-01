@@ -1,0 +1,6 @@
+sp {mario*elaborate*mario
+   (state <s> ^io.input-link.mario <mario>
+              ^name mario-soar)
+-->
+   (<s> ^mario <mario>)
+}

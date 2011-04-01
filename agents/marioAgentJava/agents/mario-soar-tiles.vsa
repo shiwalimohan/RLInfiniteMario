@@ -1,0 +1,18 @@
+VERSION 4
+/mario-soar-tiles/mario-soar-tiles.dm
+0	ROOT mario-soar-tiles mario-soar-tiles 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR copy-reward copy-reward.soar 6
+6	3	FOPERATOR elaborate-monster elaborate-monster.soar 7
+7	3	FOPERATOR elaborate-tiles elaborate-tiles.soar 8
+8	3	FOPERATOR remove-action remove-action.soar 9
+9	3	FOPERATOR top-state top-state.soar 10
+10	0	OPERATOR action-monster action-monster.soar 11
+11	0	OPERATOR action-tiles action-tiles.soar 12
+12	0	OPERATOR apply-action apply-action.soar 13
+13	0	OPERATOR initialize-mario-soar-tiles initialize-mario-soar-tiles.soar 14
+14	0	OPERATOR random-action random-action.soar 15
+END

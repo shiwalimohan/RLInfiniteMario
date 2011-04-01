@@ -1,0 +1,62 @@
+sp {propose*action
+   (state <s> ^name mario-soar-monster
+              ^io.input-link.mario <mario>
+              ^move <mv>)
+   (<mv> ^direction <d>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+   (<jp> ^up <j>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name action
+        ^move <d>
+        ^jump <j>)
+}
+
+sp {mario*rl
+   :template
+   (state <s> ^operator <op> +
+              ^io.input-link.mario <mario>
+              ^move <mv>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+   (<op> ^name action
+         ^move <d>
+         ^jump <ju>)
+   (<mv> ^direction <d>
+         ^initial <i1>)
+-->
+   (<s> ^operator <op> = <i1>)
+}
+
+sp {mario*rl*monster
+   :template
+   (state <s> ^operator <op> +
+              ^io.input-link.monster <m>
+              ^move <mv>)
+   (<m> ^type <type>
+        ^x <x>
+        ^y <y>)
+   (<op> ^name action
+         ^move <d>
+         ^jump <ju>)
+   (<mv> ^direction <d>
+         ^initial <i1>)
+-->
+   (<s> ^operator <op> = <i1>)
+}
+
+
+
+sp {apply*action
+   (state <s> ^operator <op>
+              ^io.output-link <ol>)
+   (<op> ^name action
+         ^move <d>
+         ^jump <ju>)
+-->
+   (<ol> ^jump <j>
+         ^move <m>)
+   (<j> ^up <ju>)
+   (<m> ^direction <d>)
+}

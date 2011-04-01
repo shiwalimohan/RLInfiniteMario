@@ -1,0 +1,23 @@
+sp {mario*elaborate*mario
+   (state <s> ^io.input-link.mario <mario>
+              ^name mario-soar-hrl)
+-->
+   (<s> ^mario <mario>)
+}
+sp {c
+   (state <s> ^io.input-link <il>
+              ^xtile <xt>
+              ^ytile.y3 <yt>
+              ^mario <mario>)
+   (<mario> ^yi <my>)
+   (<il> ^visual-scene.tile-row <row>)
+   (<xt> ^<pos> <xpos>)
+   (<row> ^y <= <yt>
+          ^tile <t>)
+   (<row> ^y > <my>)
+   (<t> ^x <xpos>
+        ^type <ty> << |7| |b| |?| >>)
+-->
+   (<mario> ^isclear <is>)
+   (<is> ^<pos> no)
+}

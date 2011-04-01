@@ -1,0 +1,31 @@
+sp {determine-present-id
+   (state <s> ^name predict-next-position
+              ^stage 0
+              ^epmem.command <ecom>)
+-->
+   (<ecom> ^query <q>)
+   (<q> ^top-state.superstate nil)
+}
+
+sp {propose*store*present-id
+   (state <s> ^name predict-next-position
+              ^epmem.result <eres>
+              ^stage 0)
+   (<eres> ^present-id <pid>)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name store-present-id
+         ^present-id <pid>)
+}
+
+sp {apply*store*present-id
+   (state <s> ^name predict-next-position
+              ^operator <op>)
+   (<op> ^name store-present-id
+         ^present-id <pid>)
+-->
+   (<s> ^last-id (- <pid> 1)
+        ^stage 0 -
+        ^stage 1)
+}
+   

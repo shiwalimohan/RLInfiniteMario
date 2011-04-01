@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/Makefile.in
+END
+LICENSE-2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/LICENSE-2.0.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/Makefile
+END
+configure.ac
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/configure.ac
+END
+aclocal.m4
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/aclocal.m4
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/Makefile.am
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/README.txt
+END
+authors.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/authors.xml
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/ChangeLog
+END
+bootstrap.sh
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/bootstrap.sh
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/INSTALL
+END
+HOWTORELEASE
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/HOWTORELEASE
+END
+libtool
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/libtool
+END
+config.status
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/rl-glue/config.status
+END

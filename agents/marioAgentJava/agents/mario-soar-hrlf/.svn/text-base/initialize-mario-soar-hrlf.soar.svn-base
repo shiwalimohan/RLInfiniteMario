@@ -1,0 +1,34 @@
+sp {propose*initialize-mario-soar-hrlf
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-mario-soar-hrlf)
+}
+
+sp {apply*initialize-mario-soar-hrlf
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-mario-soar-hrlf)
+-->
+   (<s> ^name mario-soar-hrlf
+        ^rand-move <m1>
+        ^rand-move <m2>
+        ^rand-move <m3>
+        ^rand-jump <j1>
+        ^rand-jump <j2>
+        ^rand-speed <s1>
+        ^rand-speed <s2>)
+   (<m1> ^direction left)
+   (<m2> ^direction right)
+   (<m3> ^direction nil)
+   (<j1> ^up yes)
+   (<j2> ^up no)
+   (<s1> ^degree low)
+   (<s2> ^degree high)
+   (<s> ^metadata <m>)
+   (<s> ^available-functions <af>)
+   (<af> ^function tackle-monster
+         ^function grab-coin
+         ^function search-question
+         ^function move-to-goal)
+}

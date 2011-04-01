@@ -1,0 +1,47 @@
+Productions : combined
+Learning Policy : sarsa
+Learning Rate : 0.3
+Discount Rate : 0.9
+Eligibility trace  decay rate: 0.0
+Eligibility trace tolerance : 0.0010
+Exploration Policy : epsilon-greedy
+Exploration epsilon : 0.1
+Exploration temprature : 25
+Auto Reduce : on
+Reduction Policy : exponential
+Reduction Rate : 0.9999
+Soar Inititalized. Episode : 0 Reward :-7.39
+Soar Inititalized. Episode : 1 Reward :3.9399999999999995
+Soar Inititalized. Episode : 2 Reward :7.120000000000001
+Soar Inititalized. Episode : 3 Reward :-7.449999999999999
+Soar Inititalized. Episode : 4 Reward :-8.34
+Soar Inititalized. Episode : 5 Reward :-7.279999999999999
+Soar Inititalized. Episode : 6 Reward :-7.529999999999999
+Soar Inititalized. Episode : 7 Reward :3.200000000000001
+Soar Inititalized. Episode : 8 Reward :6.52
+Soar Inititalized. Episode : 9 Reward :-10.08
+Soar Inititalized. Episode : 10 Reward :-7.380000000000001
+Soar Inititalized. Episode : 11 Reward :-8.38
+Soar Inititalized. Episode : 12 Reward :-10.06
+Soar Inititalized. Episode : 13 Reward :2.7300000000000004
+Soar Inititalized. Episode : 14 Reward :5.390000000000001
+Soar Inititalized. Episode : 15 Reward :-7.59
+Soar Inititalized. Episode : 16 Reward :-8.48
+Soar Inititalized. Episode : 17 Reward :-10.09
+Soar Inititalized. Episode : 18 Reward :-8.45
+Soar Inititalized. Episode : 19 Reward :6.539999999999999
+Soar Inititalized. Episode : 20 Reward :-7.26
+Soar Inititalized. Episode : 21 Reward :-10.08
+Soar Inititalized. Episode : 22 Reward :2.700000000000001
+Soar Inititalized. Episode : 23 Reward :-7.66
+Soar Inititalized. Episode : 24 Reward :-10.07
+Soar Inititalized. Episode : 25 Reward :2.01
+Soar Inititalized. Episode : 26 Reward :-0.9199999999999999
+Soar Inititalized. Episode : 27 Reward :3.4800000000000004
+Soar Inititalized. Episode : 28 Reward :10.380000000000003
+Soar Inititalized. Episode : 29 Reward :16.14
+Soar Inititalized. Episode : 30 Reward :7.209999999999997
+Soar Inititalized. Episode : 31 Reward :25.799999999999997
+Soar Inititalized. Episode : 32 Reward :31.75
+Soar Inititalized. Episode : 33 Reward :25.509999999999998
+Soar Inititalized. Episode : 34 Reward :161.33

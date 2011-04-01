@@ -1,0 +1,88 @@
+sp {mario*elaborate*interesting*space*1
+   (state <s> ^name mario-soar
+              ^mario <mario>
+              ^tilespace <tspace>)
+   (<mario> ^xi <x>
+            ^yi <y>)
+-->
+   (<tspace> ^tile <t11>
+        ^tile <t12>
+        ^tile <t13>
+        ^tile <t21>
+        ^tile <t22>
+        ^tile <t23>
+        ^tile <t31>
+        ^tile <t32>
+        ^tile <t33>
+        ^tile <t41>
+        ^tile <t42>
+        ^tile <t43>
+        ^tile <t51>
+        ^tile <t52>
+        ^tile <t53>)
+   (<t11> ^xi (- <x> 2)
+          ^yi (- <y> 1)
+          ^id 11)
+   (<t12> ^xi (- <x> 2)
+          ^yi (- <y> 0)
+              ^id 12)
+   (<t13> ^xi (- <x> 2)
+          ^yi (+ <y> 1)
+              ^id 13)
+   (<t21> ^xi (- <x> 1)
+          ^yi (- <y> 1)
+              ^id 21)
+   (<t22> ^xi (- <x> 1)
+          ^yi (- <y> 0)
+              ^id 22)
+   (<t23> ^xi (- <x> 1)
+          ^yi (+ <y> 1)
+              ^id 23)
+   (<t31> ^xi (- <x> 0)
+          ^yi (- <y> 1)
+              ^id 31)
+   (<t32> ^xi (- <x> 0)
+          ^yi (- <y> 0)
+              ^id 32)
+   (<t33> ^xi (- <x> 0)
+          ^yi (+ <y> 1)
+              ^id 33)
+   (<t41> ^xi (+ <x> 1)
+          ^yi (- <y> 1)
+              ^id 41)
+   (<t42> ^xi (+ <x> 1)
+          ^yi (- <y> 0)
+              ^id 42)
+   (<t43> ^xi (+ <x> 1)
+          ^yi (+ <y> 1)
+              ^id 43)
+   (<t51> ^xi (+ <x> 2)
+          ^yi (- <y> 1)
+              ^id 51)
+   (<t52> ^xi (+ <x> 2)
+          ^yi (+ <y> 0)
+              ^id 52)
+   (<t53> ^xi (+ <x> 2)
+          ^yi (+ <y> 1)
+              ^id 53)     
+}
+
+sp {mario*elaborate*interesting*space*2
+   (state <s> ^name mario-soar
+              ^tilespace.tile <t>
+              ^io.input-link <il>
+              ^mario <mario>)
+   (<il> ^visual-scene.tile-row <row>)
+   (<row> ^y <y>
+          ^tile <tt>)
+   (<tt> ^x <x>
+         ^type <ttype>)
+   (<t> ^xi <x>
+        ^yi <y>)
+   (<mario> ^sx <sx>
+            ^sy <sy>)
+-->
+   (<t> ^type <ttype>
+        ^sx (- 0 <sx>)
+        ^sy (- 0 <sy>))
+}

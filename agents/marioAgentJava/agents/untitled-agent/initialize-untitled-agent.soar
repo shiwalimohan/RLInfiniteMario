@@ -1,0 +1,15 @@
+sp {propose*initialize-untitled-agent
+   (state <s> ^superstate nil
+             -^name)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name initialize-untitled-agent)
+}
+
+sp {apply*initialize-untitled-agent
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-untitled-agent)
+-->
+   (<s> ^name untitled-agent)
+}
+

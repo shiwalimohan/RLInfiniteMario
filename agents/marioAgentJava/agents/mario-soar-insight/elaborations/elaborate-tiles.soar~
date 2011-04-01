@@ -1,0 +1,85 @@
+sp {mario*elaborate*xright
+   (state <s> ^io.input-link.mario.xi <x>)
+-->
+   (<s> ^xtile <xt>)
+   (<xt> ^right (+ <x> 1))
+}
+
+sp {mario*elaborate*tile-on-right
+   (state <s> ^io.input-link <il>
+              ^xtile.right <xloc>)
+   (<il> ^mario <mario>
+         ^visual-scene.tile-row <row>)
+   (<mario> ^yi <y>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <xloc>
+        ^type <ty>)
+-->
+   (<s> ^tile-type.right <ty>)
+}
+
+sp {mario*elaborate*coin
+   (state <s> ^io.input-link <il>)
+   (<il> ^visual-scene.tile-row <row>
+         ^mario <mario> )
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        ^type |$|)
+    (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^coin <c>)
+   (<c> ^x (- <x> <mx>)
+        ^y (- <y> <my>))
+}
+sp {mario*elaborate*coin2
+   (state <s> ^coin <c>)
+   (<c> ^distx < 3
+        ^disty < 3)
+  -(<c> ^distx < -2)
+  -(<c> ^disty < 0)
+-->
+   (<c> ^isreachable yes)
+}
+sp {mario*elaborate*brick
+   (state <s> ^io.input-link <il>
+              ^xtile <xt>)
+   (<il> ^visual-scene.row <row>
+         ^mario <mario>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        ^type b)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^brick <b>)
+   (<b> ^distx (- <x> <mx>)
+        ^disty (- <y> <my>))
+}
+sp {mario*elaborate*question
+   (state <s> ^io.input-link <il>)
+   (<il> ^visual-scene.tile-row <row>
+         ^mario <mario>)
+   (<row> ^y <y>
+          ^tile <t>)
+   (<t> ^x <x>
+        ^type |?|)
+   (<mario> ^yi <my>
+            ^xi <mx>)
+-->
+   (<s> ^question <q>)
+   (<q> ^distx (- <x> <mx>)
+        ^disty (- <y> <my>))
+}
+sp {mario*elaborate*question2
+   (state <s> ^question <q>)
+   (<q> ^distx < 5
+        ^disty < 5)
+  -(<q> ^distx < -4)
+  -(<q> ^disty < 0)
+-->
+   (<q> ^isreachable yes)
+}

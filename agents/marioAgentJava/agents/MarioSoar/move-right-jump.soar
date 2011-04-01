@@ -1,0 +1,28 @@
+sp {propose*move-right-jump
+   (state <s> ^name MarioSoar
+              ^io.input-link.mario <m>)
+   (<m> ^xi <x>
+        ^yi <y>)
+-->
+   (<s> ^operator <o> +)
+   (<o> ^name move-right-jump)
+}
+
+sp {apply*move-right-jump
+   (state <s> ^operator <o>
+              ^io <io>)
+   (<io> ^output-link <out>)
+   (<o> ^name move-right-jump)
+-->
+   (<out> ^move <move>
+          ^jump <j>)
+   (<move> ^direction right)
+   (<j> ^up yes)
+}
+sp {apply*move-right-jump*remove-move
+   (state <s> ^operator.name move-right-jump
+              ^io.output-link <out>)
+   (<out> ^move <move>)
+   (<move> ^status complete)
+-->
+   (<out> ^move <move> -)}

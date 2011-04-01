@@ -1,0 +1,3 @@
+pushd mario-soar-loc
+source mario-soar-loc_source.soar
+popd

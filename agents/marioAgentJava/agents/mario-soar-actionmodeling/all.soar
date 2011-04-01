@@ -1,0 +1,36 @@
+#-------------general soar rules to handle state and related elaborations-----------------------------
+
+sp {all*elaborate-state-name
+   (state <s> ^superstate.operator.name <name>)
+-->
+   (<s> ^name <name>)
+}
+
+sp {all*elaborate-state-top-state
+   (state <s> ^superstate.top-state <ts>)
+-->
+   (<s> ^top-state <ts>)
+}
+
+sp {all*copy*reward
+   (state <s> ^reward-link <r>
+              ^io.input-link <il>)
+   (<il> ^reward <num>)
+ak-->
+   (<r> ^reward.value <num>)
+}
+
+sp {elaborate*state*io
+   (state <s> ^superstate.io <io>)
+-->
+   (<s> ^io <io>)
+}
+
+sp {all*apply*remove-action
+   (state <s> ^operator <o>
+              ^io.output-link <out>)
+   (<out> ^<action-name> <a>)
+   (<a> ^status complete)
+-->
+   (<out> ^<action-name> <a> -)
+}

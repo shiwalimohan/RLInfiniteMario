@@ -1,0 +1,50 @@
+sp {propose*random-action
+   (state <s> ^name mario-soar-discover
+              ^monster <m>)
+   (<m> ^isthreat yes)
+  -(<m> ^isthreat no)
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name random-action
+        ^object <m>)
+}
+sp {propose*grab-coin
+   (state <s> ^name mario-soar-discover
+              ^coin <c>)
+   (<c> ^isreachable yes)
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name random-action
+        ^object <c>)
+}
+sp {propose*search-question
+   (state <s> ^name mario-soar-discover
+              ^question <q>)
+   (<q> ^isreachable yes)
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name random-action
+        ^object <o>)
+}
+sp {monster*random*action
+   (state <s> ^name random-action
+              ^superstate <ss>)
+   (<ss> ^rand-move <mv>
+              ^rand-jump <jp>
+              ^rand-speed <sp>
+              ^operator <sop>
+              ^mario <mario>)
+   (<sop> ^name random-action
+         ^object <ob>)
+   (<jp> ^up <j>) 
+   (<mario> ^yi <my>
+            ^xi <mx>)
+   (<mv> ^direction <d>)
+   (<sp> ^degree <sd>)
+-->
+   (<s> ^operator <o> + =)
+   (<o> ^name action
+        ^direction <d>
+        ^jump <j>
+        ^speed <sd>)
+}

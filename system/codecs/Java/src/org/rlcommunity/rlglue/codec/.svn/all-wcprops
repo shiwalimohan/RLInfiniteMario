@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec
+END
+LocalGlue.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/LocalGlue.java
+END
+RLGlue.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/RLGlue.java
+END
+RLGlueCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/RLGlueCore.java
+END
+RLGlueInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/RLGlueInterface.java
+END
+EnvironmentInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/EnvironmentInterface.java
+END
+AgentInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/AgentInterface.java
+END
+NetGlue.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Java/src/org/rlcommunity/rlglue/codec/NetGlue.java
+END

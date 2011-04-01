@@ -1,0 +1,43 @@
+sp {apply*move1
+   (state <s> ^name mario-soar-insight
+              ^io.output-link <ol>
+              ^operator <o>
+              ^tile-type <tt>)
+   (<o> ^name move
+        ^direction <dr>)
+   (<tt> ^<dr> |7|)
+-->
+   (<ol> ^jump <j>
+         ^move <m>)
+   (<j> ^up yes)
+   (<m> ^direction <dr>)
+}
+sp {apply*move2
+   (state <s> ^name mario-soar-insight
+              ^io.output-link <ol>
+              ^operator <o>
+              ^tile-type <tt>)
+   (<o> ^name move
+        ^direction <dr>)
+   (<tt> ^<dr> |\||)
+-->
+   (<ol> ^jump <j>
+         ^move <m>)
+   (<j> ^up yes)
+   (<m> ^direction <dr>)
+}
+sp {apply*move3
+   (state <s> ^name mario-soar-insight
+              ^io.output-link <ol>
+              ^operator <o>
+              ^tile-type <tt>)
+   (<o> ^name move
+        ^direction <dr>)
+  -(<tt> ^<dr> |7|)
+  -(<tt> ^<dr> |\||)
+-->
+   (<ol> ^jump <j>
+         ^move <m>)
+   (<j> ^up no)
+   (<m> ^direction <dr>)
+}

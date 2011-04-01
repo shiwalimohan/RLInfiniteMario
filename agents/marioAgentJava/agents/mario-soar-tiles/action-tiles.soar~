@@ -1,0 +1,17 @@
+gp {mario*rl*tiles
+   (state <s> ^operator <op> +
+              ^io.input-link.visual-scene <ts> 
+              ^io.input-link.mario <mario>)
+   (<mario> ^type [1 2 3])
+   (<op> ^name action
+         ^move [left right nil]
+         ^jump [yes no]
+         ^speed [low high])
+   (<ts> ^tile-row <tr>)
+   (<tr>  ^disty [ -4 -3 -2 -1 0 1 2 3 4 ]
+          ^tile <t>)
+   (<t> ^distx  [-5 -4 3 -2 -1 0 1 2 3 4 5])
+   (<t> ^type [0 1 2 3 4 5 6 7 8 9 b |?| |$| |\|| |!| |M|])
+-->
+   (<s> ^operator <op> = 0)
+}

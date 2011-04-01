@@ -1,0 +1,50 @@
+sp {mario*template*rl1
+    :template
+    (state <s> ^operator <o> +
+               ^io.input-link.mario <m>)
+    (<m> ^xi <x>
+         ^yi <y>)
+    (<o> ^name move-right-jump)
+-->
+   (<s> ^operator <o> = 0)
+}
+sp {mario*template*rl2
+    :template
+    (state <s> ^operator <o> +
+               ^io.input-link.mario <m>)
+    (<m> ^xi <x>
+         ^yi <y>)
+    (<o> ^name move-right-only)
+-->
+   (<s> ^operator <o> = 0)
+}
+sp {mario*template*rl3
+    :template
+    (state <s> ^operator <o> +
+               ^io.input-link.mario <m>)
+    (<m> ^xi <x>
+         ^yi <y>)
+    (<o> ^name move-left-jump)
+-->
+   (<s> ^operator <o> = -0.001)
+}
+sp {mario*template*rl4
+    :template
+    (state <s> ^operator <o> +
+               ^io.input-link.mario <m>)
+    (<m> ^xi <x>
+         ^yi <y>)
+    (<o> ^name move-left-only)
+-->
+   (<s> ^operator <o> = -0.001)
+}
+sp {mario*template*rl5
+    :template
+    (state <s> ^operator <o> +
+               ^io.input-link.mario <m>)
+    (<m> ^xi <x>
+         ^yi <y>)
+    (<o> ^name jump)
+-->
+    (<s> ^operator <o> = 0)
+}

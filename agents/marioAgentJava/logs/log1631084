@@ -1,0 +1,22 @@
+Productions : common
+Learning Policy : sarsa
+Learning Rate : 0.3
+Discount Rate : 0.9
+Eligibility trace  decay rate: 0.0
+Eligibility trace tolerance : 0.0010
+Exploration Policy : epsilon-greedy
+Exploration epsilon : 0.1
+Exploration temprature : 25
+Auto Reduce : on
+Reduction Policy : exponential
+Reduction Rate : 0.9999
+Soar Inititalized. Episode : 0 Reward :2.5199999999999996
+Soar Inititalized. Episode : 1 Reward :11.910000000000004
+Soar Inititalized. Episode : 2 Reward :8.43
+Soar Inititalized. Episode : 3 Reward :2.4999999999999982
+Soar Inititalized. Episode : 4 Reward :8.490000000000002
+Soar Inititalized. Episode : 5 Reward :2.5299999999999994
+Soar Inititalized. Episode : 6 Reward :12.07
+Soar Inititalized. Episode : 7 Reward :2.66
+Soar Inititalized. Episode : 8 Reward :9.430000000000003
+Soar Inititalized. Episode : 9 Reward :2.76

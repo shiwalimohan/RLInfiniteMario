@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/skeleton
+END
+package.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/skeleton/package.lisp
+END
+skeleton-agent.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/skeleton/skeleton-agent.lisp
+END
+skeleton-environment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/skeleton/skeleton-environment.lisp
+END
+skeleton-experiment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/skeleton/skeleton-experiment.lisp
+END

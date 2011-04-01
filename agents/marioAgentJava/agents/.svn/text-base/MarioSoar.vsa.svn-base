@@ -1,0 +1,17 @@
+VERSION 4
+/MarioSoar/MarioSoar.dm
+0	ROOT MarioSoar MarioSoar 1
+1	0	FOPERATOR _firstload _firstload.soar 2
+2	0	FOLDER all all 3
+3	0	FOLDER elaborations elaborations 4
+4	3	FOPERATOR _all _all.soar 5
+5	3	FOPERATOR copy-reward copy-reward.soar 6
+6	3	FOPERATOR top-state top-state.soar 7
+7	0	OPERATOR initialize-MarioSoar initialize-MarioSoar.soar 8
+8	0	OPERATOR jump jump.soar 9
+9	0	OPERATOR move-left-jump move-left-jump.soar 10
+10	0	OPERATOR move-left-only move-left-only.soar 11
+11	0	OPERATOR move-right-jump move-right-jump.soar 12
+12	0	OPERATOR move-right-only move-right-only.soar 13
+13	0	OPERATOR rl rl.soar 14
+END

@@ -1,0 +1,5 @@
+sp{reward*right
+   (state <s> ^name mario-soar-tiles
+              ^reward-link <r>
+              ^operator <op>)
+   (<op> ^move.direction r

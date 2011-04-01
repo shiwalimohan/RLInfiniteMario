@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-test
+END
+initialize-mario-test.soar
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-test/initialize-mario-test.soar
+END
+_firstload.soar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-test/_firstload.soar
+END
+comment.dm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-test/comment.dm
+END
+mario-test.dm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-test/mario-test.dm
+END
+mario-test_source.soar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/agents/marioAgentJava/agents/mario-test/mario-test_source.soar
+END

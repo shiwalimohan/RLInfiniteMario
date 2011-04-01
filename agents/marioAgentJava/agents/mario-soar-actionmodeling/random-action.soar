@@ -1,0 +1,34 @@
+#--------------------random-actions-------------------
+
+sp {mario-soar*propose-all-possible-actions*action
+   (state <s> ^name mario-soar
+   	      ^rand-move.direction <d>
+	      ^rand-move.jump <j>
+	      ^rand-move.speed <sp>
+	      ^mario <mario>)
+   (<mario> ^x <mariox>
+   	    ^y <marioy>)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name action
+   	 ^direction <d>
+	 ^jump <j>
+	 ^speed <sp>)
+}
+
+sp {mario-soar*apply*action
+   (state <s> ^name mario-soar
+   	      ^operator <op>
+	      ^io.output-link <ol>)
+   (<op> ^name action
+   	 ^direction <d>
+	 ^jump <j>
+	 ^speed <sp>)
+-->
+   (<ol> ^jump <jump>
+   	 ^move <move>
+	 ^speed <speed>)
+   (<jump> ^up <j>)
+   (<move> ^direction <d>)
+   (<speed> ^degree <sp>)
+}

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/mines-sarsa
+END
+package.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/mines-sarsa/package.lisp
+END
+mines.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/mines-sarsa/mines.lisp
+END
+experiment.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/mines-sarsa/experiment.lisp
+END
+sarsa-agent.lisp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/shiwali/!svn/ver/7/0007-rl-competition-2009/system/codecs/Lisp/examples/mines-sarsa/sarsa-agent.lisp
+END

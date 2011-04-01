@@ -1,0 +1,3 @@
+pushd mario-soar-reward
+source mario-soar-reward_source.soar
+popd

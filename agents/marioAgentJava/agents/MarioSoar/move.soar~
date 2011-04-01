@@ -1,0 +1,20 @@
+sp {propose*move-right
+   (state <s> ^name MarioSoar
+              ^io.input-link <il>)
+   (<il> ^MarioLoc.x <x>
+         ^MarioLoc.y <y>)
+-->
+   (<s> ^operator <o> =)
+   (<o> ^name move-right)
+}
+
+sp {apply*move-right
+   (state <s> ^operator <o>
+              ^io <io>)
+   (<io> ^output-link <out>)
+   (<o> ^name move-right)
+-->
+   (<out> ^move <move>)
+   (<move> ^direction right)
+}
+         
