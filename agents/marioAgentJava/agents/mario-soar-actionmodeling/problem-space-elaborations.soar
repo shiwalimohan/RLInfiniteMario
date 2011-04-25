@@ -1,0 +1,8 @@
+sp {mario-soar*elaborate*problem-space
+   (state <s> ^name mario-soar)
+-->
+   (<s> ^problem-space <p>)
+   (<p> ^name mario-soar
+   	^default-state-copy yes
+	^two-level-attributes object)
+}

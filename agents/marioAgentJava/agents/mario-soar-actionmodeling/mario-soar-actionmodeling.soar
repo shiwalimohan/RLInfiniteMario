@@ -1,11 +1,13 @@
-#-------------support for selection space----------------------------------------------
+#-------------source all prelevant files-------------------------------------------------
+source all.soar
+source mario-elaboration.soar
+source random-action.soar
+source problem-space-elaborations.soar
+source predict.soar
 pushd ../default
 source selection.soar
 popd
-#-------------source all relevant files-------------------------------------------------
-source all.soar
-source mario-elaboration.soar
-
+#source operator-tie.soar
 #------------------intialize-agent------------------------------------------------------
 
 sp {nil*propose*initialize-mario-soar
@@ -21,14 +23,16 @@ sp {nil*apply*initialize-mario-soar
    (<op> ^name initialize-mario-soar)
 -->
    (<s> ^name mario-soar
-        ^rand-move <m>)
-   (<m> ^direction left)
-   (<m> ^direction right)
-   (<m> ^direction nil)
-   (<m> ^jump yes)
-   (<m> ^jump no)
-   (<m> ^speed low)
-   (<m> ^speed high)
+        ^rand-move <m>
+	^desired <d>)
+   (<m> ^direction left
+   	^direction right
+        ^direction nil
+ 	^jump yes
+ 	^jump no
+ 	^speed low
+        ^speed high)
+   (<d> ^better higher)
 }
 
 

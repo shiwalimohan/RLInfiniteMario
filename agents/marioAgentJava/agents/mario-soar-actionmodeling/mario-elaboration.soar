@@ -1,6 +1,4 @@
-#--------------------mario specific elaborations------
-
-
+#-------------------mario specific elaborations------
 #--psuedo elaboration to determine the current id of the episode
 
 sp {mario-soar*query*emem*present-id
@@ -38,21 +36,18 @@ sp {mario-soar*elaborate-mario
 sp {mario-soar*elaborate-monster
    (state <s> ^io.input-link.monsters.monster <m>
               ^name mario-soar)
-   -(<m> ^type |Mario|)
+   (<m> -^type |Mario|)
 -->
    (<s> ^object <m>)
-   (<m> ^type monster)
 }
 
-
-
-sp {mario-soar*elaborate-object-relative-distance
+sp {mario-soar*elaborate-object-relative-distance*float
    (state <s> ^mario <mario>
               ^object <ob>)	
-   (<mario> ^x <mariox>
-            ^y <marioy>)
-   (<ob> ^x <obx>
-         ^y <oby>)
+   (<mario> ^xd <mariox>
+            ^yd <marioy>)
+   (<ob> ^xd <obx>
+         ^yd <oby>)
 -->
    (<ob> ^distx (- <obx> <mariox>)
          ^disty (- <oby> <marioy>))
@@ -106,7 +101,7 @@ sp {mario-soar*elaborate-coin-reachable
         ^disty < 4
 	^type coin)
   -(<c> ^distx < -1)
-  -(<c> ^disty < 0)
+  -(<c> ^disty < 0nn)
 -->
    (<c> ^isreachable yes)
 }

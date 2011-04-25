@@ -1,6 +1,11 @@
+#-- source all related files------------------------
+source evaluate-operator.soar
+#---------------------------------------------------
+
 sp {default*selection*elaborate*name
    :default
-   (state <s> ^type tie)
+   (state <s> ^impasse tie
+   	      ^attribute operator)
    -->
    (<s> ^name selection)
 }

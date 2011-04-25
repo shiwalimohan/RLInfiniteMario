@@ -16,14 +16,8 @@ sp {all*copy*reward
    (state <s> ^reward-link <r>
               ^io.input-link <il>)
    (<il> ^reward <num>)
-ak-->
-   (<r> ^reward.value <num>)
-}
-
-sp {elaborate*state*io
-   (state <s> ^superstate.io <io>)
 -->
-   (<s> ^io <io>)
+   (<r> ^reward.value <num>)
 }
 
 sp {all*apply*remove-action
