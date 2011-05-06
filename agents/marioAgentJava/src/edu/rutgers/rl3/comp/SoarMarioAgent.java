@@ -55,9 +55,7 @@ public class SoarMarioAgent implements AgentInterface{
 		public void systemEventHandler(int eventID, Object data, Kernel kernel)
 		{
 			if (eventID == smlSystemEventId.smlEVENT_SYSTEM_START.swigValue()) {
-			//	System.out.println("Soar started.") ;
 			} else if (eventID == smlSystemEventId.smlEVENT_SYSTEM_STOP.swigValue()) {
-				//System.out.println("Soar stopped.") ;
 			}
 			else
 			System.out.println("Received system event in Java") ;

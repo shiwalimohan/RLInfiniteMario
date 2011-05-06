@@ -2,24 +2,27 @@ librlexperiment_la-RL_client_experiment.lo: RL_client_experiment.c \
  ../config/config.h /usr/include/stdlib.h /usr/include/features.h \
  /usr/include/bits/predefs.h /usr/include/sys/cdefs.h \
  /usr/include/bits/wordsize.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-32.h \
- /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h \
+ /usr/include/gnu/stubs-64.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
  /usr/include/bits/stdlib.h /usr/include/string.h \
  /usr/include/bits/string.h /usr/include/bits/string2.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/bits/string3.h /usr/include/stdio.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
  /usr/include/assert.h /usr/include/ctype.h /usr/include/netdb.h \
- /usr/include/netinet/in.h /usr/include/stdint.h \
- /usr/include/bits/wchar.h /usr/include/sys/socket.h \
- /usr/include/sys/uio.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/bits/uio.h /usr/include/bits/socket.h \
- /usr/include/bits/sockaddr.h /usr/include/asm/socket.h \
- /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/netinet/in.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/sys/types.h /usr/include/time.h /usr/include/bits/uio.h \
+ /usr/include/bits/socket.h /usr/include/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
  /usr/include/asm-generic/sockios.h /usr/include/bits/socket2.h \
  /usr/include/bits/in.h /usr/include/bits/byteswap.h \
  /usr/include/bits/netdb.h /usr/include/arpa/inet.h \
@@ -43,9 +46,9 @@ librlexperiment_la-RL_client_experiment.lo: RL_client_experiment.c \
 
 /usr/include/gnu/stubs.h:
 
-/usr/include/gnu/stubs-32.h:
+/usr/include/gnu/stubs-64.h:
 
-/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h:
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/bits/stdlib.h:
 
@@ -73,7 +76,7 @@ librlexperiment_la-RL_client_experiment.lo: RL_client_experiment.c \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h:
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -90,6 +93,8 @@ librlexperiment_la-RL_client_experiment.lo: RL_client_experiment.c \
 /usr/include/netdb.h:
 
 /usr/include/netinet/in.h:
+
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdint.h:
 
 /usr/include/stdint.h:
 
@@ -109,11 +114,11 @@ librlexperiment_la-RL_client_experiment.lo: RL_client_experiment.c \
 
 /usr/include/bits/sockaddr.h:
 
-/usr/include/asm/socket.h:
+/usr/include/x86_64-linux-gnu/asm/socket.h:
 
 /usr/include/asm-generic/socket.h:
 
-/usr/include/asm/sockios.h:
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/asm-generic/sockios.h:
 

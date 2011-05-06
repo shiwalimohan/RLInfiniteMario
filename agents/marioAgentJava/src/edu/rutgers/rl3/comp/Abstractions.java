@@ -15,6 +15,7 @@ public class Abstractions{
 		int type;			
 		String typeName;
 		boolean winged;
+		public double reward;
 	}
 	static class MonsterWME{
 		double x;

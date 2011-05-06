@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rlcomp/!svn/ver/590/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites
+END
+FlowerEnemy.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/FlowerEnemy.java
+END
+FireFlower.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/FireFlower.java
+END
+Sparkle.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Sparkle.java
+END
+BulletBill.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/BulletBill.java
+END
+Mushroom.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Mushroom.java
+END
+SpriteContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/SpriteContext.java
+END
+Enemy.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/rlcomp/!svn/ver/590/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Enemy.java
+END
+CoinAnim.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/CoinAnim.java
+END
+Shell.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Shell.java
+END
+Particle.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Particle.java
+END
+Sprite.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/rlcomp/!svn/ver/590/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Sprite.java
+END
+Mario.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/rlcomp/!svn/ver/440/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Mario.java
+END
+Fireball.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/sprites/Fireball.java
+END

@@ -158,10 +158,12 @@ public class GluetoSoar{
 				m.typeName = "Fiery Mario";
 				break;
 			}
-			m.x = obs.doubleArray[4*i];
-			m.y = obs.doubleArray[4*i+1];
-			m.sx = obs.doubleArray[4*i+2];
-			m.sy = obs.doubleArray[4*i+3];
+			m.x = obs.doubleArray[5*i];
+			m.y = obs.doubleArray[5*i+1];
+			m.sx = obs.doubleArray[5*i+2];
+			m.sy = obs.doubleArray[5*i+3];
+			m.reward = obs.doubleArray[5*i+4];
+			System.out.println("Reward for monster " + m.typeName + " is " + m.reward);
 			monster_vec.add(m);
 		}
 		return monster_vec;
@@ -181,7 +183,7 @@ public class GluetoSoar{
 		agent.Update(isInit,"no");
 		Mario = getMario();
 		
-		/*     ---------------------------Modified reward function ------------------------------------*/
+		/*---------------------------Modified reward function ------------------------------------*/
 	
 		if(Mario.x > prev_xloc){
 			//reward the agent on moving towards right
@@ -430,6 +432,11 @@ public class GluetoSoar{
 		monstersWME = agent.CreateIdWME(inputLink, "monsters");
 		agent.Commit();
 
+	}
+	
+	private static Vector getReward(){
+		return monsters;
+		
 	}
 	
 	

@@ -9,7 +9,7 @@ sp {mario-soar*propose-all-possible-actions*action
    (<mario> ^x <mariox>
    	    ^y <marioy>)
 -->
-   (<s> ^operator <op> +)
+   (<s> ^operator <op> + =)
    (<op> ^name action
    	 ^direction <d>
 	 ^jump <j>

@@ -1,12 +1,12 @@
 librlutils_la-TaskSpec_Parser.lo: TaskSpec_Parser.c /usr/include/stdlib.h \
  /usr/include/features.h /usr/include/bits/predefs.h \
  /usr/include/sys/cdefs.h /usr/include/bits/wordsize.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-32.h \
- /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h \
  /usr/include/bits/stdlib.h /usr/include/stdio.h \
  /usr/include/bits/types.h /usr/include/bits/typesizes.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h \
+ /usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h \
  /usr/include/bits/stdio_lim.h /usr/include/bits/sys_errlist.h \
  /usr/include/bits/stdio.h /usr/include/bits/stdio2.h \
  /usr/include/string.h /usr/include/bits/string.h \
@@ -14,8 +14,9 @@ librlutils_la-TaskSpec_Parser.lo: TaskSpec_Parser.c /usr/include/stdlib.h \
  /usr/include/bits/endian.h /usr/include/bits/string3.h \
  /usr/include/strings.h /usr/include/ctype.h /usr/include/errno.h \
  /usr/include/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \
- /usr/include/asm-generic/errno-base.h rlglue/utils/C/TaskSpec_Parser.h
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ rlglue/utils/C/TaskSpec_Parser.h
 
 /usr/include/stdlib.h:
 
@@ -29,9 +30,9 @@ librlutils_la-TaskSpec_Parser.lo: TaskSpec_Parser.c /usr/include/stdlib.h \
 
 /usr/include/gnu/stubs.h:
 
-/usr/include/gnu/stubs-32.h:
+/usr/include/gnu/stubs-64.h:
 
-/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stddef.h:
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stddef.h:
 
 /usr/include/bits/stdlib.h:
 
@@ -47,7 +48,7 @@ librlutils_la-TaskSpec_Parser.lo: TaskSpec_Parser.c /usr/include/stdlib.h \
 
 /usr/include/wchar.h:
 
-/usr/lib/gcc/i686-linux-gnu/4.4.5/include/stdarg.h:
+/usr/lib/x86_64-linux-gnu/gcc/x86_64-linux-gnu/4.5.2/include/stdarg.h:
 
 /usr/include/bits/stdio_lim.h:
 
@@ -79,7 +80,7 @@ librlutils_la-TaskSpec_Parser.lo: TaskSpec_Parser.c /usr/include/stdlib.h \
 
 /usr/include/linux/errno.h:
 
-/usr/include/asm/errno.h:
+/usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/asm-generic/errno.h:
 

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/rlcomp/!svn/ver/412/trunk/private/environments-3.0/mario/src/com/mojang/mario/mapedit
+END
+LevelEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rlcomp/!svn/ver/412/trunk/private/environments-3.0/mario/src/com/mojang/mario/mapedit/LevelEditor.java
+END
+LevelEditView.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/mapedit/LevelEditView.java
+END
+TilePicker.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/rlcomp/!svn/ver/395/trunk/private/environments-3.0/mario/src/com/mojang/mario/mapedit/TilePicker.java
+END

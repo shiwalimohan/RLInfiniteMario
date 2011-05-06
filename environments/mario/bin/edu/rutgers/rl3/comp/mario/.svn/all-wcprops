@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/rlcomp/!svn/ver/643/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario
+END
+FakeGraphics.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/rlcomp/!svn/ver/589/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario/FakeGraphics.java
+END
+GlueMarioParameters.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/rlcomp/!svn/ver/642/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario/GlueMarioParameters.java
+END
+ParameterizedMario.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/rlcomp/!svn/ver/675/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario/ParameterizedMario.java
+END
+GlueMario.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rlcomp/!svn/ver/675/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario/GlueMario.java
+END
+GeneralizedMario.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/rlcomp/!svn/ver/578/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario/GeneralizedMario.java
+END
+FakeImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/rlcomp/!svn/ver/589/trunk/private/environments-3.0/mario/src/edu/rutgers/rl3/comp/mario/FakeImage.java
+END
