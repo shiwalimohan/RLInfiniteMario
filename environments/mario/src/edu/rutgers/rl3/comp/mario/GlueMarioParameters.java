@@ -38,11 +38,11 @@ public class GlueMarioParameters {
 	
 	public int max_trial_steps = 1000;
 	
-	public double reward_goal = 100;
-	public double reward_death = -10;
-	public double reward_step = -.01;
-	public double reward_coin = 1;
-	public double reward_kill = 1;
+	public static double reward_goal = 100;
+	public static double reward_death = -10;
+	public static double reward_step = -.01;
+	public static double reward_coin = 1;
+	public static double reward_kill = 1;
 	
 	public double speed_walk = 0.6;
 	public double speed_run = 1.2;

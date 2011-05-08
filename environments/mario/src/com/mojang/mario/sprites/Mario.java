@@ -1,6 +1,8 @@
 package com.mojang.mario.sprites;
 
 
+import java.util.Vector;
+
 import com.mojang.mario.Art;
 import com.mojang.mario.Scene;
 import com.mojang.mario.level.*;
@@ -20,6 +22,7 @@ public class Mario extends Sprite
     public static int lives = 3;
     public static String levelString = "none";
     public static Sprite killedBy;
+    private static Vector <Block> blockReward = new Vector <Block> ();
     public static void resetStatic()
     {
         large = false;
@@ -532,7 +535,7 @@ public class Mario extends Sprite
 
         if (!enemy.winged){
         	Mario.kills++;
-        	enemy.setRewardType("kill");
+        	enemy.setReward((float) GlueMarioParameters.reward_kill);
         }
 
         float targetY = enemy.y - enemy.height / 2;
@@ -573,8 +576,10 @@ public class Mario extends Sprite
         }
     }
 
-    public void getHurt(Sprite sprite)
+    public void getHurt(Sprite enemy)
     {
+    	
+    	System.out.println("Get hurt by enemy");
         if (deathTime > 0 || world.paused) return;
         if (invulnerableTime > 0) return;
 
@@ -595,7 +600,7 @@ public class Mario extends Sprite
         }
         else
         {
-            die(sprite);
+            die(enemy);
         }
     }
 
@@ -611,8 +616,8 @@ public class Mario extends Sprite
 
     public void die(Sprite sprite)
     {
-    	this.killedBy = sprite;
-    	sprite.setRewardType("killed-by");
+    	System.out.println("Killed by an enemy ");
+    	sprite.setReward((float) GlueMarioParameters.reward_death);
         xDeathPos = (int) x;
         yDeathPos = (int) y;
         world.paused = true;
@@ -635,7 +640,7 @@ public class Mario extends Sprite
         }
         else
         {
-            Mario.getCoin(this);
+            Mario.getCoin(fireFlower);
             world.sound.play(Art.samples[Art.SAMPLE_GET_COIN], this, 1, 1, 1);
         }
     }
@@ -653,7 +658,7 @@ public class Mario extends Sprite
         }
         else
         {
-            Mario.getCoin(this);
+            Mario.getCoin(mushroom);
             world.sound.play(Art.samples[Art.SAMPLE_GET_COIN], this, 1, 1, 1);
         }
     }
@@ -724,6 +729,7 @@ public class Mario extends Sprite
     public static void getCoin(int x, int y)
     {
     	coins++;
+    	addBlockReward(x,y);
         if (coins==100 && !GlueMario.glue_running)
         {
             coins = 0;
@@ -731,11 +737,22 @@ public class Mario extends Sprite
         }
     }
     
-    
+    public static void initBlockReward(){
+    	blockReward.clear();
+    }
+   
+	private static void addBlockReward(int x, int y) {
+		blockReward.add(new Block (x, y, "coin"));
+	}
+	
+	public static Vector<Block> getBlockReward(){
+		return blockReward;
+	}
+	
 	public static void getCoin(Sprite sprite)
     {
-        coins++;
-        sprite.setRewardType("coin");
+		coins++;
+        sprite.setReward((float) GlueMarioParameters.reward_coin);
         if (coins==100 && !GlueMario.glue_running)
         {
             coins = 0;

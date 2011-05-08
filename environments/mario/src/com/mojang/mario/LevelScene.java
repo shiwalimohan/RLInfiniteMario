@@ -316,7 +316,6 @@ public class LevelScene extends Scene implements SpriteContext
         sprites.removeAll(spritesToRemove);
         spritesToAdd.clear();
         spritesToRemove.clear();
-        
         edu.rutgers.rl3.comp.mario.GlueMario.levelCheckIn(this);
     }
     

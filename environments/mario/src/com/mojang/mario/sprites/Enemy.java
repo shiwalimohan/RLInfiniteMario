@@ -6,6 +6,7 @@ import com.mojang.mario.Art;
 import com.mojang.mario.LevelScene;
 
 import edu.rutgers.rl3.comp.mario.GlueMario;
+import edu.rutgers.rl3.comp.mario.GlueMarioParameters;
 
 
 public class Enemy extends Sprite
@@ -140,7 +141,6 @@ public class Enemy extends Sprite
                 {
                     world.addSprite(new Sparkle((int) (x + Math.random() * 16 - 8) + 4, (int) (y - Math.random() * 8) + 4, (float) (Math.random() * 2 - 1), (float) Math.random() * -1, 0, 1, 5));
                 }
-                spriteContext.removeSprite(this);
             }
 
             if (flyDeath)
@@ -340,7 +340,7 @@ public class Enemy extends Sprite
                 hPic = -hPic;
                 yPicO = -yPicO + 16;
                 Mario.kills++;
-                this.setRewardType("kill");
+                this.setReward((float) GlueMarioParameters.reward_kill);
                 return true;
             }
         }
@@ -371,7 +371,7 @@ public class Enemy extends Sprite
                 hPic = -hPic;
                 yPicO = -yPicO + 16;
                 Mario.kills++;
-                this.setRewardType("kill");
+                this.setReward((float) GlueMarioParameters.reward_kill);
                 return true;
             }
         }

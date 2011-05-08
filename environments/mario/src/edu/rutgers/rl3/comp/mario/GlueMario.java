@@ -2,6 +2,7 @@ package edu.rutgers.rl3.comp.mario;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.util.Iterator;
 import java.util.Vector;
 
 import javax.swing.JFrame;
@@ -20,6 +21,7 @@ import rlVizLib.messaging.interfaces.ProvidesEpisodeSummariesInterface;
 import com.mojang.mario.LevelRenderer;
 import com.mojang.mario.LevelScene;
 import com.mojang.mario.MarioComponent;
+import com.mojang.mario.level.Block;
 import com.mojang.mario.level.Level;
 import com.mojang.mario.sprites.Enemy;
 import com.mojang.mario.sprites.FireFlower;
@@ -70,7 +72,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 	
 	public static void init(MarioComponent comp) {
 		rot = new Reward_observation_terminal();
-		rot.o = new Observation(0, 0, 0);
+	//	rot.o = new Observation(0, 0, 0);
 		
 		if (!glue_running) return;
 		GlueMario.comp = comp;
@@ -95,7 +97,6 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 	}
 	
 	public static void reportLoss() {
-		
 		rot.r = GlueMario.param.reward_death;
 		trial_reward += rot.r;
 		run_reward += rot.r;
@@ -119,6 +120,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 		trial_steps = 0;
 		Mario.kills = 0;
 		Mario.coins = 0;
+		Mario.initBlockReward();
 		Mario.instance.setLarge(false, false);
 		last_trial_reward = 0;
 	}
@@ -221,6 +223,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 		trial_reward = param.reward_step*(trial_steps-1);
 		trial_reward += param.reward_coin*Mario.coins;
 		trial_reward += param.reward_kill*Mario.kills;
+	
 
 		LevelRenderer lr = lscene.getLayer();
 		
@@ -284,7 +287,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
         for (int y = lr.yCam / 16; y <= (lr.yCam + lr.height) / 16; y++) {
         	for (int x = lr.xCam / 16; x <= (lr.xCam + lr.width) / 16; x++) {
                 int b = lr.level.getBlock(x, y);
-                System.out.println("x " + x + "y " + y);
+             //   System.out.println("x " + x + "y " + y);
                
                 if (mario_x == x && mario_y == y)
                 	sb.append('M');
@@ -362,8 +365,9 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 		vd.add(new Double(16.0-s.getCurrentY()/16.0));
 		vd.add(new Double(param.ticks_per_action*s.getCurrentXs()/16));
 		vd.add(new Double(param.ticks_per_action*-1*s.getCurrentYs()/16));
-		s.setReward(param);
-		vd.add(new Double(s.getReward()));
+		float reward = s.getReward();
+		System.out.println ("The reward for enemy is: " + reward);
+		vd.add(new Double (reward));
 		return vd;
 	}
 	
@@ -384,8 +388,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 	        frame.setVisible(!go_dark);
         }
 
-        GlueMario.init(mario);
-        
+        GlueMario.init(mario);   
 	}
 	
 	public GlueMario() {

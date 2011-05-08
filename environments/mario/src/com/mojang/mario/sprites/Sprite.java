@@ -12,8 +12,7 @@ import edu.rutgers.rl3.comp.mario.GlueMarioParameters;
 public class Sprite implements SoundSource
 {
     public static SpriteContext spriteContext;
-    private double reward = 0.0; // reward associated with every object in the world
-    private String rewardType = "none";
+    private float reward; // reward associated with every object in the world
     
     public float xOld, yOld, x, y, xa, ya;
 
@@ -32,27 +31,16 @@ public class Sprite implements SoundSource
     public int layer = 1;
 
     public SpriteTemplate spriteTemplate;
+	private boolean remove = false;
     
-    public void setRewardType(String type){
-    	this.rewardType = type;
+    public void setReward (float reward){
+    	this.reward = reward;
     }
     
-    public void setReward (GlueMarioParameters param){
-    	if (rewardType == "kill")
-    		this.reward = param.reward_kill;
-    	else if (rewardType == "killedby")
-    		this.reward = param.reward_death;
-    	else if (rewardType == "coin")
-    		this.reward = param.reward_coin;
-    	else
-    		this.reward = 0.0;
-    }
-    
-    public String getRewardType (){
-    	return this.rewardType;
-    }
-    
-    public double getReward (){
+    public float getReward (){
+    	if (reward != 0.0){
+    		spriteContext.removeSprite(this);
+    	}
     	return this.reward;
     }
     
