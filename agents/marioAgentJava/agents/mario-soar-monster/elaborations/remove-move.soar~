@@ -1,8 +1,0 @@
-sp {apply*remove-move
-   (state <s> ^operator <o>
-              ^io.output-link <out>)
-   (<o> ^action <action>)
-   (<out> ^<action> <move>)
-   (<move> ^status complete)
--->
-   (<out> ^<action> <move> -)}

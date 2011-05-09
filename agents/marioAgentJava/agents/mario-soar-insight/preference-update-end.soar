@@ -1,8 +1,0 @@
-sp {propose*update*preference*at*end
-   (state <s> ^name mario-soar-insight
-        ^io.input-link <il>)
-   (<il> ^init yes)
---> 
-   (halt)
- }
-

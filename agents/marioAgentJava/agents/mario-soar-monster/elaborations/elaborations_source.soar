@@ -1,4 +1,0 @@
-source _all.soar
-source copy-reward.soar
-source remove-action.soar
-source top-state.soar

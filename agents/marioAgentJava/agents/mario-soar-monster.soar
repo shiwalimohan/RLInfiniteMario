@@ -1,3 +1,0 @@
-pushd mario-soar-monster
-source mario-soar-monster_source.soar
-popd

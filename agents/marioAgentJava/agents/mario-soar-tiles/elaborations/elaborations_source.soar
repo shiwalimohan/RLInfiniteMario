@@ -1,6 +1,0 @@
-source _all.soar
-source copy-reward.soar
-source elaborate-monster.soar
-source elaborate-tiles.soar
-source remove-action.soar
-source top-state.soar

@@ -1,8 +1,0 @@
-sp {elaborate*reward
-   (state <s> ^name mario-soar-monster
-              ^reward-link <r>
-              ^io.input-link <il>)
-   (<il> ^reward <num>)
--->
-   (<r> ^reward.value <num>)
-}

@@ -1,9 +1,0 @@
-source _all.soar
-source copy-reward.soar
-source elaborate-mario.soar
-source elaborate-monsters.soar
-source elaborate-pit.soar
-source elaborate-structures.soar
-source elaborate-tiles.soar
-source remove-action.soar
-source top-state.soar

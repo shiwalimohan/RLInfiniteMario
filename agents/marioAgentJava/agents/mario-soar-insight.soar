@@ -1,3 +1,0 @@
-pushd mario-soar-insight
-source mario-soar-insight_source.soar
-popd
