@@ -33,7 +33,6 @@ public class Level
 
     public byte[][] map;
     public byte[][] data;
-    public Boolean[][] reward;
 
     public SpriteTemplate[][] spriteTemplates;
 
@@ -49,18 +48,8 @@ public class Level
         yExit = 10;
         map = new byte[width][height];
         data = new byte[width][height];
-        reward = new Boolean[width][height];
         spriteTemplates = new SpriteTemplate[width][height];
-        initReward();
     }
-
-    private void initReward() {
-		for (int i = 0; i < width; i++){
-			for (int j = 0; j < height; j++){
-				reward[i][j] = false;
-			}
-		}
-	}
 
 	public static void loadBehaviors(DataInputStream dis) throws IOException
     {

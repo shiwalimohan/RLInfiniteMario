@@ -1,16 +1,16 @@
 package com.mojang.mario.level;
 
 public class Block {
-	private double reward = 0.0;
-	private String rewardType = "none";
+	public double reward = 0.0;
 	public int x ;
 	public int y;
-	public Block(int x, int y, String string) {
-		x = x;
-		y = y;
-		rewardType = string;
+	public Block(int xtemp, int ytemp, float rewardTemp) {
+	//	System.out.println("block.java x: " + x + "y: " + y + "reward: " + reward);
+		x = xtemp;
+		y = ytemp;
+		reward = rewardTemp;
 	}
-	public String getRewardType(){
-		return rewardType;
+	public Block getBlock(){
+		return this;
 	}
 }

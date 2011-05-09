@@ -22,7 +22,7 @@ public class Mario extends Sprite
     public static int lives = 3;
     public static String levelString = "none";
     public static Sprite killedBy;
-    private static Vector <Block> blockReward = new Vector <Block> ();
+    public static Vector <Block> blockReward = new Vector <Block> ();
     public static void resetStatic()
     {
         large = false;
@@ -69,6 +69,7 @@ public class Mario extends Sprite
 
     public Sprite carried = null;
     public static Mario instance;
+	private static Level level;
 
     public Mario(LevelScene world)
     {
@@ -579,7 +580,7 @@ public class Mario extends Sprite
     public void getHurt(Sprite enemy)
     {
     	
-    	System.out.println("Get hurt by enemy");
+    	//System.out.println("Get hurt by enemy");
         if (deathTime > 0 || world.paused) return;
         if (invulnerableTime > 0) return;
 
@@ -616,7 +617,7 @@ public class Mario extends Sprite
 
     public void die(Sprite sprite)
     {
-    	System.out.println("Killed by an enemy ");
+    //	System.out.println("Killed by an enemy ");
     	sprite.setReward((float) GlueMarioParameters.reward_death);
         xDeathPos = (int) x;
         yDeathPos = (int) y;
@@ -729,6 +730,7 @@ public class Mario extends Sprite
     public static void getCoin(int x, int y)
     {
     	coins++;
+   // 	System.out.println("adding x: " + x + "y: " + y);
     	addBlockReward(x,y);
         if (coins==100 && !GlueMario.glue_running)
         {
@@ -742,7 +744,7 @@ public class Mario extends Sprite
     }
    
 	private static void addBlockReward(int x, int y) {
-		blockReward.add(new Block (x, y, "coin"));
+		blockReward.add(new Block (x, y, (float) GlueMarioParameters.reward_coin));
 	}
 	
 	public static Vector<Block> getBlockReward(){

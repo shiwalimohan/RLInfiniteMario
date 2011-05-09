@@ -120,7 +120,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 		trial_steps = 0;
 		Mario.kills = 0;
 		Mario.coins = 0;
-		Mario.initBlockReward();
+	//	Mario.initBlockReward();
 		Mario.instance.setLarge(false, false);
 		last_trial_reward = 0;
 	}
@@ -250,6 +250,17 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 			}
 		}
 		
+		o_ints.add(100);
+		
+		// add all the block rewards to int array
+		Iterator<Block> itr = Mario.getBlockReward().iterator();
+    	while (itr.hasNext()){
+    		Block b = (Block)itr.next().getBlock();
+    		o_ints.add(b.x);
+    		o_ints.add(b.y);
+    		o_ints.add((int) b.reward);
+    	}
+		
 		
 		for (Sprite s : lscene.getSprites()) {
 			s.last_step_x = s.x;
@@ -276,7 +287,8 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 			catch (Exception e) {
 
 			}
-		}			
+		}
+		Mario.blockReward.clear();
 	}
 	
 
@@ -287,8 +299,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
         for (int y = lr.yCam / 16; y <= (lr.yCam + lr.height) / 16; y++) {
         	for (int x = lr.xCam / 16; x <= (lr.xCam + lr.width) / 16; x++) {
                 int b = lr.level.getBlock(x, y);
-             //   System.out.println("x " + x + "y " + y);
-               
+                System.out.println("x " + x + "y " + y);
                 if (mario_x == x && mario_y == y)
                 	sb.append('M');
                 else {
@@ -320,10 +331,11 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
                 }
             }
         	sb.append('\n');
+        	// add reward blocks to the end of the char arra
         }
         return sb.toString().toCharArray();
 	}
-	
+//	(int)b & 0xff
 	public static Vector<Integer> getSpriteInts(Sprite s) {
 		int type = -1;
 		boolean winged = false;
@@ -366,7 +378,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
 		vd.add(new Double(param.ticks_per_action*s.getCurrentXs()/16));
 		vd.add(new Double(param.ticks_per_action*-1*s.getCurrentYs()/16));
 		float reward = s.getReward();
-		System.out.println ("The reward for enemy is: " + reward);
+	//	System.out.println ("The reward for enemy is: " + reward);
 		vd.add(new Double (reward));
 		return vd;
 	}
