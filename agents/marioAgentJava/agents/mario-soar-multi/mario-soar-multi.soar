@@ -1,0 +1,32 @@
+#--------------------source all relevant files-----------------------------
+source random-actions.soar
+source objects.soar
+source elaborations.soar
+source rl-rules.soar
+#--------------------------------------------------------------------------
+
+
+#---initialize agent
+sp {nil*propose*initialize-mario-soar
+   (state <s> ^superstate nil
+   	      -^name)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name initialize-mario-soar)
+}
+
+sp {nil*apply*initialize-mario-soar
+   (state <s> ^operator <op>)
+   (<op> ^name initialize-mario-soar)
+-->
+   (<s> ^name mario-soar
+   	^rand-move <m>
+	^to-learn <tl>)
+   (<m> ^direction left
+   	^direction right
+	^direction nil
+	^jump yes
+	^jump no
+	^speed low
+	^speed high)
+}

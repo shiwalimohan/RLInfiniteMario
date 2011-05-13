@@ -101,7 +101,7 @@ sp {mario-soar*elaborate-coin-reachable
         ^disty < 4
 	^type coin)
   -(<c> ^distx < -1)
-  -(<c> ^disty < 0nn)
+  -(<c> ^disty < 0)
 -->
    (<c> ^isreachable yes)
 }

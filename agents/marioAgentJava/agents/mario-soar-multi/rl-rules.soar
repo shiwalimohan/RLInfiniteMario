@@ -1,0 +1,66 @@
+### monster rl-rule
+
+sp {rl-rule*monster
+   :template
+   (state <s> ^name mario-soar	
+   	      ^operator <op> +
+	      ^to-learn.object <obj>
+	      ^reward-link <rl>)
+   (<s> ^mario <mario>	  
+   	 ^operator <op>)
+   (<rl> ^monster <monster-reward>)
+   (<monster-reward> ^source <obj>)
+   (<op> ^name action
+   	 ^direction <d>
+	 ^jump <j>
+	 ^speed <sp>)
+   (<obj> ^type <type>
+   	  ^group monster
+	  ^rel-dist-x <dx>
+	  ^rel-dist-y <dy>)
+-->
+   (<s> ^operator <op> = 0)
+}
+
+#### elaborate monster reward
+sp {elaborate*monster*reward
+   (state <s> ^name mario-soar
+	      ^reward-link <rl>
+	      ^to-learn.object <obj>)
+   (<obj> ^group monster
+   	  ^reward <reward>)
+-->
+   (<rl> ^monster <monster-reward>)
+   (<monster-reward> ^source <obj>
+   		     ^reward.value <reward>)
+}
+
+
+### move-right to finish line rl-rules
+sp {rl-rule*finish-game
+   :template
+   (state <s> ^name mario-soar
+   	      ^operator <op> +
+	      ^tile-type <tt>
+	      ^reward-link <rl>)
+   (<tt> ^right <tile-right>)
+   (<op> ^name action
+   	 ^direction <d>
+	 ^jump <j>
+	 ^speed <sp>)
+   (<rl> ^move-right <reward>)
+-->
+   (<s> ^operator <op> = 0)
+}
+
+### elaborate move-right reward
+sp {elaborate*finish-game
+   (state <s> ^name mario-soar
+	      ^reward-link <rl>
+	      ^io.input-link.right-reward <reward>)
+-->
+   (<rl> ^move-right <r-reward>)
+   (<r-reward> ^reward.value <reward>)
+}
+
+   	      

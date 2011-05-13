@@ -5,5 +5,9 @@ systemPath=$basePath/system
 source $systemPath/rl-competition-includes.sh
 
 
+startRLGlueInBackGround
+startEnvShellInBackGround
 startNetGuiTrainerDynamicEnvironmentStandardAgent
 
+waitForEnvShellToDie
+waitForRLGlueToDie

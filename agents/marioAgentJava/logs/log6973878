@@ -1,0 +1,41 @@
+Productions : multi
+Learning Policy : sarsa
+Learning Rate : 0.3
+Discount Rate : 0.99
+Eligibility trace  decay rate: 0.0
+Eligibility trace tolerance : 0.0010
+Exploration Policy : epsilon-greedy
+Exploration epsilon : 0.1
+Exploration temprature : 25
+Auto Reduce : off
+Reduction Policy : exponential
+Reduction Rate : 0.1
+Soar Inititalized. Episode : 0 Reward :-13.6
+Soar Inititalized. Episode : 1 Reward :126.32
+Soar Inititalized. Episode : 2 Reward :19.599999999999994
+Soar Inititalized. Episode : 3 Reward :-6.109999999999999
+Soar Inititalized. Episode : 4 Reward :-6.14
+Soar Inititalized. Episode : 5 Reward :-7.1
+Soar Inititalized. Episode : 6 Reward :-9.1
+Soar Inititalized. Episode : 7 Reward :-5.29
+Soar Inititalized. Episode : 8 Reward :112.27
+Soar Inititalized. Episode : 9 Reward :4.880000000000001
+Soar Inititalized. Episode : 10 Reward :-4.08
+Soar Inititalized. Episode : 11 Reward :21.269999999999996
+Soar Inititalized. Episode : 12 Reward :17.37
+Soar Inititalized. Episode : 13 Reward :130.97
+Soar Inititalized. Episode : 14 Reward :25.82
+Soar Inititalized. Episode : 15 Reward :-8.71
+Soar Inititalized. Episode : 16 Reward :-6.91
+Soar Inititalized. Episode : 17 Reward :-10.07
+Soar Inititalized. Episode : 18 Reward :-10.14
+Soar Inititalized. Episode : 19 Reward :-8.83
+Soar Inititalized. Episode : 20 Reward :-6.95
+Soar Inititalized. Episode : 21 Reward :-10.07
+Soar Inititalized. Episode : 22 Reward :-10.07
+Soar Inititalized. Episode : 23 Reward :-8.07
+Soar Inititalized. Episode : 24 Reward :-9.06
+Soar Inititalized. Episode : 25 Reward :-2.2299999999999995
+Soar Inititalized. Episode : 26 Reward :-10.07
+Soar Inititalized. Episode : 27 Reward :-9.27
+Soar Inititalized. Episode : 28 Reward :130.48000000000002

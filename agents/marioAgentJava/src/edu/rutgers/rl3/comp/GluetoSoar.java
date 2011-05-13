@@ -58,6 +58,7 @@ public class GluetoSoar{
 	static Vector<Monster> monsters;
 	static Vector<MonsterWME> monstersPresent;
 	private static Identifier monstersWME;
+	private static FloatElement right_reward;
 		
 	public GluetoSoar(Agent a){
 		agent = a;
@@ -70,7 +71,8 @@ public class GluetoSoar{
 		prev_xloc = 0.0;
 		
 		reward = agent.CreateFloatWME(inputLink, "reward", 0.0);
-	
+		right_reward = agent.CreateFloatWME(inputLink, "right-reward", 0.0);
+		
 		isInit = agent.CreateStringWME(inputLink, "init","no");
 		marioWME = agent.CreateIdWME(inputLink, "mario");
 		marioType = agent.CreateStringWME(marioWME, "type","small");
@@ -81,8 +83,9 @@ public class GluetoSoar{
 		mario_yi = agent.CreateIntWME(marioWME, "yi", 0);
 		mario_x = agent.CreateFloatWME(marioWME, "x", 0);
 		mario_y = agent.CreateFloatWME(marioWME, "y", 0);
-		mario_sx = agent.CreateFloatWME(marioWME, "sx", 0.0 );
-		mario_sy = agent.CreateFloatWME(marioWME, "sy", 0.0 );
+		mario_sx = agent.CreateFloatWME(marioWME, "sx", 0.0);
+		mario_sy = agent.CreateFloatWME(marioWME, "sy", 0.0);
+		
 		
 		marioNumMonsters = agent.CreateIntWME(inputLink, "num_monsters", 0);		
 		visualScene = agent.CreateIdWME(inputLink, "visual-scene");
@@ -177,8 +180,8 @@ public class GluetoSoar{
 		int j = i*2+2;
 		//System.out.println("J is " + j + "length of array is " + obs.intArray.length);
 		for (; j < obs.intArray.length; j+=3){
-	//		System.out.println("Tile x: " + obs.intArray[j] + " y: " + obs.intArray[j+1] + " reward: " + obs.intArray[j+2]);
-			blockRewards.add(new Block (obs.intArray[j], obs.intArray[j], obs.intArray[j+1]));
+		//	System.out.println("Tile x: " + obs.intArray[j] + " y: " + obs.intArray[j+1] + " reward: " + obs.intArray[j+2]);
+			blockRewards.add(new Block (obs.intArray[j], obs.intArray[j+1], obs.intArray[j+2]));
 			
 		}
 		
@@ -203,12 +206,13 @@ public class GluetoSoar{
 	
 		if(Mario.x > prev_xloc){
 			//reward the agent on moving towards right
-			r=r+0.01;
-			agent.Update(reward, r);
+			double right = 0.01;
+			agent.Update(right_reward, right);
 			//System.out.println("reward = "+ r);
 			}
 		else 
-			{agent.Update(reward, r);
+			{ 	double right = -0.01;
+				agent.Update(right_reward, right);
 			//System.out.println("reward = "+ r);
 			}
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -235,7 +239,6 @@ public class GluetoSoar{
 		prev_xloc = Mario.x;
 		
 		agent.Update(marioNumMonsters, monsters.size());
-		//System.out.println(" Number of monsters in the scene: " + monsters.size());
 		
 		getVisualScene(o);
 		getMonsterList(o);	
@@ -277,6 +280,7 @@ public class GluetoSoar{
 						agent.Update(monstersPresent.elementAt(k).monster_yd, monsters.elementAt(k).y);
 						agent.Update(monstersPresent.elementAt(k).monster_sx, monsters.elementAt(k).sx);
 						agent.Update(monstersPresent.elementAt(k).monster_sy, monsters.elementAt(k).sy);
+						agent.Update(monstersPresent.elementAt(k).monster_reward, monsters.elementAt(k).reward);
 						agent.Commit();
 						k++;
 					}
@@ -302,6 +306,7 @@ public class GluetoSoar{
 				addNew.type = monsters.elementAt(i).type;
 				addNew.typeName = monsters.elementAt(i).typeName;
 				addNew.winged = monsters.elementAt(i).winged;
+				addNew.reward = monsters.elementAt(i).reward;
 				addNew.monsterWME = agent.CreateIdWME(monstersWME, "monster");
 				addNew.monster_type = agent.CreateStringWME(addNew.monsterWME, "type", monsters.elementAt(i).typeName);
 				if (addNew.winged)
@@ -316,6 +321,7 @@ public class GluetoSoar{
 				addNew.monster_yd = agent.CreateFloatWME(addNew.monsterWME,"yd",monsters.elementAt(i).y);
 				addNew.monster_sx = agent.CreateFloatWME(addNew.monsterWME, "sx", monsters.elementAt(i).sx);
 				addNew.monster_sy  = agent.CreateFloatWME(addNew.monsterWME, "sy", monsters.elementAt(i).sy);
+				addNew.monster_reward = agent.CreateFloatWME(addNew.monsterWME, "reward", monsters.elementAt(i).reward);
 				monstersPresent.add(addNew);
 		}
 		//System.out.println(" present size2 " + monstersPresent.size() + " " + monsters.size());
@@ -326,15 +332,17 @@ public class GluetoSoar{
 	}
 	
 	
-	private static float searchBlockReward(int xe, int ye){
+	private static float getBlockRewardAt(int xe, int ye){
 		Iterator<Block> itr = blockRewards.iterator();
 		while (itr.hasNext()){
 			Block b = itr.next();
-			if (b.x == xe && b.y == ye){
+			if (b.x == xe && b.y == ye)
+			{
+	//			System.out.println("Block x: " + b.x + " y:" + b.y +  "reward is: " + b.reward);
 				return (float) b.reward;
 			}
 		}
-		return (float) 0.0;	
+		return (float) 0.0;
 	}
 
 	private static void getVisualScene(Observation o){
@@ -347,13 +355,13 @@ public class GluetoSoar{
 					}
 					xpos = agent.CreateIntWME(tileWME[i][k], "x",o.intArray[0]+k );
 					type = agent.CreateStringWME(tileWME[i][k], "type", Character.toString(o.charArray[i*22+k]));
+					agent.CreateFloatWME(tileWME[i][k],"reward", 0.0);
 				}
 			}
 		}
 		
 		else {
 			int offset = o.intArray[0] - prev_intArray0;
-		//	System.out.println(offset);
 			if (offset >= 0){
 				for(int i = 0; i < 16; i++){
 					for(int k = 0; k < offset; k++){
@@ -365,8 +373,8 @@ public class GluetoSoar{
 						}
 						String temp_type = tileWME[i][k].GetChild(1).GetValueAsString();
 						if (temp_type.equals(Character.toString(o.charArray[i*22+k-offset]))){
+							agent.Update(tileWME[i][k].GetChild(2).ConvertToFloatElement(), 0.0);
 							tileWMEcp[i][k-offset] = tileWME[i][k];
-							agent.Update(tileWMEcp[i][k-offset].GetChild(2).ConvertToFloatElement(), searchBlockReward(i,k));
 						}
 						else {
 							agent.DestroyWME(tileWME[i][k]);
@@ -374,7 +382,8 @@ public class GluetoSoar{
 							tileWME[i][k] = agent.CreateIdWME(tileRowWME[i], "tile");
 						    xpos = agent.CreateIntWME(tileWME[i][k], "x",o.intArray[0]+k-offset);
 						    type = agent.CreateStringWME(tileWME[i][k], "type", Character.toString(o.charArray[i*22+k-offset]));
-						    agent.CreateFloatWME(tileWME[i][k], "reward", searchBlockReward(i,k));
+						//    System.out.println ("Changed at: " + (o.intArray[0]+k-offset) + " " + i);
+						    agent.CreateFloatWME(tileWME[i][k], "reward", getBlockRewardAt(o.intArray[0]+k-offset, i));
 						    tileWMEcp[i][k-offset] =  tileWME[i][k];
 						}
 					}
@@ -385,7 +394,7 @@ public class GluetoSoar{
 						tileWMEcp[i][k] = agent.CreateIdWME(tileRowWME[i], "tile");
 					    xpos = agent.CreateIntWME(tileWMEcp[i][k], "x",o.intArray[0]+k);
 					    type = agent.CreateStringWME(tileWMEcp[i][k], "type", Character.toString(o.charArray[i*22+k]));
-					    agent.CreateFloatWME(tileWME[i][k], "reward", 0.0);
+					    agent.CreateFloatWME(tileWMEcp[i][k], "reward", 0.0);
 					}
 				}
 			}
@@ -400,8 +409,8 @@ public class GluetoSoar{
 						}
 						String temp_type = tileWME[i][k+offset].GetChild(1).GetValueAsString();
 						if (temp_type.equals(Character.toString(o.charArray[i*22+k]))){
+							agent.Update(tileWME[i][k+offset].GetChild(2).ConvertToFloatElement(), 0.0);
 							tileWMEcp[i][k] = tileWME[i][k+offset];
-							agent.Update(tileWMEcp[i][k+offset].GetChild(2).ConvertToFloatElement(), searchBlockReward(i,k));
 						}
 						else {
 							agent.DestroyWME(tileWME[i][k+offset]);
@@ -409,7 +418,7 @@ public class GluetoSoar{
 							tileWME[i][k+offset] = agent.CreateIdWME(tileRowWME[i], "tile");
 						    xpos = agent.CreateIntWME(tileWME[i][k+offset], "x",o.intArray[0]+k);
 						    type = agent.CreateStringWME(tileWME[i][k+offset], "type", Character.toString(o.charArray[i*22+k]));
-						    agent.CreateFloatWME(tileWME[i][k+offset], "reward", 0.0);
+						    agent.CreateFloatWME(tileWME[i][k+offset], "reward",getBlockRewardAt(i,k));
 						    tileWMEcp[i][k] =  tileWME[i][k+offset];
 						}
 					}
@@ -420,7 +429,7 @@ public class GluetoSoar{
 						tileWMEcp[i][k] = agent.CreateIdWME(tileRowWME[i], "tile");
 					    xpos = agent.CreateIntWME(tileWMEcp[i][k], "x",o.intArray[0]+k);
 					    type = agent.CreateStringWME(tileWMEcp[i][k], "type", Character.toString(o.charArray[i*22+k]));
-					    agent.CreateFloatWME(tileWME[i][k], "reward", searchBlockReward(i,k));
+					    agent.CreateFloatWME(tileWMEcp[i][k], "reward", 0.0);
 					}
 				}
 				

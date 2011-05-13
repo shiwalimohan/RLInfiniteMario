@@ -22,7 +22,8 @@ public class Abstractions{
 		double y;
 		double sx;
 		double sy;
-		int type;			
+		int type;		
+		double reward;
 		String typeName;
 		boolean winged;
 		Identifier monsterWME;
@@ -30,6 +31,7 @@ public class Abstractions{
 		StringElement monster_winged;
 		FloatElement monster_xd;
 		FloatElement monster_yd;
+		FloatElement monster_reward;
 
 		//For discretization of space around monsters. uncomment 
 		//		FloatElement monster_x;

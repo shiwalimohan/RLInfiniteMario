@@ -1,0 +1,92 @@
+sp {mario-soar*propose*add-to-learn
+   (state <s> ^name mario-soar
+   	      ^object <obj>
+	      ^to-learn <tl>)
+-   (<tl> ^object <obj>)
+   (<obj> ^visible true
+   	  ^group monster)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name add-to-learn)
+}
+
+sp {mario-soar*prefer*add-to-learn
+   (state <s> ^name mario-soar
+   	      ^operator <op1> +
+	      ^operator <op2> +)
+   (<op1> ^name add-to-learn)
+   (<op2> ^name action)
+-->
+   (<s> ^operator <op1> > <op2>)
+}
+
+sp {mario-soar*equal*add-to-learn
+   (state <s> ^name mario-soar
+   	      ^operator <op1> +
+	      ^operator <op2> +)
+   (<op1> ^name add-to-learn)
+   (<op2> ^name add-to-learn)
+-->
+   (<s> ^operator <op1> = <op2>)
+}
+
+sp {mario-soar*apply*add-to-learn
+   (state <s> ^operator <op>
+   	      ^to-learn <tl>
+	      ^object <obj>)
+   (<op> ^name add-to-learn)
+-->
+   (<tl> ^object <obj>)
+}
+
+sp {mario-soar*propose*remove-from-learn*monster
+   (state <s> ^name mario-soar
+   	      ^object <obj>
+	      ^to-learn <tl>)
+   (<tl> ^object <obj>)
+   (<obj> ^group monster
+   	  -^visible true)
+-->
+   (<s> ^operator <op> +)
+   (<op> ^name remove-from-learn
+   	 ^object <obj>)
+}
+
+sp {mario-soar*apply*remove-from-learn
+   (state <s> ^operator <op>
+   	      ^to-learn <tl>)
+   (<op> ^name remove-from-learn
+   	 ^object <obj>)
+-->
+   (<tl> ^object <obj> -)
+}
+  
+sp {mario-soar*prefer*remove-from-learn
+   (state <s> ^name mario-soar
+   	      ^operator <op1> +
+	      ^operator <op2> +)
+   (<op1> ^name remove-from-learn)
+   (<op2> ^name action)
+-->
+   (<s> ^operator <op1> > <op2>)
+}
+
+sp {mario-soar*equal*remove-from-learn
+   (state <s> ^name mario-soar
+   	      ^operator <op1> +
+	      ^operator <op2> +)
+   (<op1> ^name remove-from-learn)
+   (<op2> ^name remove-from-learn)
+-->
+   (<s> ^operator <op1> = <op2>)
+}
+
+sp {mario-soar*prefer*remove-from-learn*add-to-learn
+   (state <s> ^name mario-soar
+   	      ^operator <op1> +
+	      ^operator <op2> +)
+   (<op1> ^name remove-from-learn)
+   (<op2> ^name add-to-learn)
+-->
+   (<s> ^operator <op1> > <op2>)
+}

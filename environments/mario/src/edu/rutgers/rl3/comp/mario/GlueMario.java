@@ -299,7 +299,7 @@ public abstract class GlueMario implements EnvironmentInterface, ProvidesEpisode
         for (int y = lr.yCam / 16; y <= (lr.yCam + lr.height) / 16; y++) {
         	for (int x = lr.xCam / 16; x <= (lr.xCam + lr.width) / 16; x++) {
                 int b = lr.level.getBlock(x, y);
-                System.out.println("x " + x + "y " + y);
+           //     System.out.println("x " + x + "y " + y);
                 if (mario_x == x && mario_y == y)
                 	sb.append('M');
                 else {
