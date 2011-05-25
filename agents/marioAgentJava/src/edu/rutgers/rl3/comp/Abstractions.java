@@ -44,4 +44,18 @@ public class Abstractions{
 		FloatElement monster_sy;
 		boolean flag;
 	}
+	static class TileBlock {
+		public int x;
+		public int y;
+		public String type;
+		public String orig_type;
+		public String group = "block";
+		Identifier tileBlockId;
+		IntElement tile_x_id;
+		IntElement tile_y_id;
+		StringElement tile_type_id;
+		FloatElement reward_id;
+		StringElement tile_group_id;
+	}
+	
 }

@@ -27,6 +27,5 @@ sp {nil*apply*initialize-mario-soar
 	^direction nil
 	^jump yes
 	^jump no
-	^speed low
-	^speed high)
+	^speed low)
 }

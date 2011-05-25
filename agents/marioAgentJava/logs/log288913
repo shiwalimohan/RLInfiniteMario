@@ -1,0 +1,48 @@
+Productions : multi
+Learning Policy : sarsa
+Learning Rate : 0.3
+Discount Rate : 0.99
+Eligibility trace  decay rate: 0.0
+Eligibility trace tolerance : 0.0010
+Exploration Policy : epsilon-greedy
+Exploration epsilon : 0.1
+Exploration temprature : 25
+Auto Reduce : off
+Reduction Policy : exponential
+Reduction Rate : 0.1
+Soar Inititalized. Episode : 0 Reward :-10.37
+Soar Inititalized. Episode : 1 Reward :101.1
+Soar Inititalized. Episode : 2 Reward :100.33
+Soar Inititalized. Episode : 3 Reward :-10.13
+Soar Inititalized. Episode : 4 Reward :-10.33
+Soar Inititalized. Episode : 5 Reward :101.41
+Soar Inititalized. Episode : 6 Reward :-10.19
+Soar Inititalized. Episode : 7 Reward :-10.16
+Soar Inititalized. Episode : 8 Reward :-10.24
+Soar Inititalized. Episode : 9 Reward :-10.3
+Soar Inititalized. Episode : 10 Reward :-10.22
+Soar Inititalized. Episode : 11 Reward :-10.39
+Soar Inititalized. Episode : 12 Reward :-10.18
+Soar Inititalized. Episode : 13 Reward :-10.18
+Soar Inititalized. Episode : 14 Reward :-10.22
+Soar Inititalized. Episode : 15 Reward :-10.28
+Soar Inititalized. Episode : 16 Reward :101.29
+Soar Inititalized. Episode : 17 Reward :-10.19
+Soar Inititalized. Episode : 18 Reward :101.49
+Soar Inititalized. Episode : 19 Reward :-10.18
+Soar Inititalized. Episode : 20 Reward :-10.17
+Soar Inititalized. Episode : 21 Reward :-10.15
+Soar Inititalized. Episode : 22 Reward :-10.18
+Soar Inititalized. Episode : 23 Reward :-10.14
+Soar Inititalized. Episode : 24 Reward :-10.24
+Soar Inititalized. Episode : 25 Reward :-10.26
+Soar Inititalized. Episode : 26 Reward :-10.19
+Soar Inititalized. Episode : 27 Reward :-10.19
+Soar Inititalized. Episode : 28 Reward :-10.24
+Soar Inititalized. Episode : 29 Reward :-10.17
+Soar Inititalized. Episode : 30 Reward :-10.17
+Soar Inititalized. Episode : 31 Reward :-10.2
+Soar Inititalized. Episode : 32 Reward :-10.25
+Soar Inititalized. Episode : 33 Reward :101.39
+Soar Inititalized. Episode : 34 Reward :101.56
+Soar Inititalized. Episode : 35 Reward :100.49

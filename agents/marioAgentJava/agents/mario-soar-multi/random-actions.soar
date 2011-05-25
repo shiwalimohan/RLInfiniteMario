@@ -32,3 +32,12 @@ sp {mario-soar*apply*action
    (<move> ^direction <d>)
    (<speed> ^degree <sp>)
 }
+
+sp {apply*remove-action
+   (state <s> ^operator <o>
+              ^io.output-link <out>)
+   (<out> ^<action-name> <a>)
+   (<a> ^status complete)
+-->
+   (<out> ^<action-name> <a> -)
+}

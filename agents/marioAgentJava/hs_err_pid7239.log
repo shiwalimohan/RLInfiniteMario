@@ -1,0 +1,397 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007ffd97a72e05, pid=7239, tid=140727138297600
+#
+# JRE version: 6.0_24-b07
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (19.1-b02 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# C  [libSoarKernelSML.so+0x106e05]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+siginfo:si_signo=SIGSEGV: si_errno=0, si_code=1 (SEGV_MAPERR), si_addr=0x0000000000000000
+
+Registers:
+RAX=0x0000000000000000, RBX=0x00007ffd900e0b30, RCX=0x0000000000000001, RDX=0x0000000040873bf0
+RSP=0x00007ffd97168c90, RBP=0x0000000040cb39c0, RSI=0x0000000000000000, RDI=0x00007ffd90000020
+R8 =0x00007ffd90062810, R9 =0x3feccccccccccccd, R10=0x0000000000000000, R11=0x0000000000000246
+R12=0x0000000040873a80, R13=0x0000000040c07f30, R14=0x0000000040942ba0, R15=0x00000000408a35e8
+RIP=0x00007ffd97a72e05, EFL=0x0000000000010206, CSGSFS=0x0000000000000033, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Register to memory mapping:
+
+RAX=0x0000000000000000
+0x0000000000000000 is pointing to unknown location
+
+RBX=0x00007ffd900e0b30
+0x00007ffd900e0b30 is pointing to unknown location
+
+RCX=0x0000000000000001
+0x0000000000000001 is pointing to unknown location
+
+RDX=0x0000000040873bf0
+0x0000000040873bf0 is pointing to unknown location
+
+RSP=0x00007ffd97168c90
+0x00007ffd97168c90 is pointing to unknown location
+
+RBP=0x0000000040cb39c0
+0x0000000040cb39c0 is pointing to unknown location
+
+RSI=0x0000000000000000
+0x0000000000000000 is pointing to unknown location
+
+RDI=0x00007ffd90000020
+0x00007ffd90000020 is pointing to unknown location
+
+R8 =0x00007ffd90062810
+0x00007ffd90062810 is pointing to unknown location
+
+R9 =0x3feccccccccccccd
+0x3feccccccccccccd is pointing to unknown location
+
+R10=0x0000000000000000
+0x0000000000000000 is pointing to unknown location
+
+R11=0x0000000000000246
+0x0000000000000246 is pointing to unknown location
+
+R12=0x0000000040873a80
+0x0000000040873a80 is pointing to unknown location
+
+R13=0x0000000040c07f30
+0x0000000040c07f30 is pointing to unknown location
+
+R14=0x0000000040942ba0
+0x0000000040942ba0 is pointing to unknown location
+
+R15=0x00000000408a35e8
+0x00000000408a35e8 is pointing to unknown location
+
+
+Top of Stack: (sp=0x00007ffd97168c90)
+0x00007ffd97168c90:   00007ffd97168cc0 00007ffd97168d08
+0x00007ffd97168ca0:   00007ffd97168d38 00000000408935d0
+0x00007ffd97168cb0:   00007ffd90062820 00007ffd00000001
+0x00007ffd97168cc0:   00000000408fe970 00007ffd9c0e1b38
+0x00007ffd97168cd0:   00007ffd00000000 00007ffd9002d820
+0x00007ffd97168ce0:   00007ffd9002d820 00007ffd9002d820
+0x00007ffd97168cf0:   0000000000000001 00007ffd97abef7d
+0x00007ffd97168d00:   0000000040cd4700 00007ffd00000000
+0x00007ffd97168d10:   00007ffd90054570 00007ffd90054570
+0x00007ffd97168d20:   00007ffd90054570 0000000000000001
+0x00007ffd97168d30:   00007ffd97169048 00007ffd00000000
+0x00007ffd97168d40:   0000000000000000 00007ffd97168d38
+0x00007ffd97168d50:   00007ffd97168d38 0000000000000000
+0x00007ffd97168d60:   00007ffd90062820 00007ffd00000001
+0x00007ffd97168d70:   3fe9eb851eb851ec 00007ffda1e4a900
+0x00007ffd97168d80:   0000000000000000 000000004089b5a8
+0x00007ffd97168d90:   0000000040833c60 00000000408a35d8
+0x00007ffd97168da0:   0000000040cb9700 00007ffd97169048
+0x00007ffd97168db0:   00007ffd97169048 00007ffd97a7b0e4
+0x00007ffd97168dc0:   00007ffd97169250 00007ffd900af1e0
+0x00007ffd97168dd0:   3feccccccccccccd 00007ffd900e7840
+0x00007ffd97168de0:   0000003000000028 3ff0000000000000
+0x00007ffd97168df0:   000000004089b610 0000000040873a80
+0x00007ffd97168e00:   0000000040cb78c0 0000000040cb96f0
+0x00007ffd97168e10:   00000000408935d0 0000000040918fe0
+0x00007ffd97168e20:   0000000040833c60 00007ffd97a4cc77
+0x00007ffd97168e30:   0000000000000000 0000000040cab9d8
+0x00007ffd97168e40:   00007ffd900e3e40 00007ffd97169250
+0x00007ffd97168e50:   3fe9eb851eb851ec 3fd3333333333333
+0x00007ffd97168e60:   01007ffd900e4250 0000000040833c60
+0x00007ffd97168e70:   00007ffd900e3f00 00000000409190a0
+0x00007ffd97168e80:   00000000408357e8 00007ffd900e3ef0 
+
+Instructions: (pc=0x00007ffd97a72e05)
+0x00007ffd97a72df5:   85 db 74 57 48 8b 43 30 49 8b 94 24 b0 00 00 00
+0x00007ffd97a72e05:   48 39 10 75 e6 48 8b 50 10 80 7a 10 01 75 dc 48 
+
+Stack: [0x00007ffd9696a000,0x00007ffd9716b000],  sp=0x00007ffd97168c90,  free space=8187k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libSoarKernelSML.so+0x106e05]
+
+
+---------------  P R O C E S S  ---------------
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 18496K, used 4808K [0x00000000fd560000, 0x00000000fea00000, 0x0000000100000000)
+  eden space 15872K, 30% used [0x00000000fd560000,0x00000000fda123d0,0x00000000fe4e0000)
+  from space 2624K, 0% used [0x00000000fe770000,0x00000000fe770000,0x00000000fea00000)
+  to   space 2624K, 0% used [0x00000000fe4e0000,0x00000000fe4e0000,0x00000000fe770000)
+ PSOldGen        total 42240K, used 0K [0x00000000f8000000, 0x00000000fa940000, 0x00000000fd560000)
+  object space 42240K, 0% used [0x00000000f8000000,0x00000000f8000000,0x00000000fa940000)
+ PSPermGen       total 21248K, used 3925K [0x00000000f2e00000, 0x00000000f42c0000, 0x00000000f8000000)
+  object space 21248K, 18% used [0x00000000f2e00000,0x00000000f31d5580,0x00000000f42c0000)
+
+Dynamic libraries:
+40000000-40009000 r-xp 00000000 08:11 22822161                           /usr/lib/jvm/java-6-sun-1.6.0.24/jre/bin/java
+40108000-4010a000 rwxp 00008000 08:11 22822161                           /usr/lib/jvm/java-6-sun-1.6.0.24/jre/bin/java
+40737000-40d0a000 rwxp 00000000 00:00 0                                  [heap]
+f2e00000-f42c0000 rwxp 00000000 00:00 0 
+f42c0000-f8000000 rwxp 00000000 00:00 0 
+f8000000-fa940000 rwxp 00000000 00:00 0 
+fa940000-fd560000 rwxp 00000000 00:00 0 
+fd560000-fea00000 rwxp 00000000 00:00 0 
+fea00000-100000000 rwxp 00000000 00:00 0 
+7ffd90000000-7ffd900f0000 rwxp 00000000 00:00 0 
+7ffd900f0000-7ffd94000000 ---p 00000000 00:00 0 
+7ffd95f4a000-7ffd95f51000 r-xp 00000000 08:11 22822261                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libnio.so
+7ffd95f51000-7ffd96050000 ---p 00007000 08:11 22822261                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libnio.so
+7ffd96050000-7ffd96052000 rwxp 00006000 08:11 22822261                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libnio.so
+7ffd96052000-7ffd96065000 r-xp 00000000 08:11 22822274                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libnet.so
+7ffd96065000-7ffd96166000 ---p 00013000 08:11 22822274                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libnet.so
+7ffd96166000-7ffd96169000 rwxp 00014000 08:11 22822274                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libnet.so
+7ffd96169000-7ffd9616a000 ---p 00000000 00:00 0 
+7ffd9616a000-7ffd9696a000 rwxp 00000000 00:00 0 
+7ffd9696a000-7ffd9696b000 ---p 00000000 00:00 0 
+7ffd9696b000-7ffd9716b000 rwxp 00000000 00:00 0 
+7ffd9716b000-7ffd9716c000 ---p 00000000 00:00 0 
+7ffd9716c000-7ffd9796c000 rwxp 00000000 00:00 0 
+7ffd9796c000-7ffd97bd5000 r-xp 00000000 00:14 15991364                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libSoarKernelSML.so
+7ffd97bd5000-7ffd97dd4000 ---p 00269000 00:14 15991364                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libSoarKernelSML.so
+7ffd97dd4000-7ffd97de0000 r-xp 00268000 00:14 15991364                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libSoarKernelSML.so
+7ffd97de0000-7ffd97de6000 rwxp 00274000 00:14 15991364                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libSoarKernelSML.so
+7ffd97de6000-7ffd97dea000 rwxp 00000000 00:00 0 
+7ffd97dea000-7ffd97dff000 r-xp 00000000 08:11 24903747                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffd97dff000-7ffd97ffe000 ---p 00015000 08:11 24903747                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffd97ffe000-7ffd97fff000 r-xp 00014000 08:11 24903747                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffd97fff000-7ffd98000000 rwxp 00015000 08:11 24903747                   /lib/x86_64-linux-gnu/libgcc_s.so.1
+7ffd98000000-7ffd98ab4000 rwxp 00000000 00:00 0 
+7ffd98ab4000-7ffd9c000000 ---p 00000000 00:00 0 
+7ffd9c002000-7ffd9c075000 rwxp 00000000 00:00 0 
+7ffd9c075000-7ffd9c15d000 r-xp 00000000 08:11 20973171                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.14
+7ffd9c15d000-7ffd9c35c000 ---p 000e8000 08:11 20973171                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.14
+7ffd9c35c000-7ffd9c364000 r-xp 000e7000 08:11 20973171                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.14
+7ffd9c364000-7ffd9c366000 rwxp 000ef000 08:11 20973171                   /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.14
+7ffd9c366000-7ffd9c37b000 rwxp 00000000 00:00 0 
+7ffd9c37b000-7ffd9c38d000 r-xp 00000000 00:14 15991357                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libElementXML.so
+7ffd9c38d000-7ffd9c58c000 ---p 00012000 00:14 15991357                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libElementXML.so
+7ffd9c58c000-7ffd9c58d000 r-xp 00011000 00:14 15991357                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libElementXML.so
+7ffd9c58d000-7ffd9c58e000 rwxp 00012000 00:14 15991357                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libElementXML.so
+7ffd9c58e000-7ffd9c609000 r-xp 00000000 00:14 15991576                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libJava_sml_ClientInterface.so
+7ffd9c609000-7ffd9c808000 ---p 0007b000 00:14 15991576                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libJava_sml_ClientInterface.so
+7ffd9c808000-7ffd9c80c000 r-xp 0007a000 00:14 15991576                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libJava_sml_ClientInterface.so
+7ffd9c80c000-7ffd9c80d000 rwxp 0007e000 00:14 15991576                   /home/shiwali/soar-experimental/SoarSuite/out/lib/libJava_sml_ClientInterface.so
+7ffd9c80d000-7ffd9c812000 r-xs 00028000 00:14 15991684                   /home/shiwali/soar-experimental/SoarSuite/out/share/java/sml.jar
+7ffd9c812000-7ffd9c814000 r-xs 0000a000 00:14 16517939                   /home/shiwali/infiniteMario/system/libraries/rl-viz/libs/commons-codec-1.3.jar
+7ffd9c814000-7ffd9c819000 r-xs 00037000 00:14 15992695                   /home/shiwali/infiniteMario/system/libraries/rl-viz/RLVizLib.jar
+7ffd9c819000-7ffd9c81b000 r-xs 00015000 08:11 22807357                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/ext/JavaRLGlueCodec.jar
+7ffd9c81b000-7ffd9c81c000 ---p 00000000 00:00 0 
+7ffd9c81c000-7ffd9c91c000 rwxp 00000000 00:00 0 
+7ffd9c91c000-7ffd9c91f000 ---p 00000000 00:00 0 
+7ffd9c91f000-7ffd9ca1d000 rwxp 00000000 00:00 0 
+7ffd9ca1d000-7ffd9ca20000 ---p 00000000 00:00 0 
+7ffd9ca20000-7ffd9cb1e000 rwxp 00000000 00:00 0 
+7ffd9cb1e000-7ffd9cb21000 ---p 00000000 00:00 0 
+7ffd9cb21000-7ffd9cc1f000 rwxp 00000000 00:00 0 
+7ffd9cc1f000-7ffd9cc22000 ---p 00000000 00:00 0 
+7ffd9cc22000-7ffd9cd20000 rwxp 00000000 00:00 0 
+7ffd9cd20000-7ffd9cfc5000 r-xp 00000000 08:11 20971663                   /usr/lib/locale/locale-archive
+7ffd9cfc5000-7ffd9cfc8000 ---p 00000000 00:00 0 
+7ffd9cfc8000-7ffd9d0c6000 rwxp 00000000 00:00 0 
+7ffd9d0c6000-7ffd9d0c9000 ---p 00000000 00:00 0 
+7ffd9d0c9000-7ffd9d1c7000 rwxp 00000000 00:00 0 
+7ffd9d1c7000-7ffd9d1c8000 ---p 00000000 00:00 0 
+7ffd9d1c8000-7ffd9d801000 rwxp 00000000 00:00 0 
+7ffd9d801000-7ffd9d999000 r-xs 03027000 08:11 21630355                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/rt.jar
+7ffd9d999000-7ffd9d9c1000 rwxp 00000000 00:00 0 
+7ffd9d9c1000-7ffd9d9c2000 ---p 00000000 00:00 0 
+7ffd9d9c2000-7ffd9dac2000 rwxp 00000000 00:00 0 
+7ffd9dac2000-7ffd9dac3000 ---p 00000000 00:00 0 
+7ffd9dac3000-7ffd9dbc3000 rwxp 00000000 00:00 0 
+7ffd9dbc3000-7ffd9dbc4000 ---p 00000000 00:00 0 
+7ffd9dbc4000-7ffd9dcc4000 rwxp 00000000 00:00 0 
+7ffd9dcc4000-7ffd9dcc5000 ---p 00000000 00:00 0 
+7ffd9dcc5000-7ffd9ddd0000 rwxp 00000000 00:00 0 
+7ffd9ddd0000-7ffd9ddee000 rwxp 00000000 00:00 0 
+7ffd9ddee000-7ffd9de03000 rwxp 00000000 00:00 0 
+7ffd9de03000-7ffd9de19000 rwxp 00000000 00:00 0 
+7ffd9de19000-7ffd9de24000 rwxp 00000000 00:00 0 
+7ffd9de24000-7ffd9de42000 rwxp 00000000 00:00 0 
+7ffd9de42000-7ffd9de57000 rwxp 00000000 00:00 0 
+7ffd9de57000-7ffd9de6c000 rwxp 00000000 00:00 0 
+7ffd9de6c000-7ffd9de77000 rwxp 00000000 00:00 0 
+7ffd9de77000-7ffd9de82000 rwxp 00000000 00:00 0 
+7ffd9de82000-7ffd9e0f3000 rwxp 00000000 00:00 0 
+7ffd9e0f3000-7ffda0e83000 rwxp 00000000 00:00 0 
+7ffda0e83000-7ffda0e91000 r-xp 00000000 08:11 22822296                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libzip.so
+7ffda0e91000-7ffda0f93000 ---p 0000e000 08:11 22822296                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libzip.so
+7ffda0f93000-7ffda0f96000 rwxp 00010000 08:11 22822296                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libzip.so
+7ffda0f96000-7ffda0f97000 rwxp 00000000 00:00 0 
+7ffda0f97000-7ffda0fa3000 r-xp 00000000 08:11 24905577                   /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7ffda0fa3000-7ffda11a2000 ---p 0000c000 08:11 24905577                   /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7ffda11a2000-7ffda11a3000 r-xp 0000b000 08:11 24905577                   /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7ffda11a3000-7ffda11a4000 rwxp 0000c000 08:11 24905577                   /lib/x86_64-linux-gnu/libnss_files-2.13.so
+7ffda11a4000-7ffda11af000 r-xp 00000000 08:11 24905579                   /lib/x86_64-linux-gnu/libnss_nis-2.13.so
+7ffda11af000-7ffda13ae000 ---p 0000b000 08:11 24905579                   /lib/x86_64-linux-gnu/libnss_nis-2.13.so
+7ffda13ae000-7ffda13af000 r-xp 0000a000 08:11 24905579                   /lib/x86_64-linux-gnu/libnss_nis-2.13.so
+7ffda13af000-7ffda13b0000 rwxp 0000b000 08:11 24905579                   /lib/x86_64-linux-gnu/libnss_nis-2.13.so
+7ffda13b0000-7ffda13b8000 r-xp 00000000 08:11 24905575                   /lib/x86_64-linux-gnu/libnss_compat-2.13.so
+7ffda13b8000-7ffda15b7000 ---p 00008000 08:11 24905575                   /lib/x86_64-linux-gnu/libnss_compat-2.13.so
+7ffda15b7000-7ffda15b8000 r-xp 00007000 08:11 24905575                   /lib/x86_64-linux-gnu/libnss_compat-2.13.so
+7ffda15b8000-7ffda15b9000 rwxp 00008000 08:11 24905575                   /lib/x86_64-linux-gnu/libnss_compat-2.13.so
+7ffda15b9000-7ffda15c0000 r-xp 00000000 08:11 22822308                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/native_threads/libhpi.so
+7ffda15c0000-7ffda16c1000 ---p 00007000 08:11 22822308                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/native_threads/libhpi.so
+7ffda16c1000-7ffda16c3000 rwxp 00008000 08:11 22822308                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/native_threads/libhpi.so
+7ffda16c3000-7ffda16c4000 rwxp 00000000 00:00 0 
+7ffda16c4000-7ffda16db000 r-xp 00000000 08:11 24905574                   /lib/x86_64-linux-gnu/libnsl-2.13.so
+7ffda16db000-7ffda18da000 ---p 00017000 08:11 24905574                   /lib/x86_64-linux-gnu/libnsl-2.13.so
+7ffda18da000-7ffda18db000 r-xp 00016000 08:11 24905574                   /lib/x86_64-linux-gnu/libnsl-2.13.so
+7ffda18db000-7ffda18dc000 rwxp 00017000 08:11 24905574                   /lib/x86_64-linux-gnu/libnsl-2.13.so
+7ffda18dc000-7ffda18de000 rwxp 00000000 00:00 0 
+7ffda18de000-7ffda1907000 r-xp 00000000 08:11 22822295                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libjava.so
+7ffda1907000-7ffda1a06000 ---p 00029000 08:11 22822295                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libjava.so
+7ffda1a06000-7ffda1a0d000 rwxp 00028000 08:11 22822295                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libjava.so
+7ffda1a0d000-7ffda1a1a000 r-xp 00000000 08:11 22822273                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libverify.so
+7ffda1a1a000-7ffda1b19000 ---p 0000d000 08:11 22822273                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libverify.so
+7ffda1b19000-7ffda1b1c000 rwxp 0000c000 08:11 22822273                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/libverify.so
+7ffda1b1c000-7ffda1b23000 r-xp 00000000 08:11 24905584                   /lib/x86_64-linux-gnu/librt-2.13.so
+7ffda1b23000-7ffda1d22000 ---p 00007000 08:11 24905584                   /lib/x86_64-linux-gnu/librt-2.13.so
+7ffda1d22000-7ffda1d23000 r-xp 00006000 08:11 24905584                   /lib/x86_64-linux-gnu/librt-2.13.so
+7ffda1d23000-7ffda1d24000 rwxp 00007000 08:11 24905584                   /lib/x86_64-linux-gnu/librt-2.13.so
+7ffda1d24000-7ffda1d27000 ---p 00000000 00:00 0 
+7ffda1d27000-7ffda1e25000 rwxp 00000000 00:00 0 
+7ffda1e25000-7ffda1ea9000 r-xp 00000000 08:11 24905572                   /lib/x86_64-linux-gnu/libm-2.13.so
+7ffda1ea9000-7ffda20a8000 ---p 00084000 08:11 24905572                   /lib/x86_64-linux-gnu/libm-2.13.so
+7ffda20a8000-7ffda20a9000 r-xp 00083000 08:11 24905572                   /lib/x86_64-linux-gnu/libm-2.13.so
+7ffda20a9000-7ffda20aa000 rwxp 00084000 08:11 24905572                   /lib/x86_64-linux-gnu/libm-2.13.so
+7ffda20aa000-7ffda28e8000 r-xp 00000000 08:11 22822299                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server/libjvm.so
+7ffda28e8000-7ffda29e7000 ---p 0083e000 08:11 22822299                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server/libjvm.so
+7ffda29e7000-7ffda2b7b000 rwxp 0083d000 08:11 22822299                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server/libjvm.so
+7ffda2b7b000-7ffda2bb4000 rwxp 00000000 00:00 0 
+7ffda2bb4000-7ffda2d3e000 r-xp 00000000 08:11 24905568                   /lib/x86_64-linux-gnu/libc-2.13.so
+7ffda2d3e000-7ffda2f3d000 ---p 0018a000 08:11 24905568                   /lib/x86_64-linux-gnu/libc-2.13.so
+7ffda2f3d000-7ffda2f41000 r-xp 00189000 08:11 24905568                   /lib/x86_64-linux-gnu/libc-2.13.so
+7ffda2f41000-7ffda2f42000 rwxp 0018d000 08:11 24905568                   /lib/x86_64-linux-gnu/libc-2.13.so
+7ffda2f42000-7ffda2f48000 rwxp 00000000 00:00 0 
+7ffda2f48000-7ffda2f4a000 r-xp 00000000 08:11 24905571                   /lib/x86_64-linux-gnu/libdl-2.13.so
+7ffda2f4a000-7ffda314a000 ---p 00002000 08:11 24905571                   /lib/x86_64-linux-gnu/libdl-2.13.so
+7ffda314a000-7ffda314b000 r-xp 00002000 08:11 24905571                   /lib/x86_64-linux-gnu/libdl-2.13.so
+7ffda314b000-7ffda314c000 rwxp 00003000 08:11 24905571                   /lib/x86_64-linux-gnu/libdl-2.13.so
+7ffda314c000-7ffda3164000 r-xp 00000000 08:11 24905582                   /lib/x86_64-linux-gnu/libpthread-2.13.so
+7ffda3164000-7ffda3364000 ---p 00018000 08:11 24905582                   /lib/x86_64-linux-gnu/libpthread-2.13.so
+7ffda3364000-7ffda3365000 r-xp 00018000 08:11 24905582                   /lib/x86_64-linux-gnu/libpthread-2.13.so
+7ffda3365000-7ffda3366000 rwxp 00019000 08:11 24905582                   /lib/x86_64-linux-gnu/libpthread-2.13.so
+7ffda3366000-7ffda336a000 rwxp 00000000 00:00 0 
+7ffda336a000-7ffda338b000 r-xp 00000000 08:11 24905378                   /lib/x86_64-linux-gnu/ld-2.13.so
+7ffda33a7000-7ffda33b1000 rwxp 00000000 00:00 0 
+7ffda33b1000-7ffda3467000 rwxp 00000000 00:00 0 
+7ffda3467000-7ffda346a000 rwxp 00000000 00:00 0 
+7ffda346a000-7ffda3471000 r-xp 00000000 08:11 22822270                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/jli/libjli.so
+7ffda3471000-7ffda3572000 ---p 00007000 08:11 22822270                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/jli/libjli.so
+7ffda3572000-7ffda3574000 rwxp 00008000 08:11 22822270                   /usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/jli/libjli.so
+7ffda3574000-7ffda3575000 rwxp 00000000 00:00 0 
+7ffda357e000-7ffda3586000 rwxs 00000000 08:11 14155866                   /tmp/hsperfdata_shiwali/7239
+7ffda3586000-7ffda3587000 rwxp 00000000 00:00 0 
+7ffda3587000-7ffda3588000 r-xp 00000000 00:00 0 
+7ffda3588000-7ffda358a000 rwxp 00000000 00:00 0 
+7ffda358a000-7ffda358b000 r-xp 00020000 08:11 24905378                   /lib/x86_64-linux-gnu/ld-2.13.so
+7ffda358b000-7ffda358d000 rwxp 00021000 08:11 24905378                   /lib/x86_64-linux-gnu/ld-2.13.so
+7fff6ed98000-7fff6edb9000 rwxp 00000000 00:00 0                          [stack]
+7fff6edff000-7fff6ee00000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -Xmx128M 
+java_command: edu.rutgers.rl3.comp.SoarMarioAgent agents/mario-soar-multi/multi.config
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/java-6-sun
+CLASSPATH=/usr/share/java/jogl.jar:/usr/share/java/gluegen-rt.jar:/usr/local/share/java/lcm.jar:/home/shiwali/freetts-1.2.1/lib/freetts.jar
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/var/lib/gems/1.8/bin/:/var/lib/gems/1.8/bin/:/home/shiwali/soar-experimental/SoarSuite/out/bin:/var/lib/gems/1.8/bin/
+USERNAME=shiwali
+LD_LIBRARY_PATH=/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64/server:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/lib/amd64:/usr/lib/jvm/java-6-sun-1.6.0.24/jre/../lib/amd64:/home/shiwali/give/lib:/home/shiwali/soar/soarrobot/SoarRobotServer/lib:/home/shiwali/nlp/simplenlg-v38/:/home/shiwali/freetts-1.2.1/lib:/home/shiwali/soar-experimental/SoarSuite/out/lib
+SHELL=/bin/bash
+DISPLAY=:1
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x791b30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x791b30], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: SIG_IGN, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGXFSZ: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x640ba0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x643780], sa_mask[0]=0x00000000, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x643380], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x643380], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x643380], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x643380], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:squeeze/sid
+
+uname:Linux 2.6.38-8-generic #42-Ubuntu SMP Mon Apr 11 03:31:24 UTC 2011 x86_64
+libc:glibc 2.13 NPTL 2.13 
+rlimit: STACK 8192k, CORE 0k, NPROC infinity, NOFILE 4096, AS infinity
+load average:0.08 0.14 0.11
+
+/proc/meminfo:
+MemTotal:        4054892 kB
+MemFree:          795840 kB
+Buffers:          444588 kB
+Cached:          1012980 kB
+SwapCached:            0 kB
+Active:          1987532 kB
+Inactive:         943808 kB
+Active(anon):    1474556 kB
+Inactive(anon):     3316 kB
+Active(file):     512976 kB
+Inactive(file):   940492 kB
+Unevictable:          48 kB
+Mlocked:              48 kB
+SwapTotal:      11878396 kB
+SwapFree:       11878396 kB
+Dirty:               608 kB
+Writeback:             0 kB
+AnonPages:       1473880 kB
+Mapped:           168904 kB
+Shmem:              4104 kB
+Slab:             149288 kB
+SReclaimable:      90788 kB
+SUnreclaim:        58500 kB
+KernelStack:        3984 kB
+PageTables:        29824 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    13905840 kB
+Committed_AS:    3877820 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      115956 kB
+VmallocChunk:   34359597052 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      201600 kB
+DirectMap2M:     3991552 kB
+
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 23 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1
+
+Memory: 4k page, physical 4054892k(795840k free), swap 11878396k(11878396k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (19.1-b02) for linux-amd64 JRE (1.6.0_24-b07), built on Feb  2 2011 16:55:54 by "java_re" with gcc 3.2.2 (SuSE Linux)
+
+time: Wed May 25 11:39:45 2011
+elapsed time: 2 seconds
+

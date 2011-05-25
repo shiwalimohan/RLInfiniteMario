@@ -15,44 +15,73 @@ sp {mario-soar*elaborate-monster
    	^type <mtype>)
 -->
    (<s> ^object <m>)
-   (<m>	^group monster)
 }
 
+#### elaborate blocks
 
-#--------------elaborate blocks-----------------------
-sp {mario-soar*elaborate-coin
-   (state <s> ^io.input-link <il>
+sp {mario-soar*elaborate-blocks
+   (state <s> ^io.input-link.block-objects.block <b>
    	      ^name mario-soar)
-   (<il> ^visual-scene.tile-row <row>)
-   (<row> ^y <y>
-          ^tile <t>)
-   (<t> ^x <x>
-        ^type |$|
-	^reward <r>)
--->
-   (<s> ^object <c>)
-   (<c> ^x <x>
-        ^y <y>
-	^type coin
-	^reward <r>)
+ -->
+   (<s> ^object <b>)
 }
 
-sp {mario-soar*elaborate-question
-   (state <s> ^io.input-link <il>
-   	      ^name mario-soar)
-   (<il> ^visual-scene.tile-row <row>)
-   (<row> ^y <y>
-          ^tile <t>)
-   (<t> ^x <x>
-        ^type |?|
-	^reward <r>)
+### elaborate monsters speed, symbolic
+
+sp {mario-soar*elaborate-speed*px
+   (state <s> ^name mario-soar
+   	      ^object <obj>)
+   (<obj> ^group monster
+   	  ^sx > 0)
 -->
-   (<s> ^object <q>)
-   (<q> ^x <x>
-        ^y <y>
-	^type question
-	^reward <r>)
+   (<obj> ^horizontal-speed positive)
 }
+
+sp {mario-soar*elaborate-speed*nx
+   (state <s> ^name mario-soar
+   	      ^object <obj>)
+   (<obj> ^group monster
+   	  ^sx < 0)
+-->
+   (<obj> ^horizontal-speed negative)
+}
+
+sp {mario-soar*elaborate-speed*zx
+   (state <s> ^name mario-soar
+   	      ^object <obj>)
+   (<obj> ^group monster
+   	  ^sx 0.0)
+-->
+   (<obj> ^horizontal-speed stat)
+}
+
+sp {mario-soar*elaborate-speed*py
+   (state <s> ^name mario-soar
+   	      ^object <obj>)
+   (<obj> ^group monster
+   	  ^sy > 0)
+-->
+   (<obj> ^vertical-speed positive)
+}
+
+sp {mario-soar*elaborate-speed*ny
+   (state <s> ^name mario-soar
+   	      ^object <obj>)
+   (<obj> ^group monster
+   	  ^sy < 0)
+-->
+   (<obj> ^vertical-speed negative)
+}
+
+sp {mario-soar*elaborate-speed*zy
+   (state <s> ^name mario-soar
+   	      ^object <obj>)
+   (<obj> ^group monster
+   	  ^sy 0.0)
+-->
+   (<obj> ^vertical-speed stat)
+}
+
 
 #------elaborate relative distance from objects-----------------
 #using integral distances only for now
@@ -73,11 +102,11 @@ sp {mario-soar*elaborate-object-relative-distance*float
 sp {mario-soar*elaborate*object-visibility*coin
    (state <s> ^mario <mario>
    	      ^object <obj>)
-   (<obj> ^rel-dist-x < 2
-   	  ^rel-dist-y < 4
-	  ^type coin)
-   -(<obj> ^rel-dist-x < -1)
-   -(<obj> ^rel-dist-y < 0)
+   (<obj> ^rel-dist-x < 5
+   	  ^rel-dist-y < 5
+	  ^type |$|)
+   -(<obj> ^rel-dist-x < -2)
+   -(<obj> ^rel-dist-y < -2)
 -->
    (<obj> ^visible true)
 }
@@ -86,11 +115,11 @@ sp {mario-soar*elaborate*object-visibility*coin
 sp {mario-soar*elaborate*object-visibility*question
    (state <s> ^mario <mario>
    	      ^object <obj>)
-   (<obj> ^rel-dist-x < 3
-   	  ^rel-dist-y < 4
-	  ^type question)
+   (<obj> ^rel-dist-x < 5
+   	  ^rel-dist-y < 5
+	  ^type |?|)
   -(<obj> ^rel-dist-x < -2)
-  -(<obj> ^rel-dist-y < 0)
+  -(<obj> ^rel-dist-y < -2)
 -->
    (<obj> ^visible true)
 }
@@ -98,11 +127,11 @@ sp {mario-soar*elaborate*object-visibility*question
 sp {mario-soar*elaborate*object-visibility*monster
    (state <s> ^mario <mario>
    	      ^object <obj>)
-   (<obj> ^rel-dist-x < 6
-   	  ^rel-dist-y < 5
+   (<obj> ^rel-dist-x < 4
+   	  ^rel-dist-y < 3
 	  ^group monster)
-  -(<obj> ^rel-dist-x < -5)
-  -(<obj> ^rel-dist-y < -5)
+  -(<obj> ^rel-dist-x < -3)
+  -(<obj> ^rel-dist-y < -3)
 -->
    (<obj> ^visible true)
 }
@@ -111,8 +140,8 @@ sp {mario-soar*elaborate*object-visibility*monster
 sp {mario-soar*elaborate-xright
    (state <s> ^mario <mario>
    	      ^name mario-soar)
-   (<mario> ^xi <x>
-        ^yi <y>)
+   (<mario> ^x <x>
+        ^y <y>)
 -->
    (<s> ^xtile <xt>
         ^ytile <yt>)
@@ -124,7 +153,7 @@ sp {mario-soar*elaborate-xright
 sp {mario-soar*elaborate-tile-on-right
    (state <s> ^io.input-link <il>
               ^xtile.right <xloc>
-              ^mario.yi <y>
+              ^mario.y <y>
 	      ^name mario-soar)
    (<il> ^visual-scene.tile-row <row>)
    (<row> ^y <y>

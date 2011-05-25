@@ -85,6 +85,7 @@ public class SoarMarioAgent implements AgentInterface{
 		Reward = 0.0;
 		
 		csv = new PrintWriter(csvFile);
+		csv.write("#Episode"+"\t"+"Reward" +"\n");
 		
 		kernel = Kernel.CreateKernelInNewThread();
 		if (kernel.HadError())
@@ -114,7 +115,7 @@ public class SoarMarioAgent implements AgentInterface{
 		kernel.RegisterForSystemEvent(smlSystemEventId.smlEVENT_SYSTEM_STOP, listener, null);
 	}
 
-	public void agent_init(String task) {
+	public void agent_init(String task) {;
 		inputToSoar.reset();
 	}
 	
@@ -154,9 +155,9 @@ public class SoarMarioAgent implements AgentInterface{
 		agent.RunSelfTilOutput();
 		agent.InitSoar();
 		inputToSoar.reset();
-		System.out.println("Soar Inititalized. Episode : " +episode +" Reward :" + Reward);
+		System.out.println(episode +"\t" + Reward);
 		log.write("Soar Inititalized. Episode : " +episode +" Reward :" + Reward + "\n");
-		csv.write(Reward+"\n");
+		csv.write(episode+"\t"+Reward+"\n");
 		episode++;
 	}
 	public String agent_message(String msg) {

@@ -1,0 +1,112 @@
+Productions : multi
+Learning Policy : sarsa
+Learning Rate : 0.3
+Discount Rate : 0.9
+Eligibility trace  decay rate: 0.0
+Eligibility trace tolerance : 0.0010
+Exploration Policy : epsilon-greedy
+Exploration epsilon : 0.1
+Exploration temprature : 25
+Auto Reduce : on
+Reduction Policy : exponential
+Reduction Rate : 0.9999
+Soar Inititalized. Episode : 0 Reward :-10.47
+Soar Inititalized. Episode : 1 Reward :-10.28
+Soar Inititalized. Episode : 2 Reward :-10.33
+Soar Inititalized. Episode : 3 Reward :-10.28
+Soar Inititalized. Episode : 4 Reward :-10.21
+Soar Inititalized. Episode : 5 Reward :-10.2
+Soar Inititalized. Episode : 6 Reward :-10.19
+Soar Inititalized. Episode : 7 Reward :-10.19
+Soar Inititalized. Episode : 8 Reward :-10.26
+Soar Inititalized. Episode : 9 Reward :-10.27
+Soar Inititalized. Episode : 10 Reward :-10.56
+Soar Inititalized. Episode : 11 Reward :-10.38
+Soar Inititalized. Episode : 12 Reward :-10.26
+Soar Inititalized. Episode : 13 Reward :-10.24
+Soar Inititalized. Episode : 14 Reward :-10.16
+Soar Inititalized. Episode : 15 Reward :-10.33
+Soar Inititalized. Episode : 16 Reward :-10.18
+Soar Inititalized. Episode : 17 Reward :-10.15
+Soar Inititalized. Episode : 18 Reward :-10.15
+Soar Inititalized. Episode : 19 Reward :-10.15
+Soar Inititalized. Episode : 20 Reward :-10.17
+Soar Inititalized. Episode : 21 Reward :-10.16
+Soar Inititalized. Episode : 22 Reward :-10.16
+Soar Inititalized. Episode : 23 Reward :-10.23
+Soar Inititalized. Episode : 24 Reward :-4.01
+Soar Inititalized. Episode : 25 Reward :-4.72
+Soar Inititalized. Episode : 26 Reward :-10.21
+Soar Inititalized. Episode : 27 Reward :-1.2400000000000002
+Soar Inititalized. Episode : 28 Reward :-10.16
+Soar Inititalized. Episode : 29 Reward :-10.17
+Soar Inititalized. Episode : 30 Reward :-10.16
+Soar Inititalized. Episode : 31 Reward :-10.16
+Soar Inititalized. Episode : 32 Reward :-10.16
+Soar Inititalized. Episode : 33 Reward :5.829999999999998
+Soar Inititalized. Episode : 34 Reward :-0.5700000000000003
+Soar Inititalized. Episode : 35 Reward :-10.19
+Soar Inititalized. Episode : 36 Reward :-10.18
+Soar Inititalized. Episode : 37 Reward :-10.2
+Soar Inititalized. Episode : 38 Reward :-10.19
+Soar Inititalized. Episode : 39 Reward :-10.18
+Soar Inititalized. Episode : 40 Reward :-10.18
+Soar Inititalized. Episode : 41 Reward :-10.18
+Soar Inititalized. Episode : 42 Reward :-1.4299999999999997
+Soar Inititalized. Episode : 43 Reward :-10.15
+Soar Inititalized. Episode : 44 Reward :-10.18
+Soar Inititalized. Episode : 45 Reward :-10.15
+Soar Inititalized. Episode : 46 Reward :-10.16
+Soar Inititalized. Episode : 47 Reward :-9.87
+Soar Inititalized. Episode : 48 Reward :-10.31
+Soar Inititalized. Episode : 49 Reward :-10.17
+Soar Inititalized. Episode : 50 Reward :-10.22
+Soar Inititalized. Episode : 51 Reward :-10.39
+Soar Inititalized. Episode : 52 Reward :-7.08
+Soar Inititalized. Episode : 53 Reward :-10.19
+Soar Inititalized. Episode : 54 Reward :-2.160000000000001
+Soar Inititalized. Episode : 55 Reward :-10.16
+Soar Inititalized. Episode : 56 Reward :-3.0700000000000003
+Soar Inititalized. Episode : 57 Reward :-10.16
+Soar Inititalized. Episode : 58 Reward :-10.18
+Soar Inititalized. Episode : 59 Reward :-3.0299999999999994
+Soar Inititalized. Episode : 60 Reward :-10.22
+Soar Inititalized. Episode : 61 Reward :-10.16
+Soar Inititalized. Episode : 62 Reward :-10.19
+Soar Inititalized. Episode : 63 Reward :-4.99
+Soar Inititalized. Episode : 64 Reward :-10.15
+Soar Inititalized. Episode : 65 Reward :7.260000000000002
+Soar Inititalized. Episode : 66 Reward :-10.17
+Soar Inititalized. Episode : 67 Reward :-0.41000000000000014
+Soar Inititalized. Episode : 68 Reward :-10.22
+Soar Inititalized. Episode : 69 Reward :1.6400000000000006
+Soar Inititalized. Episode : 70 Reward :-10.15
+Soar Inititalized. Episode : 71 Reward :-5.42
+Soar Inititalized. Episode : 72 Reward :-2.1399999999999997
+Soar Inititalized. Episode : 73 Reward :-10.16
+Soar Inititalized. Episode : 74 Reward :-10.32
+Soar Inititalized. Episode : 75 Reward :-10.19
+Soar Inititalized. Episode : 76 Reward :-10.27
+Soar Inititalized. Episode : 77 Reward :-10.33
+Soar Inititalized. Episode : 78 Reward :-10.16
+Soar Inititalized. Episode : 79 Reward :-3.0700000000000003
+Soar Inititalized. Episode : 80 Reward :-3.990000000000001
+Soar Inititalized. Episode : 81 Reward :-10.15
+Soar Inititalized. Episode : 82 Reward :-10.21
+Soar Inititalized. Episode : 83 Reward :-10.22
+Soar Inititalized. Episode : 84 Reward :-10.18
+Soar Inititalized. Episode : 85 Reward :-10.3
+Soar Inititalized. Episode : 86 Reward :-10.18
+Soar Inititalized. Episode : 87 Reward :-10.19
+Soar Inititalized. Episode : 88 Reward :-10.18
+Soar Inititalized. Episode : 89 Reward :-10.3
+Soar Inititalized. Episode : 90 Reward :-10.3
+Soar Inititalized. Episode : 91 Reward :-10.2
+Soar Inititalized. Episode : 92 Reward :-10.19
+Soar Inititalized. Episode : 93 Reward :-10.18
+Soar Inititalized. Episode : 94 Reward :-10.18
+Soar Inititalized. Episode : 95 Reward :-10.18
+Soar Inititalized. Episode : 96 Reward :-10.18
+Soar Inititalized. Episode : 97 Reward :-10.18
+Soar Inititalized. Episode : 98 Reward :-3.41
+Soar Inititalized. Episode : 99 Reward :-10.17
