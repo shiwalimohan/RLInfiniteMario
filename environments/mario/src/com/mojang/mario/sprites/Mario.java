@@ -618,7 +618,8 @@ public class Mario extends Sprite
     public void die(Sprite sprite)
     {
     //	System.out.println("Killed by an enemy ");
-    	sprite.setReward((float) GlueMarioParameters.reward_death);
+    	if (sprite != null)
+    		sprite.setReward((float) GlueMarioParameters.reward_death);
         xDeathPos = (int) x;
         yDeathPos = (int) y;
         world.paused = true;

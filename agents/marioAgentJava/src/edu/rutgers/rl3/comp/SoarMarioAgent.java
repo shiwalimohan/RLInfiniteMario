@@ -27,6 +27,8 @@ public class SoarMarioAgent implements AgentInterface{
 	private GluetoSoar inputToSoar;
 	private SoartoGlue outputFromSoar;
 	private double Reward;
+	public static double RewardBlocks;
+	public static double RewardMonsters;
 	private static String productions;
 	private static String logFile;
 	private static PrintWriter log;
@@ -83,6 +85,8 @@ public class SoarMarioAgent implements AgentInterface{
 	
 		episode = 0;
 		Reward = 0.0;
+		RewardBlocks = 0.0;
+		RewardMonsters = 0.0;
 		
 		csv = new PrintWriter(csvFile);
 		csv.write("#Episode"+"\t"+"Reward" +"\n");
@@ -113,6 +117,7 @@ public class SoarMarioAgent implements AgentInterface{
 		//agent.RegisterForPrintEvent(smlPrintEventId.smlEVENT_PRINT, listener,null) ;				
 		kernel.RegisterForSystemEvent(smlSystemEventId.smlEVENT_SYSTEM_START, listener, null);
 		kernel.RegisterForSystemEvent(smlSystemEventId.smlEVENT_SYSTEM_STOP, listener, null);
+		System.out.println("-10.0");
 	}
 
 	public void agent_init(String task) {;
@@ -123,6 +128,8 @@ public class SoarMarioAgent implements AgentInterface{
 	}
 	public Action agent_start(Observation o) {
 		Reward = 0.0;
+		RewardBlocks = 0.0;
+		RewardMonsters = 0.0;
 	/*	for (int i = 0;i <16; i++){
 			for(int j = 0; j < 21; j++){
 				System.out.print(o.charArray[22*i+j]);
@@ -155,9 +162,10 @@ public class SoarMarioAgent implements AgentInterface{
 		agent.RunSelfTilOutput();
 		agent.InitSoar();
 		inputToSoar.reset();
-		System.out.println(episode +"\t" + Reward);
+		System.out.println(Reward + "\t" + RewardBlocks + "\t" + RewardMonsters);
+		
 		log.write("Soar Inititalized. Episode : " +episode +" Reward :" + Reward + "\n");
-		csv.write(episode+"\t"+Reward+"\n");
+		csv.write(episode+"\t"+Reward + "\t" + RewardBlocks + "\t" + RewardMonsters + "\n");
 		episode++;
 	}
 	public String agent_message(String msg) {
@@ -258,7 +266,7 @@ public class SoarMarioAgent implements AgentInterface{
 		PrintWriter rlFile;
 		
 		if(args.length < 1){
-			System.out.println("You forgot the config file maybe.");
+			System.out.println("agent: you forgot the config file maybe.");
 			System.exit(0);
 		}
 		

@@ -34,11 +34,11 @@ public class Abstractions{
 		FloatElement monster_reward;
 
 		//For discretization of space around monsters. uncomment 
-		//		FloatElement monster_x;
-		//	FloatElement monster_y;
+				FloatElement monster_x;
+			FloatElement monster_y;
 		
-	    IntElement monster_x;
-		IntElement monster_y;
+	    //IntElement monster_x;
+		//IntElement monster_y;
 		
 		FloatElement monster_sx;
 		FloatElement monster_sy;

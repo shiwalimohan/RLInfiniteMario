@@ -305,7 +305,6 @@ public class MarioComponent extends JComponent implements Runnable, KeyListener,
     public void levelFailed()
     {
         if (edu.rutgers.rl3.comp.mario.GlueMario.glue_running) {
-        	System.out.println("Last tick and last check in");
         	for (int i = 0; i < 10; i++)
         		scene.tick();
 	        edu.rutgers.rl3.comp.mario.GlueMario.reportLoss();

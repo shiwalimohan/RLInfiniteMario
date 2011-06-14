@@ -4,7 +4,7 @@ sp {rl-rule*monster
    :template
    (state <s> ^name mario-soar	
    	      ^operator <op> +
-	      ^to-learn.object <obj>
+	      ^object <obj>
 	      ^reward-link <rl>
 	      ^mario <mario>)
    (<rl> ^<obj> <obj-reward>)
@@ -29,7 +29,7 @@ sp {rl-rule*block
    :template
    (state <s> ^name mario-soar	
    	      ^operator <op> +
-	      ^to-learn.object <obj>
+	      ^object <obj>
 	      ^reward-link <rl>
 	      ^mario <mario>)
    (<rl> ^<obj> <obj-reward>)
@@ -53,8 +53,9 @@ sp {rl-rule*block
 sp {elaborate*monster*reward
    (state <s> ^name mario-soar
 	      ^reward-link <rl>
-	      ^to-learn.object <obj>)
-   (<obj> ^reward <reward>)
+	      ^object <obj>)
+   (<obj> ^reward <reward>
+   	  ^visible true)
 -->
    (<rl> ^<obj> <obj-reward>)
    (<obj-reward> ^reward <rr>)

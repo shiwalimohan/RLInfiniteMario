@@ -1,0 +1,9 @@
+open FILE, "/home/shiwali/infiniteMario/agents/marioAgentJava/agents/mario-soar-multi/run11.csv" or die $!;
+my @total_reward;
+my $i;
+while (<FILE>){
+    my @split_data = split(' ',$_);
+    @total_reward[i] = @total_reward[i] + $split_data[1];
+    print "$total_reward[i]\n";
+    i=i+1;
+}

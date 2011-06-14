@@ -140,8 +140,8 @@ sp {mario-soar*elaborate*object-visibility*monster
 sp {mario-soar*elaborate-xright
    (state <s> ^mario <mario>
    	      ^name mario-soar)
-   (<mario> ^x <x>
-        ^y <y>)
+   (<mario> ^xi <x>
+        ^yi <y>)
 -->
    (<s> ^xtile <xt>
         ^ytile <yt>)
@@ -153,7 +153,7 @@ sp {mario-soar*elaborate-xright
 sp {mario-soar*elaborate-tile-on-right
    (state <s> ^io.input-link <il>
               ^xtile.right <xloc>
-              ^mario.y <y>
+              ^mario.yi <y>
 	      ^name mario-soar)
    (<il> ^visual-scene.tile-row <row>)
    (<row> ^y <y>
@@ -163,3 +163,4 @@ sp {mario-soar*elaborate-tile-on-right
 -->
    (<s> ^tile-type.right <ty>)
 }
+

@@ -1,2 +1,2 @@
-plot "run1.csv"
+plot "plot.data"
 reread

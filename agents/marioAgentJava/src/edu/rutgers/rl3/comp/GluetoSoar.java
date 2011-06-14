@@ -39,6 +39,8 @@ public class GluetoSoar{
 	
 
 	private static FloatElement mario_prevx;
+	private static FloatElement mario_xd;
+	private static FloatElement mario_yd;
 	private static FloatElement mario_x;
 	private static FloatElement mario_y;
 	private static IntElement mario_xi;
@@ -85,10 +87,12 @@ public class GluetoSoar{
 		
 		//added to support rewarding the agent on moving towards right
 		mario_prevx = agent.CreateFloatWME(marioWME, "prevx", 0.0);
-		mario_xi = agent.CreateIntWME(marioWME, "x", 0);
-		mario_yi = agent.CreateIntWME(marioWME, "y", 0);
-		mario_x = agent.CreateFloatWME(marioWME, "xd", 0);
-		mario_y = agent.CreateFloatWME(marioWME, "yd", 0);
+		mario_x = agent.CreateFloatWME(marioWME, "x", 0);
+		mario_y = agent.CreateFloatWME(marioWME, "y", 0);
+		mario_xi = agent.CreateIntWME(marioWME, "xi", 0);
+		mario_yi = agent.CreateIntWME(marioWME, "yi", 0);
+		mario_xd = agent.CreateFloatWME(marioWME, "xd", 0);
+		mario_yd = agent.CreateFloatWME(marioWME, "yd", 0);
 		mario_sx = agent.CreateFloatWME(marioWME, "sx", 0.0);
 		mario_sy = agent.CreateFloatWME(marioWME, "sy", 0.0);
 		
@@ -180,6 +184,7 @@ public class GluetoSoar{
 			m.sx = obs.doubleArray[5*i+2];
 			m.sy = obs.doubleArray[5*i+3];
 			m.reward = obs.doubleArray[5*i+4];
+			SoarMarioAgent.RewardMonsters += m.reward;
 	//		System.out.println("Reward for monster " + m.typeName + " is " + m.reward + " x is " + m.x);
 			monster_vec.add(m);
 		}
@@ -189,6 +194,7 @@ public class GluetoSoar{
 		for (; j < obs.intArray.length; j+=3){
 		//	System.out.println("Tile x: " + obs.intArray[j] + " y: " + obs.intArray[j+1] + " reward: " + obs.intArray[j+2]);
 			blockRewards.add(new Block (obs.intArray[j], obs.intArray[j+1], obs.intArray[j+2]));
+			SoarMarioAgent.RewardBlocks += obs.intArray[j+2];
 			
 		}
 		
@@ -236,10 +242,12 @@ public class GluetoSoar{
 		}
 		int tempx = (int)(2*Mario.x);
 		int tempy = (int)(2*Mario.y);
-		agent.Update(mario_x, Mario.x);
-		agent.Update(mario_y, Mario.y);
+		agent.Update(mario_xd, Mario.x);
+		agent.Update(mario_yd, Mario.y);
 		agent.Update(mario_xi, (int)Mario.x);
 		agent.Update(mario_yi, (int)Mario.y);
+		agent.Update(mario_x, tempx/2.0);
+		agent.Update(mario_y, tempy/2.0);
 		agent.Update(mario_sx, Mario.sx);
 		agent.Update(mario_sy, Mario.sy);
 		agent.Update(mario_prevx, prev_xloc);
@@ -275,15 +283,15 @@ public class GluetoSoar{
 					int tempy = (int)(2*monsters.elementAt(k).y);
 				//	System.out.println("Double distance, x: "+ monsters.elementAt(k).x+"y: " + monsters.elementAt(k).y + " Int distance, x: " + tempx/4.0 + "y: " +tempy/4.0);
 					if(monstersPresent.elementAt(k).typeName.equals(monsters.elementAt(k).typeName)){ 
-					//	agent.Update(monstersPresent.elementAt(k).monster_x, tempx/2.0);
-					//	agent.Update(monstersPresent.elementAt(k).monster_y, tempy/2.0);
+						agent.Update(monstersPresent.elementAt(k).monster_x, tempx/2.0);
+						agent.Update(monstersPresent.elementAt(k).monster_y, tempy/2.0);
 						
 						
 						//changed the discreteization to single time///
 						//change back for some agent runs//
 						//or make this a parameter of the program//
-						agent.Update(monstersPresent.elementAt(k).monster_x, (int)(monsters.elementAt(k).x));
-						agent.Update(monstersPresent.elementAt(k).monster_y, (int)(monsters.elementAt(k).y));
+					//	agent.Update(monstersPresent.elementAt(k).monster_x, (int)(monsters.elementAt(k).x));
+					//	agent.Update(monstersPresent.elementAt(k).monster_y, (int)(monsters.elementAt(k).y));
 						agent.Update(monstersPresent.elementAt(k).monster_xd, monsters.elementAt(k).x);
 						agent.Update(monstersPresent.elementAt(k).monster_yd, monsters.elementAt(k).y);
 						agent.Update(monstersPresent.elementAt(k).monster_sx, monsters.elementAt(k).sx);
@@ -323,8 +331,10 @@ public class GluetoSoar{
 					addNew.monster_winged = agent.CreateStringWME(addNew.monsterWME, "winged", "no");
 				int tempx = (int)(2*monsters.elementAt(i).x);
 				int tempy = (int)(2*monsters.elementAt(i).y);
-				addNew.monster_x = agent.CreateIntWME(addNew.monsterWME, "x", (int)(monsters.elementAt(k).x));
-				addNew.monster_y  = agent.CreateIntWME(addNew.monsterWME, "y", (int)(monsters.elementAt(k).y));
+			//	addNew.monster_x = agent.CreateIntWME(addNew.monsterWME, "x", (int)(monsters.elementAt(k).x));
+			//	addNew.monster_y  = agent.CreateIntWME(addNew.monsterWME, "y", (int)(monsters.elementAt(k).y));
+				addNew.monster_x = agent.CreateFloatWME(addNew.monsterWME, "x", tempx/2.0);
+				addNew.monster_y  = agent.CreateFloatWME(addNew.monsterWME, "y", tempy/2.0);
 				addNew.monster_xd = agent.CreateFloatWME(addNew.monsterWME,"xd",monsters.elementAt(i).x);
 				addNew.monster_yd = agent.CreateFloatWME(addNew.monsterWME,"yd",monsters.elementAt(i).y);
 				addNew.monster_sx = agent.CreateFloatWME(addNew.monsterWME, "sx", monsters.elementAt(i).sx);
