@@ -115,7 +115,7 @@ public class ExMarioAgent implements AgentInterface {
 	 */
 	public static Monster[] getMonsters(Observation obs) {
 		Vector<Monster> monster_vec = new Vector<Monster>();
-		for (int i=0; 1+2*i<obs.intArray.length; i++) {
+		for (int i=0; 1+2*i<obs.intArray.length && obs.intArray[1+2*i] != 100; i++) {
 			Monster m = new Monster();
 			m.type = obs.intArray[1+2*i];
 			m.winged = obs.intArray[2+2*i]!=0;
@@ -238,7 +238,7 @@ public class ExMarioAgent implements AgentInterface {
 			last_actions = new Vector<Action>();
 		this_actions = new Vector<Action>();
 		Reward += r;
-		System.out.println(" Reward : " + Reward);
+		System.out.println(Reward);
 	}
 
 	public String agent_message(String msg) {

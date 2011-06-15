@@ -57,9 +57,8 @@ public class consoleTrainer {
                 int slideJumpTime = Integer.parseInt(configFile.getProperty("slidejump-time"));
                 
 
-                consoleTrainerHelper.loadPMario(seed,levelType,levelDifficulty,levelWidth,maxSteps,rewardGoal,
-                		rewardDeath,rewardStep,rewardCoin,rewardKill,speedWalk,speedRun,speedJump,speedSlideJump,accelFall,jumpTime
-                		,slideJumpTime);
+                consoleTrainerHelper.loadMario(seed,levelType,levelDifficulty,levelWidth,maxSteps,rewardGoal,
+                		rewardDeath,rewardStep,rewardCoin,rewardKill,speedWalk,speedRun,speedJump,speedSlideJump,accelFall,jumpTime,slideJumpTime);
 
                 RLGlue.RL_init();
 
