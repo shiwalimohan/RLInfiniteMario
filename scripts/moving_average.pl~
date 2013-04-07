@@ -1,5 +1,0 @@
-$filename = "data1.dat"
-
-    for ($count=1; $count < 1500-10; $count++){
-	sum
-}

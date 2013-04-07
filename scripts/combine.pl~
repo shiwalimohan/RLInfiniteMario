@@ -1,5 +1,0 @@
-my @combined;
-$file1 = "data.dat";
-$file2 = "mov_av_sample.data";
-
-    open FILE1, $file1 or die $!;

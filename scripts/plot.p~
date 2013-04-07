@@ -1,6 +1,0 @@
-# Gnuplot script file for plotting data
-
- set xlabel "Runs"
- set ylabel "Total Reward"
- set grid
- plot "/home/shiwali/infiniteMario/agents/marioAgentJava/agents/mario-soar-multi/run2.csv" notitle pointtype 3 lt 3
