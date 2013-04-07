@@ -1,7 +1,0 @@
-sp {propose*tackle-monster
-   (state <s> ^name mario-soar
-   	      ^object <obj>)
-   (<obj> ^visible true)
--->
-   (<s> ^operator <op> +)
-   }

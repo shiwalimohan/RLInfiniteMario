@@ -1,8 +1,0 @@
-#---initialize agent
-sp {nil*propose*initialize-mario-soar
-   (state <s> ^superstate nil
-   	      -^name)
--->
-   (<s> ^operator <op> +)
-   (<o> ^name initialize-mario-soar)
-}

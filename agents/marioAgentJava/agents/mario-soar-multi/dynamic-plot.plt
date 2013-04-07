@@ -1,2 +1,0 @@
-plot "plot.data"
-reread

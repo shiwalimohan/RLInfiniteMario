@@ -1,3 +1,0 @@
-pushd mario-soar-test
-source mario-soar-test_source.soar
-popd

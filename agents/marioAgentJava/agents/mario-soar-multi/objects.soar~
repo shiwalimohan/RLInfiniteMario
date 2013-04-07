@@ -1,8 +1,0 @@
-sp {mario-soar*
-   (state <s> ^name mario-soar
-   	      ^object <obj>
-	      ^to-learn <tl>)
-   (<obj> ^visible true)
--->
-   (<s> ^operator <op> + =)
-   (<op> ^name 

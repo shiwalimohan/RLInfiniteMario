@@ -1,5 +1,0 @@
-*.class: src/edu/rutgers/rl3/comp/*.java
-	javac -source 5 -d bin src/edu/rutgers/rl3/comp/*.java
-
-clean:
-	rm -Rf bin/*

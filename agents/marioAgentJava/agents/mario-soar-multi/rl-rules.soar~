@@ -1,8 +1,0 @@
-### monster rl-rule
-
-sp {rl-rule*monster
-   :template
-   (state <s> ^name mario-soar	
-   	      ^operator <op> +)
-   (<s> ^mario <mario>	  
-   	 ^operator <op>)

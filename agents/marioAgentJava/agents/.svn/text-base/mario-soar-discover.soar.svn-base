@@ -1,3 +1,0 @@
-pushd mario-soar-discover
-source mario-soar-discover_source.soar
-popd

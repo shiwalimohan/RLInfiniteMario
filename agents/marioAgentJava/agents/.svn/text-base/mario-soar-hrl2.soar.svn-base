@@ -1,3 +1,0 @@
-pushd mario-soar-hrl2
-source mario-soar-hrl2_source.soar
-popd
