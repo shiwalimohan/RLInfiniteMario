@@ -1,37 +1,0 @@
-8
-
-dir
-647
-http://svn.2009.rl-competition.org/svn/rlcomp/trunk/private/environments-3.0/mario/src
-http://svn.2009.rl-competition.org/svn/rlcomp
-
-
-
-2009-04-09T22:43:52.538902Z
-643
-techcomm
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-3ab7dca2-0840-0410-924d-e80575ecc2e6
-
-com
-dir
-
-edu
-dir
-
-res
-dir
-
